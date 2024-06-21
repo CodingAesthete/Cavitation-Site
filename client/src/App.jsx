@@ -7,6 +7,7 @@ import Contacts from './pages/Contacts';
 import LearnMore from './pages/LearnMore';
 import Header from './components/Header';
 import SignUp from './pages/SignUp';
+import SignIn from './pages/SIgnIn';
 
 export default function App() {
   return (
@@ -18,7 +19,8 @@ export default function App() {
         <Route path="/goals" element={<Goals />} />
         <Route path="/learn-more" element={<LearnMore />} />
         <Route path="/contacts" element={<Contacts />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/sign-in" element={<SignIn />} />
       </Routes>
     </BrowserRouter>
   )

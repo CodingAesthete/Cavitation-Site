@@ -34,7 +34,7 @@ export default function Header() {
           <Link to='/contacts'>
             <li className='hidden lg:inline hover:underline'> Контакти </li>
           </Link>
-          <Link to='/signup'><li className='inline hover:underline cursor-pointer'><img className=' w-11 bg-blue-200 rounded-full' src={Avatar} alt="avatar icon" /></li>
+          <Link to='/sign-in'><li className='inline hover:underline cursor-pointer'><img className=' w-11 bg-blue-200 rounded-full' src={Avatar} alt="avatar icon" /></li>
           </Link>
         </ul>
       </div>
