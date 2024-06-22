@@ -70,7 +70,7 @@ export default function SignIn() {
       </form>
       <div className='flex gap-2 mt-5 font-bold tracking-wide text-lg bg-blue-50 bg-opacity-80 px-3'>
         <p className='text-violet-700'>Нямате акаунт?</p>
-        <Link to={'/sign-in'}>
+        <Link to={'/sign-up'}>
           <span className='text-blue-900'>Регистрирайте се</span>
         </Link>
       </div>

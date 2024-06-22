@@ -8,6 +8,8 @@ import LearnMore from './pages/LearnMore';
 import Header from './components/Header';
 import SignUp from './pages/SignUp';
 import SignIn from './pages/SIgnIn';
+import PrivateRoute from './components/PrivateRoute';
+import Profile from './pages/Profile';
 
 export default function App() {
   return (
@@ -21,6 +23,9 @@ export default function App() {
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/sign-in" element={<SignIn />} />
+        <Route element={<PrivateRoute />}>
+          <Route path='/profile' element={<Profile />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )

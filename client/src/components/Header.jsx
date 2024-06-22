@@ -2,8 +2,10 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import Logo from "../assets/images/logo-site.png"
 import Avatar from "../assets/images/site-avatar.jpg"
+import { useSelector } from 'react-redux'
 
 export default function Header() {
+  const { currentUser } = useSelector((state) => state.user);
   return (
     <header className='bg-blue-200 text-black font-semibold shadow-lg'>
       <div className='flex items-center justify-between p-2 lg:gap-4 sm:mx-10'>
@@ -36,6 +38,11 @@ export default function Header() {
           </Link>
           <Link to='/sign-in'><li className='inline hover:underline cursor-pointer'><img className=' w-11 bg-blue-200 rounded-full' src={Avatar} alt="avatar icon" /></li>
           </Link>
+          {/* <Link to='/profile'>
+            {currentUser ? (
+              <li className='inline hover:underline cursor-pointer'>SignIn</li>
+            ) : (<li className='inline hover:underline cursor-pointer'><img className=' w-11 bg-blue-200 rounded-full' src={Avatar} alt="avatar icon" /></li>)}
+          </Link> */}
         </ul>
       </div>
     </header>
