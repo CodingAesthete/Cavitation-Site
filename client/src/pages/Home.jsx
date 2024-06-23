@@ -10,7 +10,7 @@ export default function Home() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="text-lg text-justify w-5/6 mx-auto rounded-md px-10 py-6 mt-6 mb-10 bg-blue-50"
+      className="text-lg text-justify w-5/6 mx-auto rounded-md px-10 py-6 mt-6 pt-10 mb-10 bg-blue-50"
     >
       <div>
         <motion.h1

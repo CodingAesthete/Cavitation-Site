@@ -27,7 +27,7 @@ export default function LearnMore() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="text-lg text-justify w-5/6 mx-auto rounded-md px-10 py-6 mt-6 mb-10 bg-blue-50"
+      className="text-lg text-justify w-5/6 mx-auto rounded-md px-10  py-4 mt-6 mb-10 bg-blue-50"
     >
       <div style={{ clear: 'both' }}>
         <br />
@@ -35,7 +35,7 @@ export default function LearnMore() {
           className='w-full text-center text-2xl font-bold pb-6'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
+          transition={{ delay: 0.2 }}
         >
           Що е кавитация?
         </motion.h2>
@@ -47,7 +47,7 @@ export default function LearnMore() {
           whileHover={{ scale: 1.1 }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
+          transition={{ delay: 0.2 }}
         />
         <motion.img
           src={Baloons}
@@ -56,13 +56,13 @@ export default function LearnMore() {
           whileHover={{ scale: 1.1 }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
+          transition={{ delay: 0.2 }}
         />
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
+          transition={{ delay: 0.3 }}
         >
           Кавитацията е образуването на въздушните мехурчета във водата поради резки промени в налягането, това е процес на нарушаване целостта на течността, който се извършва в тези части на потока, където налягането се понижава и достига до критично значение. С възникването на въздушните балончета и изменението на техните размери в процеса на кавитацията се променят физическите и акустичните свойства на водата.
         </motion.p>
@@ -72,7 +72,7 @@ export default function LearnMore() {
           className='mt-12 mb-6'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
+          transition={{ delay: 0.3 }}
         >
           <motion.img
             className=' w-3/5 mx-auto'
@@ -81,7 +81,7 @@ export default function LearnMore() {
             whileHover={{ scale: 1.1 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.8 }}
+            transition={{ delay: 0.4 }}
           />
         </motion.div>
 
@@ -90,7 +90,7 @@ export default function LearnMore() {
             className="mb-3"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.8 }}
+            transition={{ delay: 0.4 }}
           >
             При гидродинамичната обработка на водата се изменят нейните физико-химически характеристики.
             По време на този процес водните молекули се разпадат, освобождават се кислород и водороден прекис, които са мощни окислители. Според учените "студеното кипене"
@@ -101,7 +101,7 @@ export default function LearnMore() {
             className="mb-3"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.8 }}
+            transition={{ delay: 0.4 }}
           >
             При разрушаването на кавитационите балончета се освобождава определено количество енергия и настъпва следния химически процес:
           </motion.li>
@@ -110,7 +110,7 @@ export default function LearnMore() {
             className='mt-12 mb-6 mr-20 ml-20'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.8 }}
+            transition={{ delay: 0.5 }}
           >
             <motion.img
               className=' w-3/12 mx-auto'
@@ -119,7 +119,7 @@ export default function LearnMore() {
               whileHover={{ scale: 1.1 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.8 }}
+              transition={{ delay: 0.5 }}
             />
             <motion.img
               className=' w-3/12 mx-auto'
@@ -128,7 +128,7 @@ export default function LearnMore() {
               whileHover={{ scale: 1.1 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.9 }}
+              transition={{ delay: 0.6 }}
             />
             <motion.img
               className=' w-3/12 mx-auto'
@@ -137,7 +137,7 @@ export default function LearnMore() {
               whileHover={{ scale: 1.1 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.9 }}
+              transition={{ delay: 0.6 }}
             />
           </motion.div>
           <motion.div
@@ -156,7 +156,7 @@ export default function LearnMore() {
             className='mt-12 mb-6 rounded-2xl'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.9 }}
+            transition={{ delay: 0.6 }}
           >
             <div className=" p-6 bg-slate-100 bg-opacity-65 rounded-2xl border-4 border-dashed border-blue-300">
               <p>
@@ -174,7 +174,7 @@ export default function LearnMore() {
             className="mb-2 mt-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.9 }}
+            transition={{ delay: 0.6 }}
           >
             До неотдавна кавитацията се разглеждаше като отрицателно явление, свързано с ерозията на повърхността на устройствата, работещи в условията на образуване на кавитация (помпи, корабни винтове, турбинни детайли и т.н.).
             Сега кавитационните технологии намират широко приложение в различните области на промишлеността.
@@ -187,7 +187,7 @@ export default function LearnMore() {
             className='mt-6 mb-6 flex justify-between'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
+            transition={{ delay: 0.7 }}
           >
             <motion.img
               className=' w-4/12 mx-auto'
@@ -196,7 +196,7 @@ export default function LearnMore() {
               whileHover={{ scale: 1.1 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 1 }}
+              transition={{ delay: 0.7 }}
             />
             <motion.img
               className=' w-4/12 mx-auto'
@@ -205,14 +205,14 @@ export default function LearnMore() {
               whileHover={{ scale: 1.1 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 1 }}
+              transition={{ delay: 0.7 }}
             />
           </motion.div>
           <motion.li
             className="mb-3"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 1.1, duration: 0.5 }}
+            transition={{ delay: 0.7, duration: 0.5 }}
             whileHover={{ color: 'darkblue' }}
             style={{
               overflowWrap: 'break-word',
@@ -243,7 +243,7 @@ export default function LearnMore() {
           className='w-full text-center text-2xl font-bold pb-6'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
+          transition={{ delay: 0.8 }}
         >
           Приложение на кавитацията
         </motion.h2>
@@ -251,7 +251,7 @@ export default function LearnMore() {
           className="flex items-center mb-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
+          transition={{ delay: 0.8 }}
         >
 
           <motion.p>
@@ -273,7 +273,7 @@ export default function LearnMore() {
           className="flex items-center mb-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
+          transition={{ delay: 0.8 }}
         >
 
           <motion.p>
@@ -294,7 +294,7 @@ export default function LearnMore() {
           className="flex items-center mb-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
+          transition={{ delay: 0.8 }}
         >
 
           <motion.p>
@@ -313,7 +313,7 @@ export default function LearnMore() {
           className="flex items-center mb-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
+          transition={{ delay: 0.8 }}
         >
 
           <motion.p>
@@ -333,7 +333,7 @@ export default function LearnMore() {
           className="flex items-center mb-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
+          transition={{ delay: 0.8 }}
         >
 
           <motion.p>
@@ -362,7 +362,7 @@ export default function LearnMore() {
           className='w-full text-center text-2xl font-bold pb-6'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
+          transition={{ delay: 0.9 }}
         >
           Сравнителен анализ и преимущества
         </motion.h2>
@@ -372,7 +372,7 @@ export default function LearnMore() {
             className="flex items-start border-blue-900 border-dotted border-r-2 pr-3"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.7 }}
+            transition={{ delay: 0.9 }}
           >
             <motion.p>
               <b>1.</b> Обработка с хлор:
@@ -387,7 +387,7 @@ export default function LearnMore() {
             className="flex items-start border-blue-900 border-dotted border-r-2 pr-3"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.7 }}
+            transition={{ delay: 0.9 }}
           >
             <motion.p>
               <b>2.</b> Обработка с ултра-виолетови лъчи:
@@ -400,7 +400,7 @@ export default function LearnMore() {
             className="flex items-start"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.7 }}
+            transition={{ delay: 0.9 }}
           >
             <motion.p>
               <b>3.</b> Обработката с използуване на кавитационния ефект няма по-горе отбелязаните недостатъци; Тя е много по-енергоефективна и по-евтина.
@@ -415,7 +415,7 @@ export default function LearnMore() {
             className="flex items-start"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.7 }}
+            transition={{ delay: 0.9 }}
           >
             <motion.img
               src={Chlor}
@@ -428,7 +428,7 @@ export default function LearnMore() {
             className="flex items-start"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.7 }}
+            transition={{ delay: 0.9 }}
           >
             <motion.img
               src={CavitationMethod}
@@ -441,7 +441,7 @@ export default function LearnMore() {
             className="flex items-start"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.7 }}
+            transition={{ delay: 0.9 }}
           >
             <motion.img
               src={UV}
@@ -465,7 +465,7 @@ export default function LearnMore() {
           className='w-full text-center text-2xl font-bold pb-3'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
+          transition={{ delay: 1 }}
         >
           Резултати от кавитацията
         </motion.h2>
@@ -528,7 +528,7 @@ export default function LearnMore() {
           className="flex items-center mb-3 mt-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
+          transition={{ delay: 1 }}
         >
 
           <motion.p>
@@ -540,7 +540,7 @@ export default function LearnMore() {
           className="flex items-center mb-3 mt-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
+          transition={{ delay: 1 }}
         >
 
           <motion.p>
@@ -560,7 +560,7 @@ export default function LearnMore() {
         className='mt-12 mb-6'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.7 }}
+        transition={{ delay: 1 }}
       >
         <motion.img
           className='w-3/5 mx-auto'
@@ -569,7 +569,7 @@ export default function LearnMore() {
           whileHover={{ scale: 1.1 }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
+          transition={{ delay: 1 }}
           style={{ display: 'block', margin: '0 auto' }}
         />
         <motion.div
