@@ -9,13 +9,41 @@ import SuccessIcon from '../assets/images/SuccessIcon.png';
 import ReputationIcon from '../assets/images/Reputation.webp';
 import Vision from '../assets/images/Vision2.jpg';
 
-export default function LearnMore() {
+// Custom hook to detect screen size
+function useMediaQuery() {
+  const [screenSize, setScreenSize] = React.useState('');
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setScreenSize('sm');
+      } else {
+        setScreenSize('lg');
+      }
+    };
+
+    // Initial check on mount
+    handleResize();
+
+    // Listen to window resize event
+    window.addEventListener('resize', handleResize);
+
+    // Clean up
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return screenSize;
+}
+
+export default function Contacts() {
+  const screenSize = useMediaQuery();
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="text-lg text-justify w-5/6 mx-auto rounded-md px-10 py-6 mt-6 mb-6 bg-blue-50"
+      className="text-lg w-5/6 mx-auto rounded-md px-10 py-6 mt-6 mb-6 bg-blue-50"
     >
       <div>
         <motion.h1
@@ -39,7 +67,7 @@ export default function LearnMore() {
                 transition={{ delay: 0.2 }}
               />
               <motion.p
-                className='mb-3'
+                className={`mb-3 ${screenSize === 'sm' ? 'text-center' : 'text-justify'}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
@@ -47,7 +75,7 @@ export default function LearnMore() {
                 С удоволствие ще отговорим на всички ваши въпроси и запитвания относно нашите услуги и продукти. Независимо дали искате да направите поръчка, да получите допълнителна информация или просто да споделите своите идеи и предложения, ние сме тук, за да ви помогнем.
               </motion.p>
               <motion.p
-                className='mb-3 flex items-center'
+                className={`mb-3 flex items-center ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
@@ -69,7 +97,7 @@ export default function LearnMore() {
           <div className="flex flex-col-reverse lg:flex-row justify-between items-center lg:items-start">
             <div className="w-full lg:w-7/12">
               <motion.p
-                className='mb-3 flex'
+                className={`mb-3 flex ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
@@ -82,7 +110,7 @@ export default function LearnMore() {
                 гр.Варна, р-н Приморски, Ген.Радко Димитриев 13, вх.Б, ет.1
               </motion.p>
               <motion.p
-                className='mb-3 flex'
+                className={`mb-3 flex ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
@@ -95,7 +123,7 @@ export default function LearnMore() {
                 Статусът ни е активен и сме в процес на надграждане
               </motion.p>
               <motion.p
-                className='mb-3 flex'
+                className={`mb-3 flex ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
@@ -108,7 +136,7 @@ export default function LearnMore() {
                 Дългогодишен опит и успешни проекти
               </motion.p>
               <motion.p
-                className='mb-3 flex'
+                className={`mb-3 flex ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
@@ -121,7 +149,7 @@ export default function LearnMore() {
                 Доволни клиенти и безупречна репутация
               </motion.p>
               <motion.p
-                className='mb-3 flex'
+                className={`mb-3 flex ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
