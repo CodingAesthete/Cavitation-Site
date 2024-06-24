@@ -27,7 +27,7 @@ export default function LearnMore() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="text-lg text-justify w-5/6 mx-auto rounded-md px-10  py-4 mt-6 mb-10 bg-blue-50"
+      className="text-lg text-justify w-11/12 sm:w-5/6 mx-auto rounded-md px-4  sm:px-10  py-4 mt-6 mb-10 bg-blue-50"
     >
       <div style={{ clear: 'both' }}>
         <br />
@@ -40,24 +40,28 @@ export default function LearnMore() {
           Що е кавитация?
         </motion.h2>
 
-        <motion.img
-          src={Baloons2}
-          alt="Baloons 2"
-          style={{ float: 'left', marginRight: '24px', maxHeight: '220px' }}
-          whileHover={{ scale: 1.1 }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-        />
-        <motion.img
-          src={Baloons}
-          alt="Baloons"
-          style={{ float: 'right', marginLeft: '24px', maxHeight: '220px' }}
-          whileHover={{ scale: 1.1 }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-        />
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}
+          className='flex-col sm:flex-row'>
+          <motion.img
+            src={Baloons2}
+            alt="Baloons 2"
+            style={{ flex: '0 1 45%', maxHeight: '220px', marginBottom: '10px' }}
+            whileHover={{ scale: 1.1 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className='m-0'
+          />
+          <motion.img
+            src={Baloons}
+            alt="Baloons"
+            style={{ flex: '0 1 45%', maxHeight: '220px', marginBottom: '10px' }}
+            whileHover={{ scale: 1.1 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          />
+        </div>
 
         <motion.p
           initial={{ opacity: 0 }}
@@ -68,14 +72,13 @@ export default function LearnMore() {
         </motion.p>
 
         <motion.div
-          style={{ clear: 'both' }}
           className='mt-12 mb-6'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
           <motion.img
-            className=' w-3/5 mx-auto'
+            className='w-full mx-auto'
             src={Chain}
             alt="cavitation chain"
             whileHover={{ scale: 1.1 }}
@@ -92,10 +95,7 @@ export default function LearnMore() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            При гидродинамичната обработка на водата се изменят нейните физико-химически характеристики.
-            По време на този процес водните молекули се разпадат, освобождават се кислород и водороден прекис, които са мощни окислители. Според учените "студеното кипене"
-            на водата може да се сравни с работата на огромен миксер.
-
+            При гидродинамичната обработка на водата се изменят нейните физико-химически характеристики. По време на този процес водните молекули се разпадат, освобождават се кислород и водороден прекис, които са мощни окислители. Според учените "студеното кипене" на водата може да се сравни с работата на огромен миксер.
           </motion.li>
           <motion.li
             className="mb-3"
@@ -106,14 +106,14 @@ export default function LearnMore() {
             При разрушаването на кавитационите балончета се освобождава определено количество енергия и настъпва следния химически процес:
           </motion.li>
           <motion.div
-            style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', clear: 'both' }}
-            className='mt-12 mb-6 mr-20 ml-20'
+            style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+            className='mt-12 mb-6 sm:flex-row flex-col gap-3 sm:gap-0'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
             <motion.img
-              className=' w-3/12 mx-auto'
+              className='w-7/12 sm:w-1/4 mx-auto'
               src={Formula1}
               alt="cavitation formulas"
               whileHover={{ scale: 1.1 }}
@@ -122,7 +122,7 @@ export default function LearnMore() {
               transition={{ delay: 0.5 }}
             />
             <motion.img
-              className=' w-3/12 mx-auto'
+              className='w-7/12 sm:w-1/4 mx-auto'
               src={Formula2}
               alt="cavitation formulas"
               whileHover={{ scale: 1.1 }}
@@ -131,7 +131,7 @@ export default function LearnMore() {
               transition={{ delay: 0.6 }}
             />
             <motion.img
-              className=' w-3/12 mx-auto'
+              className='w-7/12 sm:w-1/4 mx-auto'
               src={Formula3}
               alt="cavitation formulas"
               whileHover={{ scale: 1.1 }}
@@ -150,15 +150,15 @@ export default function LearnMore() {
               backgroundPosition: 'center',
               backgroundBlendMode: 'overlay',
               backgroundColor: 'rgba(173, 216, 230, 0.7)',
-              width: '80%',
+              width: '95%',
               margin: '0 auto',
             }}
-            className='mt-12 mb-6 rounded-2xl'
+            className='mt-12 mb-6 rounded-2xl lg:w-80 lg:mx-auto'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
           >
-            <div className=" p-6 bg-slate-100 bg-opacity-65 rounded-2xl border-4 border-dashed border-blue-300">
+            <div className="p-2 sm:p-6 bg-slate-100 bg-opacity-65 rounded-2xl border-4 border-dashed border-blue-300">
               <p>
                 Молекулите на водата се насищат с кислород на основание на хидродинамическото изменение. Характеристиките на флуида, изменят своето енергийно състояние и получават допълнителна степен на свобода.
                 В резултат на това водата се дезинфекцира, микробите и бактериите умират. Освен това, когато мехурчетата се неутрализират, се отделя голямо количество енергия, която може да се използва за обезсоляване и затопляне на водата.
@@ -166,50 +166,14 @@ export default function LearnMore() {
                 Ефективността на бактерицидното въздействие зависи от интензивността на кавитацията и времето на въздействие.
                 На ефективността на процеса не влияе качеството на входната вода, мътността,
                 солеността, цветността и т.н.
-                Бактериите се подлагат еднновремено на хидродинамично, топло и ударно въздействие, което води до разрушаване на повърхността им и тяхното унищожаване. Най-интензивното унищожаване на микроорганизмите се извършва в момента на възникване на кавитацията, а пълно обеззаразяване става при равномерното разпределение на водата в кавитационите зони.
+                Бактериите се подлагат еднновремено на хидродинамично, топло и ударно въздействие, което води до разрушаване на повърхността им и тяхното унищожаване. Най-интензивното унищожаве на микроорганизмите се извършва в момента на възникване на кавитацията, а пълно обеззаразяване става при равномерното разпределение на водата в кавитационите зони.
               </p>
             </div>
           </motion.div>
+
+
           <motion.li
             className="mb-2 mt-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-          >
-            До неотдавна кавитацията се разглеждаше като отрицателно явление, свързано с ерозията на повърхността на устройствата, работещи в условията на образуване на кавитация (помпи, корабни винтове, турбинни детайли и т.н.).
-            Сега кавитационните технологии намират широко приложение в различните области на промишлеността.
-            Това е свързано с високата енергоефективност на химико-технологичните процеси, които са подложени на кавитационна обработка.
-            Едно от главните достойнства на метода се заключава в това, че кавитационната обработка е изключително физически процес и следователно много по-безопасен в сравнение с аналогичните химически методи. Освен това се отличава с голяма
-            ефективност и висок КПД.
-          </motion.li>
-          <motion.div
-            style={{ clear: 'both' }}
-            className='mt-6 mb-6 flex justify-between'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.7 }}
-          >
-            <motion.img
-              className=' w-4/12 mx-auto'
-              src={Technologies}
-              alt="cavitation technologies"
-              whileHover={{ scale: 1.1 }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.7 }}
-            />
-            <motion.img
-              className=' w-4/12 mx-auto'
-              src={Technologies2}
-              alt="cavitation technologies"
-              whileHover={{ scale: 1.1 }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.7 }}
-            />
-          </motion.div>
-          <motion.li
-            className="mb-3"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.7, duration: 0.5 }}
@@ -218,7 +182,7 @@ export default function LearnMore() {
               overflowWrap: 'break-word',
             }}
           >
-            <u><i>Ефективността на кавитационните технологии се дължи на няколко фактора:</i></u>
+            <u><i>Ефективността се дължи на няколко фактора:</i></u>
             <br />
             - ерозия на твърдото тяло,
             <br />
@@ -226,10 +190,11 @@ export default function LearnMore() {
             <br />
             - дисперсия на твърдите частици,
             <br />
-            - екстрагиране, емулсия, хомогенизация на твърдите частици.
+            - екстрагиране, хомогенизация, емулсия на твърдите частици.
           </motion.li>
         </ul>
       </div>
+
       <motion.div
         className="h-1 bg-blue-900 mt-6"
         initial={{ scaleX: 0 }}
@@ -247,107 +212,106 @@ export default function LearnMore() {
         >
           Приложение на кавитацията
         </motion.h2>
+
+        {/* First Application Section */}
         <motion.div
-          className="flex items-center mb-3"
+          className="flex flex-col gap-3 lg:gap-0 lg:flex-row items-center mb-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-
-          <motion.p>
+          <motion.p className="lg:w-3/5 lg:pr-6">
             Кавитационната обработка има широко приложение в промишленоста, селското
             стопанство и медицината. В <b>хранителната промишленост</b> за хомогенизация и
             пастьоризация на млякото, консервация на хранителните емулсии, както и
             повишаване на срока на съхранение на продуктите.
           </motion.p>
-
           <motion.img
             src={Food}
             alt="Agriculture"
-            style={{ float: 'right', marginLeft: '24px', maxHeight: '170px' }}
+            className="mb-3 lg:mb-0 lg:ml-6 lg:max-h-170"
+            style={{ maxHeight: '170px' }}
             whileHover={{ scale: 1.1 }}
           />
         </motion.div>
-        <br />
+
+        {/* Second Application Section */}
         <motion.div
-          className="flex items-center mb-3"
+          className="flex flex-col gap-3 lg:gap-0 lg:flex-row items-center mb-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-
-          <motion.p>
-            В <b>медицината</b> също открива приложение -  използва се за бактериологично обеззаразяване, така също
-            и за  ефективното проникване на лекарствените вещества към центъра на поразяване.
-            Подобрява кръвообращението и стимулира регенеративните процеси.
+          <motion.p className="lg:w-3/5 lg:pr-6">
+            В <b>медицината</b> също открива приложение - използва се за бактериологично обеззаразяване, така също и за ефективното проникване на лекарствените вещества към центъра на поразяване. Подобрява кръвообращението и стимулира регенеративните процеси.
           </motion.p>
-
           <motion.img
             src={Medicine}
             alt="Medicine"
-            style={{ float: 'right', marginLeft: '24px', maxHeight: '170px' }}
+            className="mb-3 lg:mb-0 lg:ml-6 lg:max-h-170"
+            style={{ maxHeight: '170px' }}
             whileHover={{ scale: 1.1 }}
           />
         </motion.div>
-        <br />
+
+        {/* Third Application Section */}
         <motion.div
-          className="flex items-center mb-3"
+          className="flex flex-col gap-3 lg:gap-0 lg:flex-row items-center mb-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-
-          <motion.p>
-            В <b>селското стопанство</b> при използването на кавивитационо-обработената вода ce наблюдава значително увеличаване на добивите, а също  и се намалява заболеваемостта на посевите, което е свързано с повишеното съдържание на кислорода във водата.
+          <motion.p className="lg:w-3/5 lg:pr-6">
+            В <b>селското стопанство</b> при използването на кавитационно-обработената вода се наблюдава значително увеличаване на добивите, а също и намаляване на заболяваемостта на посевите, което е свързано с повишеното съдържание на кислорода във водата.
           </motion.p>
-
           <motion.img
             src={Farming}
             alt="Farming"
-            style={{ float: 'right', marginLeft: '24px', maxHeight: '170px' }}
+            className="mb-3 lg:mb-0 lg:ml-6 lg:max-h-170"
+            style={{ maxHeight: '170px' }}
             whileHover={{ scale: 1.1 }}
           />
         </motion.div>
-        <br />
+
+        {/* Fourth Application Section */}
         <motion.div
-          className="flex items-center mb-3"
+          className="flex flex-col gap-3 lg:gap-0 lg:flex-row items-center mb-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-
-          <motion.p>
-            Не по-малка се оказва ролята на кавитацията в  <b>нефтената промишленост</b> - кавитационната обработка позволява да се увеличи процента на леките фракции при крекинг процеса и като следствие на това  да се получи по-
-            лека фракция на мазута.
+          <motion.p className="lg:w-3/5 lg:pr-6">
+            Не по-малка се оказва ролята на кавитацията в <b>нефтената промишленост</b> - кавитационната обработка позволява да се увеличи процентът на леките фракции при крекинг процеса и като следствие на това да се получи по-лека фракция на мазута.
           </motion.p>
-
           <motion.img
             src={Oil}
             alt="Oil"
-            style={{ float: 'right', marginLeft: '24px', maxHeight: '170px' }}
+            className="mb-3 lg:mb-0 lg:ml-6 lg:max-h-170"
+            style={{ maxHeight: '170px' }}
             whileHover={{ scale: 1.1 }}
           />
         </motion.div>
-        <br />
+
+        {/* Fifth Application Section */}
         <motion.div
-          className="flex items-center mb-3"
+          className="flex flex-col gap-3 lg:gap-0 lg:flex-row items-center mb-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-
-          <motion.p>
-            Приложението й в други области кавитационната технология се състои в  изчистване и полиране на вътрешните повърхности на оборудванието, изчистване от замърсяване и накипи,
-            производство на биогаз, както и за отопление на помещенията.
+          <motion.p className="lg:w-3/5 lg:pr-6">
+            Приложението й в други области кавитационната технология се състои в изчистване и полиране на вътрешните повърхности на оборудванието, изчистване от замърсяване и накипи, производство на биогаз, както и за отопление на помещенията.
           </motion.p>
-
           <motion.img
             src={Polishing}
             alt="Polishing"
-            style={{ float: 'right', marginLeft: '24px', maxHeight: '170px' }}
+            className="mb-3 lg:mb-0 lg:ml-6 lg:max-h-170"
+            style={{ maxHeight: '170px' }}
             whileHover={{ scale: 1.1 }}
           />
         </motion.div>
+
+        {/* Divider */}
         <motion.div
           className="h-1 bg-blue-900 mt-6"
           initial={{ scaleX: 0 }}
@@ -355,6 +319,7 @@ export default function LearnMore() {
           transition={{ duration: 0.5 }}
         ></motion.div>
       </div>
+
 
       <div style={{ clear: 'both' }}>
         <br />
@@ -367,9 +332,10 @@ export default function LearnMore() {
           Сравнителен анализ и преимущества
         </motion.h2>
 
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          {/* First Column */}
           <motion.div
-            className="flex items-start border-blue-900 border-dotted border-r-2 pr-3"
+            className="flex items-start border-blue-900 border-dotted border-r-0 lg:border-r-2 pr-3 mb-6 lg:mb-0"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
@@ -383,8 +349,9 @@ export default function LearnMore() {
             </motion.p>
           </motion.div>
 
+          {/* Second Column */}
           <motion.div
-            className="flex items-start border-blue-900 border-dotted border-r-2 pr-3"
+            className="flex items-start border-blue-900 border-dotted border-r-0 lg:border-r-2 pr-3 mb-6 lg:mb-0"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
@@ -396,8 +363,9 @@ export default function LearnMore() {
             </motion.p>
           </motion.div>
 
+          {/* Third Column */}
           <motion.div
-            className="flex items-start"
+            className="flex items-start mb-6 lg:mb-0"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
@@ -406,52 +374,64 @@ export default function LearnMore() {
               <b>3.</b> Обработката с използуване на кавитационния ефект няма по-горе отбелязаните недостатъци; Тя е много по-енергоефективна и по-евтина.
               За сравнение, разходите на кавитационния способ в сравнение с другите способи
               за изчистване на водите е както следва:
-              - способ за изчистване с УВ - 1,7 пъти по-малко,
-              - способ с хлориране - 3,5 пъти по-малко,
-              - озониране- 10 пъти по-малко,
+              способ за изчистване с УВ - 1,7 пъти по-малко,
+              способ с хлориране - 3,5 пъти по-малко,
+              озониране- 10 пъти по-малко.
             </motion.p>
-          </motion.div>
-          <motion.div
-            className="flex items-start"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.9 }}
-          >
-            <motion.img
-              src={Chlor}
-              alt="Chlor"
-              style={{ maxHeight: '180px' }}
-              whileHover={{ scale: 1.1 }}
-            />
-          </motion.div>
-          <motion.div
-            className="flex items-start"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.9 }}
-          >
-            <motion.img
-              src={CavitationMethod}
-              alt="Cavitation-Method"
-              style={{ maxHeight: '180px' }}
-              whileHover={{ scale: 1.1 }}
-            />
-          </motion.div>
-          <motion.div
-            className="flex items-start"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.9 }}
-          >
-            <motion.img
-              src={UV}
-              alt="UV-Treatment"
-              style={{ maxHeight: '180px' }}
-              whileHover={{ scale: 1.1 }}
-            />
           </motion.div>
         </div>
 
+        {/* Images Section (Below lg) */}
+        <motion.div className="grid grid-cols-1 justify-center items-center mx-auto lg:hidden gap-4 mb-6">
+          <motion.img
+            src={Chlor}
+            alt="Chlor"
+            className="mb-3"
+            style={{ maxWidth: '100%', height: 'auto' }} // Adjusted width to be responsive
+            whileHover={{ scale: 1.1 }}
+          />
+          <motion.img
+            src={CavitationMethod}
+            alt="Cavitation-Method"
+            className="mb-3"
+            style={{ maxWidth: '100%', height: 'auto' }} // Adjusted width to be responsive
+            whileHover={{ scale: 1.1 }}
+          />
+          <motion.img
+            src={UV}
+            alt="UV-Treatment"
+            className="mb-3"
+            style={{ maxWidth: '100%', height: 'auto' }} // Adjusted width to be responsive
+            whileHover={{ scale: 1.1 }}
+          />
+        </motion.div>
+
+        {/* Images Section (lg and larger) */}
+        <motion.div className="hidden lg:grid lg:grid-cols-3 gap-4 mt-2">
+          <motion.img
+            src={Chlor}
+            alt="Chlor"
+            className="mb-3 lg:mb-0"
+            style={{ maxWidth: '95%', height: 'auto' }} // Adjusted width to be responsive
+            whileHover={{ scale: 1.1 }}
+          />
+          <motion.img
+            src={CavitationMethod}
+            alt="Cavitation-Method"
+            className="mb-3 lg:mb-0"
+            style={{ maxWidth: '95%', height: 'auto' }} // Adjusted width to be responsive
+            whileHover={{ scale: 1.1 }}
+          />
+          <motion.img
+            src={UV}
+            alt="UV-Treatment"
+            className="mb-3 lg:mb-0"
+            style={{ maxWidth: '95%', height: 'auto' }} // Adjusted width to be responsive
+            whileHover={{ scale: 1.1 }}
+          />
+        </motion.div>
+
+        {/* Divider */}
         <motion.div
           className="h-1 bg-blue-900 mt-6"
           initial={{ scaleX: 0 }}
@@ -459,6 +439,8 @@ export default function LearnMore() {
           transition={{ duration: 0.5 }}
         ></motion.div>
       </div>
+
+
 
       <div style={{ clear: 'both' }} className='mt-3'>
         <motion.h2
@@ -563,7 +545,7 @@ export default function LearnMore() {
         transition={{ delay: 1 }}
       >
         <motion.img
-          className='w-3/5 mx-auto'
+          className='w-full sm:w-4/5 md:w-3/5 mx-auto'
           src={ContactImage}
           alt="cavitation chain"
           whileHover={{ scale: 1.1 }}
@@ -590,8 +572,8 @@ export default function LearnMore() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
         >
-          <p className='pb-3'>Имате въпроси?</p>
-          <p>Свържете се с нас!</p>
+          <p className='hidden sm:inline text-2xl md:text-3xl pb-3'>Имате въпроси?</p>
+          <p className='text-2xl md:text-3xl pb-3'>Свържете се с нас!</p>
         </motion.div>
       </motion.div>
 
