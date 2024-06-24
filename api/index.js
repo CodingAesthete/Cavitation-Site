@@ -9,9 +9,9 @@ dotenv.config();
 
 mongoose.connect(process.env.MONGO)
   .then(() => { console.log('Connected to MongoDB!') })
-  .catch((err => {
+  .catch((err) => {
     console.log(err);
-  }));
+  });
 
 const __dirname = path.resolve();
 
@@ -23,18 +23,20 @@ app.use('/api/auth', authRouter);
 
 app.use(express.static(path.join(__dirname, '/client/dist')));
 
-app.get('*', (req, res => {
-  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'))
-}))
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
+});
 
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;
   const message = err.message || 'Internal Server Error';
   return res.status(statusCode).json({
-    success: false, statusCode, message
+    success: false,
+    statusCode,
+    message
   });
 });
 
 app.listen(3000, () => {
   console.log('Port: 3000...');
-})
+});
