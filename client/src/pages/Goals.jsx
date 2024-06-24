@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaChevronDown } from 'react-icons/fa';
+import CavitationVideo from '../assets/images/cavitation-video.mp4';
 
 export default function Goals() {
   const [selectedQuestion, setSelectedQuestion] = useState(null);
+  const [showOverlay, setShowOverlay] = useState(false); // State for showing overlay
 
   const questionsAndAnswers = [
     {
@@ -72,12 +74,17 @@ export default function Goals() {
     },
   };
 
+  const overlayVariants = {
+    hidden: { opacity: 0, scale: 0.5 },
+    visible: { opacity: 1, scale: 1 },
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="text-lg text-justify w-5/6 mx-auto rounded-md px-10 py-6 mt-6 mb-6 bg-blue-50"
+      className="text-lg text-justify w-11/12 sm:w-5/6 mx-auto rounded-md  px-3 sm:px-10 py-6 mt-6 mb-6 bg-blue-50"
     >
       <h1 className='text-2xl font-bold mb-4 text-center'>Често задавани въпроси</h1>
       <div className='space-y-4'>
@@ -87,14 +94,19 @@ export default function Goals() {
               onClick={() => handleQuestionClick(index)}
               className='text-lg font-medium text-left w-full focus:outline-none flex items-center justify-between'
             >
-              <span className='flex items-center'>
+              <span className='flex sm:items-center'>
                 <span className='bg-gradient-to-r from-blue-500 to-violet-500 text-white font-bold mr-2 flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center'>
                   {index + 1}
                 </span>
-                <span className='ml-2'>{qa.question}</span> {/* Added margin here */}
+                <span className=' ml-1 sm:ml-2 sm:text-justify md:text-start'> {qa.question}</span>
               </span>
-              <FaChevronDown className={`transform transition-transform duration-300 ${selectedQuestion === index ? 'rotate-180' : ''}`} />
+
+              {/* <FaChevronDown className={`transform transition-transform duration-300 ${selectedQuestion === index ? 'rotate-180' : ''} sm:hidden`} /> */}
             </button>
+
+            <div className="flex justify-center cursor-pointer mt-2" onClick={() => handleQuestionClick(index)}>
+              <FaChevronDown className={`transform transition-transform duration-300 ${selectedQuestion === index ? 'rotate-180' : ''}`} />
+            </div>
             {selectedQuestion === index && (
               <motion.div
                 variants={answerVariants}
@@ -111,6 +123,36 @@ export default function Goals() {
             )}
           </div>
         ))}
+      </div>
+
+      {/* Video component with animated overlay */}
+      <div style={{ position: 'relative', maxWidth: '100%', maxHeight: 'auto', margin: '10px auto' }}>
+        <motion.video
+          src={CavitationVideo}
+          type="video/mp4"
+          autoPlay
+          loop
+          muted
+          style={{ maxWidth: '100%', display: 'block' }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+          onMouseEnter={() => setShowOverlay(true)}
+          onMouseLeave={() => setShowOverlay(false)}
+        />
+
+        {/* Animated overlay text */}
+        <motion.div
+          initial="hidden"
+          animate={showOverlay ? "visible" : "hidden"}
+          variants={overlayVariants}
+          className="flex justify-center items-center absolute bottom-1/4 sm:bottom-1/2 md:top-1/2 md:right-1/4 transform -translate-x-1/2 -translate-y-1/2 text-green-50 font-bold p-4"
+          style={{ backgroundColor: 'rgba(255, 255, 255, 0.3)', borderRadius: '8px' }}
+        >
+          <motion.p className=" text-lg sm:text-xl font-semibold text-center">
+            Кавитацията е ключ към развитието и просперитета.
+          </motion.p>
+        </motion.div>
       </div>
     </motion.div>
   );
