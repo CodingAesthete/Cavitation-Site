@@ -22,13 +22,10 @@ function useMediaQuery() {
       }
     };
 
-    // Initial check on mount
     handleResize();
 
-    // Listen to window resize event
     window.addEventListener('resize', handleResize);
 
-    // Clean up
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
@@ -43,7 +40,7 @@ export default function Contacts() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="text-lg w-5/6 mx-auto rounded-md px-10 py-6 mt-6 mb-6 bg-blue-50"
+      className="text-lg w-11/12 sm:w-5/6 mx-auto rounded-md px-4 sm:px-10 py-6 mt-6 mb-6 bg-blue-50"
     >
       <div>
         <motion.h1
@@ -75,7 +72,7 @@ export default function Contacts() {
                 С удоволствие ще отговорим на всички ваши въпроси и запитвания относно нашите услуги и продукти. Независимо дали искате да направите поръчка, да получите допълнителна информация или просто да споделите своите идеи и предложения, ние сме тук, за да ви помогнем.
               </motion.p>
               <motion.p
-                className={`mb-3 flex items-center ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}
+                className={`mb-3 flex items-start sm:items-center ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}

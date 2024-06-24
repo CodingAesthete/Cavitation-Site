@@ -4,13 +4,41 @@ import CavitationPool from '../assets/images/cavitation-pool.jpg';
 import CavitationGlass from '../assets/images/cavitation-result.jpg';
 import SubjectOfActivity from '../assets/images/SubjectOfActivity.jpg';
 
+// Custom hook to detect screen size
+function useMediaQuery() {
+  const [screenSize, setScreenSize] = React.useState('');
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setScreenSize('sm');
+      } else {
+        setScreenSize('lg');
+      }
+    };
+
+    // Initial check on mount
+    handleResize();
+
+    // Listen to window resize event
+    window.addEventListener('resize', handleResize);
+
+    // Clean up
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return screenSize;
+}
+
 export default function Home() {
+  const screenSize = useMediaQuery();
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="text-lg text-justify w-11/12 sm:w-5/6 mx-auto rounded-md px-4 sm:px-10 py-6 mt-6 pt-10 mb-10 bg-blue-50"
+      className="text-lg w-11/12 sm:w-5/6 mx-auto rounded-md px-4 sm:px-10 py-6 mt-6 pt-10 mb-10 bg-blue-50"
     >
       <div>
         <motion.h1
@@ -21,19 +49,19 @@ export default function Home() {
         >
           Система за бактериално почистване на води
         </motion.h1>
-        <div className="md:flex md:items-start">
+        <div className="lg:flex lg:items-start">
           <motion.img
             src={CavitationPool}
             alt="Cavitation Process"
-            className='md:float-left md:mr-6 mb-4 md:mb-0 w-full md:w-auto max-w-[340px] mx-auto md:mx-0'
+            className='lg:float-left lg:mr-6 mb-4 lg:mb-0 w-full md:w-auto max-w-[340px] mx-auto lg:mx-0'
             whileHover={{ scale: 1.1 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           />
-          <div className="md:ml-6">
+          <div className="lg:ml-6">
             <motion.p
-              className='mb-3'
+              className={`mb-3 text-center sm:text-justify`}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
@@ -41,7 +69,7 @@ export default function Home() {
               Фирма <b className='text-lg'>Vortex Shipping</b> - гр. Варна предлага комплексна система за бактериално почистване на басейни, аквариуми и други както затворени, така и отворени водни пространства. Защитена е с патент <b>№ 5767</b> от 26.03.2024.
             </motion.p>
             <motion.p
-              className='mb-3'
+              className={`mb-3 text-center sm:text-justify`}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
@@ -51,9 +79,9 @@ export default function Home() {
             </motion.p>
           </div>
         </div>
-        <div className="md:flex md:items-start md:flex-row-reverse">
+        <div className="lg:flex lg:items-start lg:flex-row-reverse">
           <motion.img
-            className='pt-2 md:float-right md:ml-6 mb-4 md:mb-0 w-full md:w-auto max-w-[265px] xl:max-w-[340px] mx-auto md:mx-0'
+            className='pt-2 lg:float-right lg:ml-6 mb-4 lg:mb-0 w-full lg:w-auto max-w-[265px] xl:max-w-[340px] mx-auto lg:mx-0'
             src={CavitationGlass}
             alt="Cavitation Example"
             whileHover={{ scale: 1.1 }}
@@ -61,9 +89,9 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           />
-          <div className="md:mr-6">
+          <div className="lg:mr-6">
             <motion.p
-              className='mb-3'
+              className={`mb-3 text-center sm:text-justify`}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
@@ -73,7 +101,7 @@ export default function Home() {
               бактерии и микроорганизми.
             </motion.p>
             <motion.p
-              className='mb-3'
+              className={`mb-3 text-center sm:text-justify`}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
@@ -109,7 +137,7 @@ export default function Home() {
           >
             <b>Предмет на дейност</b>
           </motion.h1>
-          <p className="text-lg leading-6 italic">
+          <p className={`text-lg leading-6 italic ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}>
             - търговски сделки пряко и непряко свързани с морско, речно и каботажно плаване;<br /><br />
             - маркетинг, внос и износ, лизингова дейност,<br /><br />
             - търговско представителство и посредничество,<br /><br />

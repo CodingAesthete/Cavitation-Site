@@ -1,7 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import CavitationPool from '../assets/images/cavitation-pool.jpg';
-import CavitationGlass from '../assets/images/cavitation-result.jpg';
 import Baloons from '../assets/images/balloons.jpg';
 import Baloons2 from '../assets/images/baloons2.jpg';
 import Chain from '../assets/images/cavitation-chain.jpg';
@@ -9,8 +7,6 @@ import Formula1 from '../assets/images/formula1.png';
 import Formula2 from '../assets/images/formula2.png';
 import Formula3 from '../assets/images/formula3.png';
 import WaterDrops from '../assets/images/water-drops.jpg';
-import Technologies from '../assets/images/Technologies.jpg';
-import Technologies2 from '../assets/images/Technologies2.jpg';
 import Food from '../assets/images/Food.jpg';
 import Medicine from '../assets/images/medicine.jpg';
 import Farming from '../assets/images/farming.jpg';
@@ -67,6 +63,7 @@ export default function LearnMore() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
+          className='text-center sm:text-justify'
         >
           Кавитацията е образуването на въздушните мехурчета във водата поради резки промени в налягането, това е процес на нарушаване целостта на течността, който се извършва в тези части на потока, където налягането се понижава и достига до критично значение. С възникването на въздушните балончета и изменението на техните размери в процеса на кавитацията се променят физическите и акустичните свойства на водата.
         </motion.p>
@@ -88,7 +85,7 @@ export default function LearnMore() {
           />
         </motion.div>
 
-        <ul>
+        <ul className='text-center sm:text-justify'>
           <motion.li
             className="mb-3"
             initial={{ opacity: 0 }}
@@ -220,7 +217,8 @@ export default function LearnMore() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          <motion.p className="lg:w-3/5 lg:pr-6">
+          <motion.p className="lg:w-3/5 lg:pr-6 text-center sm:text-justify"
+          >
             Кавитационната обработка има широко приложение в промишленоста, селското
             стопанство и медицината. В <b>хранителната промишленост</b> за хомогенизация и
             пастьоризация на млякото, консервация на хранителните емулсии, както и
@@ -242,7 +240,7 @@ export default function LearnMore() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          <motion.p className="lg:w-3/5 lg:pr-6">
+          <motion.p className="lg:w-3/5 lg:pr-6 text-center sm:text-justify">
             В <b>медицината</b> също открива приложение - използва се за бактериологично обеззаразяване, така също и за ефективното проникване на лекарствените вещества към центъра на поразяване. Подобрява кръвообращението и стимулира регенеративните процеси.
           </motion.p>
           <motion.img
@@ -261,7 +259,7 @@ export default function LearnMore() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          <motion.p className="lg:w-3/5 lg:pr-6">
+          <motion.p className="lg:w-3/5 lg:pr-6 text-center sm:text-justify">
             В <b>селското стопанство</b> при използването на кавитационно-обработената вода се наблюдава значително увеличаване на добивите, а също и намаляване на заболяваемостта на посевите, което е свързано с повишеното съдържание на кислорода във водата.
           </motion.p>
           <motion.img
@@ -280,7 +278,7 @@ export default function LearnMore() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          <motion.p className="lg:w-3/5 lg:pr-6">
+          <motion.p className="lg:w-3/5 lg:pr-6 text-center sm:text-justify">
             Не по-малка се оказва ролята на кавитацията в <b>нефтената промишленост</b> - кавитационната обработка позволява да се увеличи процентът на леките фракции при крекинг процеса и като следствие на това да се получи по-лека фракция на мазута.
           </motion.p>
           <motion.img
@@ -299,7 +297,7 @@ export default function LearnMore() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          <motion.p className="lg:w-3/5 lg:pr-6">
+          <motion.p className="lg:w-3/5 lg:pr-6 text-center sm:text-justify">
             Приложението й в други области кавитационната технология се състои в изчистване и полиране на вътрешните повърхности на оборудванието, изчистване от замърсяване и накипи, производство на биогаз, както и за отопление на помещенията.
           </motion.p>
           <motion.img
@@ -335,7 +333,7 @@ export default function LearnMore() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           {/* First Column */}
           <motion.div
-            className="flex items-start border-blue-900 border-dotted border-r-0 lg:border-r-2 pr-3 mb-6 lg:mb-0"
+            className="text-center sm:text-justify flex items-start border-blue-900 border-dotted border-r-0 lg:border-r-2 pr-3 mb-6 lg:mb-0"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
@@ -351,7 +349,7 @@ export default function LearnMore() {
 
           {/* Second Column */}
           <motion.div
-            className="flex items-start border-blue-900 border-dotted border-r-0 lg:border-r-2 pr-3 mb-6 lg:mb-0"
+            className="text-center sm:text-justify flex items-start border-blue-900 border-dotted border-r-0 lg:border-r-2 pr-3 mb-6 lg:mb-0"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
@@ -365,7 +363,7 @@ export default function LearnMore() {
 
           {/* Third Column */}
           <motion.div
-            className="flex items-start mb-6 lg:mb-0"
+            className="text-center sm:text-justify flex items-start mb-6 lg:mb-0"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
@@ -507,7 +505,7 @@ export default function LearnMore() {
           </tbody>
         </table>
         <motion.div
-          className="flex items-center mb-3 mt-3"
+          className="text-center sm:text-justify flex items-center mb-3 mt-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
@@ -519,7 +517,7 @@ export default function LearnMore() {
           </motion.p>
         </motion.div>
         <motion.div
-          className="flex items-center mb-3 mt-3"
+          className=" text-center sm:text-justify flex items-center mb-3 mt-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
