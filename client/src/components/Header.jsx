@@ -39,7 +39,7 @@ export default function Header() {
             <li className='hover:underline'>Кавитация</li>
           </Link>
           <Link to='/goals'>
-            <li className='hover:underline'>Визия</li>
+            <li className='hover:underline'>Факти</li>
           </Link>
           <Link to='/contacts'>
             <li className='hover:underline'> Контакти </li>
