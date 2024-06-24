@@ -10,7 +10,7 @@ export default function Home() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="text-lg text-justify w-5/6 mx-auto rounded-md px-10 py-6 mt-6 pt-10 mb-10 bg-blue-50"
+      className="text-lg text-justify w-11/12 sm:w-5/6 mx-auto rounded-md px-4 sm:px-10 py-6 mt-6 pt-10 mb-10 bg-blue-50"
     >
       <div>
         <motion.h1
@@ -21,74 +21,79 @@ export default function Home() {
         >
           Система за бактериално почистване на води
         </motion.h1>
-        <div>
+        <div className="md:flex md:items-start">
           <motion.img
             src={CavitationPool}
             alt="Cavitation Process"
-            style={{ float: 'left', marginRight: '24px', maxWidth: '340px' }}
+            className='md:float-left md:mr-6 mb-4 md:mb-0 w-full md:w-auto max-w-[340px] mx-auto md:mx-0'
             whileHover={{ scale: 1.1 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           />
-          <motion.p
-            className='mb-3'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-          >
-            Фирма <b className='text-lg'>Vortex Shipping</b> - гр. Варна предлага комплексна система за бактериално почистване на басейни, аквариуми и други както затворени, така и отворени водни пространства. Защитена е с патент <b>№ 5767</b> от 26.03.2024.
-          </motion.p>
-          <motion.p
-            className='mb-3'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-          >
-            Смисълът за работата на системата за бактериологично очистване на води при
-            затворен цикъл се състои в това, че водата от басейна преминава през система за бактериално очистване и отново се влива в общия обем на водното пространтво. Кавитационната обработка на течността довежда до нейната активация, изменя физико-химическите свойства и спомага за интензификацията на физико-технологическите процеси.
-          </motion.p>
+          <div className="md:ml-6">
+            <motion.p
+              className='mb-3'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+            >
+              Фирма <b className='text-lg'>Vortex Shipping</b> - гр. Варна предлага комплексна система за бактериално почистване на басейни, аквариуми и други както затворени, така и отворени водни пространства. Защитена е с патент <b>№ 5767</b> от 26.03.2024.
+            </motion.p>
+            <motion.p
+              className='mb-3'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+            >
+              Смисълът за работата на системата за бактериологично очистване на води при
+              затворен цикъл се състои в това, че водата от басейна преминава през система за бактериално очистване и отново се влива в общия обем на водното пространтво. Кавитационната обработка на течността довежда до нейната активация, изменя физико-химическите свойства и спомага за интензификацията на физико-технологическите процеси.
+            </motion.p>
+          </div>
+        </div>
+        <div className="md:flex md:items-start md:flex-row-reverse">
           <motion.img
-            className='pt-2'
+            className='pt-2 md:float-right md:ml-6 mb-4 md:mb-0 w-full md:w-auto max-w-[265px] xl:max-w-[340px] mx-auto md:mx-0'
             src={CavitationGlass}
             alt="Cavitation Example"
-            style={{ float: 'right', marginLeft: '24px', maxWidth: '265px' }}
             whileHover={{ scale: 1.1 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           />
-          <motion.p
-            className='mb-3'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
-          >
-            След кавитационната обработка, чистата питейна вода става "мека" и "лечебна" поради произхождащите в нея структурни изменения.
-            Водата е обеззаразена и с качества недопускащи развитието на болествотворни
-            бактерии и микроорганизми.
-          </motion.p>
-          <motion.p
-            className='mb-3'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-          >
-            Преимуществата на тази система от затворен тип се явява отсъствието на всякакви химически вещества, както на основата на хлора, така и всякакъв друг вид
-            химически продукти.
-            Така обработената вода влияе изключително здравословно върху кожата на човека и повишава общия енергиен баланс.
-          </motion.p>
+          <div className="md:mr-6">
+            <motion.p
+              className='mb-3'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4 }}
+            >
+              След кавитационната обработка, чистата питейна вода става "мека" и "лечебна" поради произхождащите в нея структурни изменения.
+              Водата е обеззаразена и с качества недопускащи развитието на болествотворни
+              бактерии и микроорганизми.
+            </motion.p>
+            <motion.p
+              className='mb-3'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5 }}
+            >
+              Преимуществата на тази система от затворен тип се явява отсъствието на всякакви химически вещества, както на основата на хлора, така и всякакъв друг вид
+              химически продукти.
+              Така обработената вода влияе изключително здравословно върху кожата на човека и повишава общия енергиен баланс.
+            </motion.p>
+          </div>
         </div>
       </div>
 
       <motion.div
-        className="h-1 bg-blue-900 mt-6"
+        className="h-1 bg-blue-900 mt-6 home-upper:mt-12 home-container:mt-6"
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
         transition={{ duration: 0.5 }}
       ></motion.div>
 
-      <div className="mt-6 flex items-center">
+      <div className="mt-6 flex flex-col home-container:flex-row items-center">
         <img
           src={SubjectOfActivity}
           alt="Subject of Activity"

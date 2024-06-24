@@ -8,6 +8,9 @@ export default {
     extend: {
       screens: {
         'xs': '415px',
+        'sl': '1322px',
+        'home-container': '1305px',
+        'home-upper': '1209px',
       },
     },
   },
