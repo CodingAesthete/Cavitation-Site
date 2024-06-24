@@ -112,7 +112,7 @@ export default function Goals() {
                 variants={answerVariants}
                 initial='hidden'
                 animate='visible'
-                className='mt-2 text-gray-700'
+                className='mt-2 text-gray-700 text-center sm:text-justify'
               >
                 {qa.answer.split('').map((letter, idx) => (
                   <motion.span key={idx} variants={letterVariants}>
