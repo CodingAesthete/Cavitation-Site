@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import CavitationPool from '../assets/images/cavitation-pool.jpg';
 import CavitationGlass from '../assets/images/cavitation-result.jpg';
 import SubjectOfActivity from '../assets/images/SubjectOfActivity.jpg';
+import CavitationRealImg from '../assets/images/cavitation-real.jpg';
 
 // Custom hook to detect screen size
 function useMediaQuery() {
@@ -49,9 +50,9 @@ export default function Home() {
         >
           Система за бактериално почистване на води
         </motion.h1>
-        <div className="lg:flex lg:items-start">
+        <div className="lg:flex lg:items-start mb-3">
           <motion.img
-            src={CavitationPool}
+            src={CavitationRealImg}
             alt="Cavitation Process"
             className='lg:float-left lg:mr-6 mb-4 lg:mb-0 w-full md:w-auto max-w-[340px] mx-auto lg:mx-0'
             whileHover={{ scale: 1.1 }}
