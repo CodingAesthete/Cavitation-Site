@@ -21,7 +21,9 @@ export default {
         },
       },
       screens: {
+        'extrasmall': '370px',
         'xs': '415px',
+        'header-sm': '500px',
         'sl': '1322px',
         'home-container': '1305px',
         'home-upper': '1209px',

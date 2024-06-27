@@ -12,7 +12,7 @@ export default function Header() {
     <header className='bg-blue-200 text-black font-semibold shadow-lg'>
       <div className='flex flex-col header-special:flex-row items-center justify-between mx-4 header-special:mx-24 xl:mx-28'>
         <Link to='/' className='flex flex-row items-center header-special:flex-row header-special:gap-4'>
-          <div className='w-14 sm:w-16'>
+          <div className='w-14 extrasmall:w-18 sm:w-16'>
             <img src={OfficialLogo} alt="Logo" />
           </div>
           <motion.div
@@ -22,31 +22,34 @@ export default function Header() {
             transition={{ delay: 0.2 }}
             style={{
               letterSpacing: '3px',
-              fontFamily: 'Pacifico, cursive',
-              background: 'linear-gradient(to right, #1e3c72, #2a5298)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent'
+              fontFamily: 'Arial, sans-serif',
+              fontWeight: 'bold',
             }}
           >
             Vortex Shipping
           </motion.div>
         </Link>
-        <ul className='flex flex-col mb-2 header-special:mb-0 md:flex-row items-center gap-4 xs:gap-8 sm:gap-8 text-xl xs:text-lg md:text-2xl xl:text-xl mt-4 header-special:mt-0'>
-          <Link to='/'>
-            <li className='hover:underline cursor-pointer'>За нас</li>
-          </Link>
-          <Link to='/learn-more'>
-            <li className='hover:underline'>Кавитация</li>
-          </Link>
-          <Link to='/effects'>
-            <li className='hover:underline'>Eфекти</li>
-          </Link>
-          <Link to='/goals'>
-            <li className='hover:underline'>Факти</li>
-          </Link>
-          <Link to='/contacts'>
-            <li className='hover:underline'> Контакти </li>
-          </Link>
+
+        <ul className='text-blue-800 flex flex-col header-sm:flex-row sm:text-xl mb-2 header-special:mb-0 md:flex-row items-center gap-1 header-sm:gap-6 sm:gap-8 text-xl xs:text-lg md:text-2xl xl:text-xl mt-4 header-special:mt-0'>
+          <div className='flex flex-row sm:flex-row sm:text-xl mb-2 header-special:mb-0 md:flex-row items-center gap-4 xs:gap-8 sm:gap-8 text-xl xs:text-lg md:text-2xl xl:text-xl mt-4 header-special:mt-0'>
+            <Link to='/'>
+              <li className='hover:underline cursor-pointer'>За нас</li>
+            </Link>
+            <Link to='/learn-more'>
+              <li className='hover:underline'>Кавитация</li>
+            </Link>
+            <Link to='/effects'>
+              <li className='hover:underline'>Eфекти</li>
+            </Link>
+          </div>
+          <div className='flex flex-row sm:flex-row sm:text-xl mb-2 header-special:mb-0 md:flex-row items-center gap-4 xs:gap-8 sm:gap-8 text-xl xs:text-lg md:text-2xl xl:text-xl mt-4 header-special:mt-0'>
+            <Link to='/goals'>
+              <li className='hover:underline'>Факти</li>
+            </Link>
+            <Link to='/contacts'>
+              <li className='hover:underline'> Контакти </li>
+            </Link>
+          </div>
         </ul>
       </div>
     </header>
