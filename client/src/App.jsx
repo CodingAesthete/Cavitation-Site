@@ -10,6 +10,7 @@ import SignUp from './pages/SignUp';
 import SignIn from './pages/SIgnIn';
 import PrivateRoute from './components/PrivateRoute';
 import Profile from './pages/Profile';
+import Effects from './pages/Effects';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/goals" element={<Goals />} />
+        <Route path="/effects" element={<Effects />} />
         <Route path="/learn-more" element={<LearnMore />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/sign-up" element={<SignUp />} />
