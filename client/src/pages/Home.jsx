@@ -1,9 +1,11 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useRef } from "react";
+import { motion, useInView } from 'framer-motion';
 import CavitationPool from '../assets/images/cavitation-pool.jpg';
 import CavitationGlass from '../assets/images/cavitation-result.jpg';
 import SubjectOfActivity from '../assets/images/SubjectOfActivity.jpg';
 import CavitationRealImg from '../assets/images/cavitation-real.jpg';
+import MAE from '../assets/images/mae-logo2.png';
+import Lions from '../assets/images/lions-logo.png';
 
 // Custom hook to detect screen size
 function useMediaQuery() {
@@ -33,6 +35,9 @@ function useMediaQuery() {
 
 export default function Home() {
   const screenSize = useMediaQuery();
+
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true });
 
   return (
     <motion.div
@@ -159,6 +164,69 @@ export default function Home() {
         animate={{ scaleX: 1 }}
         transition={{ duration: 0.5 }}
       ></motion.div>
+
+      <div className="mt-6" ref={sectionRef}>
+        <motion.h1
+          className='w-full text-center text-2xl font-semibold pb-6 text-violet-900'
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ delay: 0.2 }}
+        >
+          <b>Нашите Партньори</b>
+        </motion.h1>
+        <div className="flex flex-row justify-around items-start flex-wrap">
+          <motion.div
+            className="mx-0 sm:mx-4 mb-4 max-w-xs sm:max-w-md flex flex-col justify-center items-center"
+            initial={{ opacity: 0, x: 100 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
+            transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <motion.img
+              src={Lions}
+              alt="Lions Logo"
+              className="max-w-80"
+              whileHover={{ rotate: 0 }}
+              animate={isInView ? {
+                rotate: [0, -3, 3, 0],
+                scale: [1, 1.1, 1]
+              } : {}}
+              transition={isInView ? {
+                repeat: 1,
+                duration: 1.2,
+                ease: "easeInOut"
+              } : {}}
+            />
+            <p className="text-center mt-3">Lions Clubs International е призната по целия свят като символ на коректност и обслужване. В рамките на бранда се съдържат няколко  лога и емблеми, които представят различните инициативи.</p>
+          </motion.div>
+          <motion.div
+            className="mx-0 sm:mx-4 mb-4 max-w-xs sm:max-w-md flex flex-col justify-center items-center"
+
+            initial={{ opacity: 0, x: 100 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
+            transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <motion.img
+              src={MAE}
+              alt="MAE Logo"
+              className="max-w-80"
+              whileHover={{ rotate: 0 }}
+              animate={isInView ? {
+                rotate: [0, -3, 3, 0],
+                scale: [1, 1.1, 1]
+              } : {}}
+              transition={isInView ? {
+                repeat: 1,
+                duration: 1.2,
+                ease: "easeInOut"
+              } : {}}
+            />
+            <p className="text-center">Международната академия по екология се фокусира върху решаването на екологични проблеми в медицината и фармакологията, организирайки научни конференции.</p>
+          </motion.div>
+        </div>
+      </div>
+
     </motion.div>
   );
 }
