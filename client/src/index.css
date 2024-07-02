@@ -57,3 +57,33 @@ body {
 .artistic-heading .char:nth-child(3) {
   animation-delay: 0.3s;
 }
+
+@keyframes waterReflection {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(-20px) scale(1.1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.reflection-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(173, 216, 230, 0.4);
+  /* light blue color */
+  pointer-events: none;
+  z-index: 1000;
+  animation: waterReflection 2s ease-in-out forwards;
+}
