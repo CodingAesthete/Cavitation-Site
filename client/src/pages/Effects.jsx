@@ -4,6 +4,8 @@ import Water1 from '../assets/images/water1.jpg';
 import Water2 from '../assets/images/water2.jpg';
 import Water3 from '../assets/images/water3.jpg';
 import Water4 from '../assets/images/water4.jpg';
+import WaterExtra from '../assets/images/WaterExtra.jpg';
+import WaterExtra2 from '../assets/images/WaterExtra2.jpg';
 import Water5 from '../assets/images/water5.jpg';
 import Water6 from '../assets/images/water6.jpg';
 import Water7 from '../assets/images/water7.jpg';
@@ -124,15 +126,15 @@ export default function Effects() {
             <li>става по-здравословна за организма;</li>
             <li>осигурява също много по-дълбока хидратация на органи и тъкани.</li>
           </ul>
-          <div className="flex flex-col md:flex-row justify-between items-center mb-4 gap-3 xl:gap-0">
+          <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water1} alt="Water 1" className="max-w-sx md:max-w-md border rounded-md" />
+              <img src={Water1} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={Water2} alt="Water 2" className="hidden md:block max-w-sx md:max-w-md border rounded-md" />
+              <img src={Water2} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
-          <p className="text-center text-sm italic">
+          <p className="text-center text-md italic">
             Визуализация на структурираната вода: различия в молекулната структура след кавитационна обработка.
           </p>
         </section>
@@ -152,15 +154,15 @@ export default function Effects() {
             си характеристики. Основният тип клъстерна структура е симетричен пръстен от шест водни
             молекули. Тази форма е присъща на клетъчните течности в човешкото тяло, лед и сняг.
           </p>
-          <div className="flex flex-col md:flex-row justify-between items-center mb-4 gap-3 xl:gap-0">
+          <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water3} alt="Water 1" className="max-w-sx md:max-w-md border rounded-md" />
+              <img src={Water3} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={Water4} alt="Water 2" className="hidden md:block max-w-sx md:max-w-md border rounded-md" />
+              <img src={WaterExtra} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
-          <p className="text-center text-sm italic">
+          <p className="text-center text-md italic">
             Химична структура на водните молекули
           </p>
         </section>
@@ -177,15 +179,15 @@ export default function Effects() {
             За целта се променя структурата на водата. Новите клъстери са подобни на групи в
             междуклетъчната течност, съдържащи 5-7 молекули.
           </p>
-          <div className="flex flex-col md:flex-row justify-between items-center mb-4 gap-3 xl:gap-0">
+          <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water5} alt="Water 1" className="max-w-sx md:max-w-md border rounded-md" />
+              <img src={Water5} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={Water6} alt="Water 2" className="hidden md:block max-w-sx md:max-w-md border rounded-md" />
+              <img src={Water6} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
-          <p className="text-center text-sm italic">
+          <p className="text-center text-md italic">
             Химична структура при новосъздаден клъстер
           </p>
         </section>
@@ -207,15 +209,15 @@ export default function Effects() {
             молекулите й са подредени, затова е толкова лесно и приятно да се пие от планински
             потоци и чисти извори.
           </p>
-          <div className="flex flex-col md:flex-row justify-between items-center mb-4 gap-3 xl:gap-0">
+          <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water7} alt="Water 1" className="max-w-sx md:max-w-md border rounded-md" />
+              <img src={Water7} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={Water8} alt="Water 2" className="hidden md:block max-w-sx md:max-w-md border rounded-md" />
+              <img src={Water8} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
-          <p className="text-center text-sm italic">
+          <p className="text-center text-md italic">
             Промяна на кристалната решетка на водата във вързка с прлеминаването н различно агрегатно състояние
           </p>
         </section>
@@ -234,15 +236,15 @@ export default function Effects() {
             ефективността на хидратацията се увеличава. Нейната „памет“ е до голяма степен
             изтрита, което намалява вредата от натрупаната негативна енергия.
           </p>
-          <div className="flex flex-col md:flex-row justify-between items-center mb-4 gap-3 xl:gap-0">
+          <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water9} alt="Water 1" className="max-w-sx md:max-w-md border rounded-md" />
+              <img src={Water9} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={Water10} alt="Water 2" className="hidden md:block max-w-sx md:max-w-md border rounded-md" />
+              <img src={Water10} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
-          <p className="text-center text-sm italic">
+          <p className="text-center text-md italic">
             Допълнителна хидратация на тялото, изложено на кавитационна вода
           </p>
         </section>
@@ -254,15 +256,15 @@ export default function Effects() {
           <p className="mb-4 animate-slideInUp md:text-justify text-center">
             Кавитационната обработка на водата променя структурата на молекулите, което подобрява качеството на водата особено за животните. Новообразуваните структури са полезни за тялото, тъй като съдържат микроелементи, минерали и други хранителни вещества, необходими за здравето. Тези клъстерни структури са по-стабилни и способстват за по-добро хидратиране и подобряване на общото състояние на организмите, които ги консумират.
           </p>
-          <div className="flex flex-col md:flex-row justify-between items-center mb-4 gap-3 xl:gap-0">
+          <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water11} alt="Water 1" className="max-w-sx md:max-w-md border rounded-md" />
+              <img src={Water11} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={Water12} alt="Water 2" className="hidden md:block max-w-sx md:max-w-md border rounded-md" />
+              <img src={Water12} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
-          <p className="text-center text-sm italic">
+          <p className="text-center text-md italic">
             Набавяне на важни елементи посредством консумацията на обработената вода при животните
           </p>
         </section>
@@ -285,15 +287,15 @@ export default function Effects() {
               4. Има ефект на активен антисептик, неутрализиращ инфекции и възпалителни процеси.
             </p>
           </div>
-          <div className="flex flex-col md:flex-row justify-between items-center mb-4 gap-3 xl:gap-0">
+          <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water13} alt="Water 1" className="max-w-sx md:max-w-md border rounded-md" />
+              <img src={Water13} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={Water14} alt="Water 2" className="hidden md:block max-w-sx md:max-w-md border rounded-md" />
+              <img src={Water14} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
-          <p className="text-center text-sm italic">
+          <p className="text-center text-md italic">
             Пълна дезинфекция и осигуряване на безопасност в плувни басейни
           </p>
         </section>
@@ -312,15 +314,15 @@ export default function Effects() {
             честота или време на въздействие. Ефектът на кавитацията върху водните разтвори
             се свежда до разделянето на водните молекули в кавитационните мехурчета.
           </p>
-          <div className="flex flex-col md:flex-row justify-between items-center mb-4 gap-3 xl:gap-0">
+          <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water15} alt="Water 1" className="max-w-sx md:max-w-md border rounded-md" />
+              <img src={Water15} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={Water16} alt="Water 2" className="hidden md:block max-w-sx md:max-w-md border rounded-md" />
+              <img src={WaterExtra2} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
-          <p className="text-center text-sm italic">
+          <p className="text-center text-md italic">
             Преминаване на водата през т.нар. кавитационни реактори
           </p>
         </section>
@@ -351,15 +353,15 @@ export default function Effects() {
             води, канализация на водата в плувни басейни, регенериране на флуиди за рязане и
             други течности, с които хората влизат в контакт или се изхвърлят в околната среда.
           </p>
-          <div className="flex flex-col md:flex-row justify-between items-center mb-4 gap-3 xl:gap-0">
+          <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water17} alt="Water 1" className="max-w-sx md:max-w-md border rounded-md" />
+              <img src={Water17} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={Water18} alt="Water 2" className="hidden md:block max-w-sx md:max-w-md border rounded-md" />
+              <img src={Water18} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
-          <p className="text-center text-sm italic">
+          <p className="text-center text-md italic">
             Използване на кавитационния метод  за пречустването на отпадъчни води и предотвратяване на замърсяването
           </p>
         </section>
@@ -377,15 +379,15 @@ export default function Effects() {
             почистване на повърхности от калциеви отлагания и предотвратяване на метална
             корозия в бойлери, съдомиялни машини и други уреди.
           </p>
-          <div className="flex flex-col md:flex-row justify-between items-center mb-4 gap-3 xl:gap-0">
+          <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water19} alt="Water 1" className="max-w-sx md:max-w-md border rounded-md" />
+              <img src={Water19} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={Water20} alt="Water 2" className="hidden md:block max-w-sx md:max-w-md border rounded-md" />
+              <img src={Water20} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
-          <p className="text-center text-sm italic">
+          <p className="text-center text-md italic">
             Консумация на кавитационна вода, несъдържаща хлор и други химикали, вредни за човешкото здраве
           </p>
         </section>

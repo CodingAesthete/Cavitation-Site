@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import OfficialLogo from '../assets/images/OfficialLogo.png';
 import NewLogo from '../assets/images/new-logo-2.png';
+import VortexLogo from '../assets/images/Vortex-Official-Logo.png';
 import Avatar from "../assets/images/site-avatar.jpg"
 import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
@@ -11,10 +12,10 @@ export default function Header() {
 
   return (
     <header className='bg-blue-200 text-black font-semibold shadow-lg'>
-      <div className='flex flex-col header-special:flex-row items-center justify-between mx-4 header-special:mx-24 xl:mx-28'>
+      <div className='flex flex-col header-special:flex-row items-center justify-between mx-4 header-special:mx-24 xl:mx-36'>
         <Link to='/' className='flex flex-row items-center header-special:flex-row header-special:gap-4'>
           <div className='my-2 w-48 extrasmall:w-48 sm:w-56'>
-            <img src={NewLogo} alt="Logo" />
+            <img src={VortexLogo} alt="Logo" />
           </div>
           {/* <motion.div
             className='text-2xl xs:text-3xl text-center font-bold text-black whitespace-nowrap'

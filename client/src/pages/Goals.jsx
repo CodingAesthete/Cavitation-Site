@@ -140,19 +140,6 @@ export default function Goals() {
           onMouseEnter={() => setShowOverlay(true)}
           onMouseLeave={() => setShowOverlay(false)}
         />
-
-        {/* Animated overlay text */}
-        <motion.div
-          initial="hidden"
-          animate={showOverlay ? "visible" : "hidden"}
-          variants={overlayVariants}
-          className="flex justify-center items-center absolute bottom-1/4 sm:bottom-1/2 md:top-1/2 md:right-1/4 transform -translate-x-1/2 -translate-y-1/2 text-green-50 font-bold p-4"
-          style={{ backgroundColor: 'rgba(255, 255, 255, 0.3)', borderRadius: '8px' }}
-        >
-          <motion.p className=" text-lg sm:text-xl font-semibold text-center">
-            Кавитацията е ключ към развитието и просперитета.
-          </motion.p>
-        </motion.div>
       </div>
     </motion.div>
   );

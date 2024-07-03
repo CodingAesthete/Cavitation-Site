@@ -143,13 +143,9 @@ export default function Home() {
           </motion.h1>
           <p className={`text-lg leading-6 italic ${screenSize === 'sm' ? 'text-left' : 'text-justify'} text-gray-700`}>
             - търговски сделки пряко и непряко свързани с морско, речно и каботажно плаване;<br /><br />
-            - маркетинг, внос и износ, лизингова дейност,<br /><br />
-            - търговско представителство и посредничество,<br /><br />
-            - складови сделки,<br /><br />
-            - сделки с интелектуална собственост, покупка на стоки или други вещи <br /><br />
-            - продажба на стоки от собствено производство, комисионни, спедиционни и превозни сделки, менителници, записи на заповед и чекове,<br /><br />
-            - ремонт или обзавеждане на недвижими имоти с цел продажба или отдаване под наем, земеделие и животновъдство;<br /><br />
-            - еко земеделие, проектиране, производство и търговия с иновативни производствени екосистеми системи;<br /><br />
+            - маркетинг, лизингова дейност,<br /><br />
+            - продажба на стоки от собствено производство, комисионни, спедиционни и превозни сделки,<br /><br />
+            - еко земеделие, проектиране, производство и търговия с иновативни производствени екосистеми;<br /><br />
             - внедряване в производствени екосистеми за пречистване на бункеровани танкерни води, пречиствателни корабни и наземни станции за пречистване на морски и отпадъчни води.
           </p>
         </motion.div>
@@ -173,31 +169,7 @@ export default function Home() {
         </motion.h1>
         <div className="flex flex-row justify-around items-start flex-wrap">
           <motion.div
-            className="mx-0 sm:mx-4 mb-4 max-w-xs sm:max-w-md flex flex-col justify-center items-center bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-            initial={{ opacity: 0, x: 100 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
-            transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <motion.img
-              src={Lions}
-              alt="Lions Logo"
-              className="max-w-80 mb-3"
-              whileHover={{ rotate: 0 }}
-              animate={isInView ? {
-                rotate: [0, -3, 3, 0],
-                scale: [1, 1.1, 1]
-              } : {}}
-              transition={isInView ? {
-                repeat: 1,
-                duration: 1.2,
-                ease: "easeInOut"
-              } : {}}
-            />
-            <p className="text-center text-gray-700">Lions Clubs International е призната по целия свят като символ на коректност и обслужване. В рамките на бранда се съдържат няколко  лога и емблеми, които представят различните инициативи.</p>
-          </motion.div>
-          <motion.div
-            className="mx-0 sm:mx-4 mb-4 max-w-xs sm:max-w-md flex flex-col justify-center items-center bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="mx-0 sm:mx-4 mb-4 max-w-xs sm:max-w-md flex flex-col justify-center items-center bg-white  p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             initial={{ opacity: 0, x: 100 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
             transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
@@ -219,6 +191,30 @@ export default function Home() {
               } : {}}
             />
             <p className="text-center text-gray-700">Международната академия по екология се фокусира върху решаването на екологични проблеми в медицината и фармакологията, организирайки научни конференции.</p>
+          </motion.div>
+          <motion.div
+            className="mx-0 sm:mx-4 mb-4 max-w-xs sm:max-w-md flex flex-col justify-center items-center bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            initial={{ opacity: 0, x: 100 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
+            transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <motion.img
+              src={Lions}
+              alt="Lions Logo"
+              className="max-w-80 mb-3"
+              whileHover={{ rotate: 0 }}
+              animate={isInView ? {
+                rotate: [0, -3, 3, 0],
+                scale: [1, 1.1, 1]
+              } : {}}
+              transition={isInView ? {
+                repeat: 1,
+                duration: 1.2,
+                ease: "easeInOut"
+              } : {}}
+            />
+            <p className="text-center text-gray-700 mt-3">Мисията на Lions Clubs International е да подобрява здравето и благополучието, да подкрепя чрез хуманитарни услуги и да насърчава международното разбирателство.</p>
           </motion.div>
         </div>
       </div>

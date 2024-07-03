@@ -68,23 +68,6 @@ export default function LearnMore() {
           Кавитацията е образуването на въздушните мехурчета във водата поради резки промени в налягането, това е процес на нарушаване целостта на течността, който се извършва в тези части на потока, където налягането се понижава и достига до критично значение. С възникването на въздушните балончета и изменението на техните размери в процеса на кавитацията се променят физическите и акустичните свойства на водата.
         </motion.p>
 
-        <motion.div
-          className='mt-12 mb-6'
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-        >
-          <motion.img
-            className='w-full mx-auto'
-            src={Chain}
-            alt="cavitation chain"
-            whileHover={{ scale: 1.1 }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
-          />
-        </motion.div>
-
         <ul className='text-center sm:text-justify'>
           <motion.li
             className="mb-3"
@@ -92,7 +75,7 @@ export default function LearnMore() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            При гидродинамичната обработка на водата се изменят нейните физико-химически характеристики. По време на този процес водните молекули се разпадат, освобождават се кислород и водороден прекис, които са мощни окислители. Според учените "студеното кипене" на водата може да се сравни с работата на огромен миксер.
+            При хидродинамичната обработка на водата се изменят нейните физико-химически характеристики. По време на този процес водните молекули се разпадат, освобождават се кислород и водороден прекис, които са мощни окислители. Според учените "студеното кипене" на водата може да се сравни с работата на огромен миксер.
           </motion.li>
           <motion.li
             className="mb-3"
@@ -104,13 +87,13 @@ export default function LearnMore() {
           </motion.li>
           <motion.div
             style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-            className='mt-12 mb-6 sm:flex-row flex-col gap-3 sm:gap-0'
+            className='mt-12 mb-6 lg:flex-row flex-col gap-3 lg:gap-2'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
             <motion.img
-              className='w-7/12 sm:w-1/4 mx-auto'
+              className='w-11/12 sm:w-3/4 lg:w-1/3 mx-auto'
               src={Formula1}
               alt="cavitation formulas"
               whileHover={{ scale: 1.1 }}
@@ -119,7 +102,7 @@ export default function LearnMore() {
               transition={{ delay: 0.5 }}
             />
             <motion.img
-              className='w-7/12 sm:w-1/4 mx-auto'
+              className='w-11/12 sm:w-3/4 lg:w-1/3  mx-auto'
               src={Formula2}
               alt="cavitation formulas"
               whileHover={{ scale: 1.1 }}
@@ -128,7 +111,7 @@ export default function LearnMore() {
               transition={{ delay: 0.6 }}
             />
             <motion.img
-              className='w-7/12 sm:w-1/4 mx-auto'
+              className='w-11/12 sm:w-3/4 lg:w-1/3  mx-auto'
               src={Formula3}
               alt="cavitation formulas"
               whileHover={{ scale: 1.1 }}
@@ -158,7 +141,7 @@ export default function LearnMore() {
             <div className="p-2 sm:p-6 bg-slate-100 bg-opacity-65 rounded-2xl border-4 border-dashed border-blue-300">
               <p>
                 Молекулите на водата се насищат с кислород на основание на хидродинамическото изменение. Характеристиките на флуида, изменят своето енергийно състояние и получават допълнителна степен на свобода.
-                В резултат на това водата се дезинфекцира, микробите и бактериите умират. Освен това, когато мехурчетата се неутрализират, се отделя голямо количество енергия, която може да се използва за обезсоляване и затопляне на водата.
+                В резултат на това водата се дезинфекцира, микробите и бактериите умират. Освен това, когато мехурчетата се неутрализират, се отделя голямо количество енергия, която може да се използва за затопляне на водата.
                 Кавитационата обработка на водата позволява да се постигне дълбока молекулярна обработка, запазвайки при това биологически важните микроелементи.
                 Ефективността на бактерицидното въздействие зависи от интензивността на кавитацията и времето на въздействие.
                 На ефективността на процеса не влияе качеството на входната вода, мътността,
@@ -167,28 +150,6 @@ export default function LearnMore() {
               </p>
             </div>
           </motion.div>
-
-
-          <motion.li
-            className="mb-2 mt-4"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.7, duration: 0.5 }}
-            whileHover={{ color: 'darkblue' }}
-            style={{
-              overflowWrap: 'break-word',
-            }}
-          >
-            <u><i>Ефективността се дължи на няколко фактора:</i></u>
-            <br />
-            - ерозия на твърдото тяло,
-            <br />
-            - почистване на повърхностите,
-            <br />
-            - дисперсия на твърдите частици,
-            <br />
-            - екстрагиране, хомогенизация, емулсия на твърдите частици.
-          </motion.li>
         </ul>
       </div>
 
@@ -199,7 +160,7 @@ export default function LearnMore() {
         transition={{ duration: 0.5 }}
       ></motion.div>
 
-      <div style={{ clear: 'both' }}>
+      <div style={{ clear: 'right', width: '100%' }}>
         <br />
         <motion.h2
           className='w-full text-center text-2xl font-bold pb-6'
@@ -212,13 +173,12 @@ export default function LearnMore() {
 
         {/* First Application Section */}
         <motion.div
-          className="flex flex-col gap-3 lg:gap-0 lg:flex-row items-center mb-3"
+          className="flex flex-col lg:flex-row gap-3 lg:gap-0 items-center mb-3 w-full"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          <motion.p className="lg:w-3/5 lg:pr-6 text-center sm:text-justify"
-          >
+          <motion.p className="lg:pr-6 text-center sm:text-justify w-full lg:w-auto">
             Кавитационната обработка има широко приложение в промишленоста, селското
             стопанство и медицината. В <b>хранителната промишленост</b> за хомогенизация и
             пастьоризация на млякото, консервация на хранителните емулсии, както и
@@ -227,7 +187,7 @@ export default function LearnMore() {
           <motion.img
             src={Food}
             alt="Agriculture"
-            className="mb-3 lg:mb-0 lg:ml-6 lg:max-h-170"
+            className="mb-3 lg:mb-0 lg:ml-6"
             style={{ maxHeight: '170px' }}
             whileHover={{ scale: 1.1 }}
           />
@@ -235,18 +195,18 @@ export default function LearnMore() {
 
         {/* Second Application Section */}
         <motion.div
-          className="flex flex-col gap-3 lg:gap-0 lg:flex-row items-center mb-3"
+          className="flex flex-col lg:flex-row gap-3 lg:gap-0 items-center mb-3 w-full"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          <motion.p className="lg:w-3/5 lg:pr-6 text-center sm:text-justify">
+          <motion.p className=" lg:pr-6 text-center sm:text-justify w-full lg:w-auto">
             В <b>медицината</b> също открива приложение - използва се за бактериологично обеззаразяване, така също и за ефективното проникване на лекарствените вещества към центъра на поразяване. Подобрява кръвообращението и стимулира регенеративните процеси.
           </motion.p>
           <motion.img
             src={Medicine}
             alt="Medicine"
-            className="mb-3 lg:mb-0 lg:ml-6 lg:max-h-170"
+            className="mb-3 lg:mb-0 lg:ml-6"
             style={{ maxHeight: '170px' }}
             whileHover={{ scale: 1.1 }}
           />
@@ -254,18 +214,18 @@ export default function LearnMore() {
 
         {/* Third Application Section */}
         <motion.div
-          className="flex flex-col gap-3 lg:gap-0 lg:flex-row items-center mb-3"
+          className="flex flex-col lg:flex-row gap-3 lg:gap-0 items-center mb-3 w-full"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          <motion.p className="lg:w-3/5 lg:pr-6 text-center sm:text-justify">
+          <motion.p className="lg:pr-6 text-center sm:text-justify w-full lg:w-auto">
             В <b>селското стопанство</b> при използването на кавитационно-обработената вода се наблюдава значително увеличаване на добивите, а също и намаляване на заболяваемостта на посевите, което е свързано с повишеното съдържание на кислорода във водата.
           </motion.p>
           <motion.img
             src={Farming}
             alt="Farming"
-            className="mb-3 lg:mb-0 lg:ml-6 lg:max-h-170"
+            className="mb-3 lg:mb-0 lg:ml-6"
             style={{ maxHeight: '170px' }}
             whileHover={{ scale: 1.1 }}
           />
@@ -273,18 +233,18 @@ export default function LearnMore() {
 
         {/* Fourth Application Section */}
         <motion.div
-          className="flex flex-col gap-3 lg:gap-0 lg:flex-row items-center mb-3"
+          className="flex flex-col lg:flex-row gap-3 lg:gap-0 items-center mb-3 w-full"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          <motion.p className="lg:w-3/5 lg:pr-6 text-center sm:text-justify">
-            Не по-малка се оказва ролята на кавитацията в <b>нефтената промишленост</b> - кавитационната обработка позволява да се увеличи процентът на леките фракции при крекинг процеса и като следствие на това да се получи по-лека фракция на мазута.
+          <motion.p className="lg:pr-6 text-center sm:text-justify w-full lg:w-auto">
+            Не по-малка се оказва ролята на кавитацията в <b>нефтената промишленост</b> - кавитационната обработка позволява да се увеличи процентът на леките фракции при крекинг процеса. Използва се и за почистване на оборудването.
           </motion.p>
           <motion.img
             src={Oil}
             alt="Oil"
-            className="mb-3 lg:mb-0 lg:ml-6 lg:max-h-170"
+            className="mb-3 lg:mb-0 lg:ml-6"
             style={{ maxHeight: '170px' }}
             whileHover={{ scale: 1.1 }}
           />
@@ -292,18 +252,18 @@ export default function LearnMore() {
 
         {/* Fifth Application Section */}
         <motion.div
-          className="flex flex-col gap-3 lg:gap-0 lg:flex-row items-center mb-3"
+          className="flex flex-col lg:flex-row gap-3 lg:gap-0 items-center mb-3 w-full"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          <motion.p className="lg:w-3/5 lg:pr-6 text-center sm:text-justify">
+          <motion.p className="lg:pr-6 text-center sm:text-justify w-full lg:w-auto">
             Приложението й в други области кавитационната технология се състои в изчистване и полиране на вътрешните повърхности на оборудванието, изчистване от замърсяване и накипи, производство на биогаз, както и за отопление на помещенията.
           </motion.p>
           <motion.img
             src={Polishing}
             alt="Polishing"
-            className="mb-3 lg:mb-0 lg:ml-6 lg:max-h-170"
+            className="mb-3 lg:mb-0 lg:ml-6"
             style={{ maxHeight: '170px' }}
             whileHover={{ scale: 1.1 }}
           />
@@ -317,6 +277,7 @@ export default function LearnMore() {
           transition={{ duration: 0.5 }}
         ></motion.div>
       </div>
+
 
 
       <div style={{ clear: 'both' }}>
