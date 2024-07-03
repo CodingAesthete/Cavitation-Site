@@ -96,6 +96,7 @@ export default function LearnMore() {
               className='w-11/12 sm:w-3/4 lg:w-1/3 mx-auto'
               src={Formula1}
               alt="cavitation formulas"
+              loading="lazy"
               whileHover={{ scale: 1.1 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -105,6 +106,7 @@ export default function LearnMore() {
               className='w-11/12 sm:w-3/4 lg:w-1/3  mx-auto'
               src={Formula2}
               alt="cavitation formulas"
+              loading="lazy"
               whileHover={{ scale: 1.1 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -114,6 +116,7 @@ export default function LearnMore() {
               className='w-11/12 sm:w-3/4 lg:w-1/3  mx-auto'
               src={Formula3}
               alt="cavitation formulas"
+              loading="lazy"
               whileHover={{ scale: 1.1 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -190,6 +193,7 @@ export default function LearnMore() {
             className="mb-3 lg:mb-0 lg:ml-6"
             style={{ maxHeight: '170px' }}
             whileHover={{ scale: 1.1 }}
+            loading="lazy"
           />
         </motion.div>
 
@@ -206,6 +210,7 @@ export default function LearnMore() {
           <motion.img
             src={Medicine}
             alt="Medicine"
+            loading="lazy"
             className="mb-3 lg:mb-0 lg:ml-6"
             style={{ maxHeight: '170px' }}
             whileHover={{ scale: 1.1 }}
@@ -226,6 +231,7 @@ export default function LearnMore() {
             src={Farming}
             alt="Farming"
             className="mb-3 lg:mb-0 lg:ml-6"
+            loading="lazy"
             style={{ maxHeight: '170px' }}
             whileHover={{ scale: 1.1 }}
           />
@@ -244,6 +250,7 @@ export default function LearnMore() {
           <motion.img
             src={Oil}
             alt="Oil"
+            loading="lazy"
             className="mb-3 lg:mb-0 lg:ml-6"
             style={{ maxHeight: '170px' }}
             whileHover={{ scale: 1.1 }}
@@ -263,6 +270,7 @@ export default function LearnMore() {
           <motion.img
             src={Polishing}
             alt="Polishing"
+            loading="lazy"
             className="mb-3 lg:mb-0 lg:ml-6"
             style={{ maxHeight: '170px' }}
             whileHover={{ scale: 1.1 }}

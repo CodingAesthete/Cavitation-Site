@@ -156,10 +156,10 @@ export default function Effects() {
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water3} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Water3} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={WaterExtra} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={WaterExtra} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
           <p className="text-center text-md italic">
@@ -181,10 +181,10 @@ export default function Effects() {
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water5} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Water5} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={Water6} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Water6} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
           <p className="text-center text-md italic">
@@ -211,10 +211,10 @@ export default function Effects() {
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water7} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Water7} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={Water8} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Water8} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
           <p className="text-center text-md italic">
@@ -238,10 +238,10 @@ export default function Effects() {
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water9} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Water9} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={Water10} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Water10} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
           <p className="text-center text-md italic">
@@ -258,10 +258,10 @@ export default function Effects() {
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water11} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Water11} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={Water12} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Water12} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
           <p className="text-center text-md italic">
@@ -289,10 +289,10 @@ export default function Effects() {
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water13} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Water13} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={Water14} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Water14} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
           <p className="text-center text-md italic">
@@ -316,10 +316,10 @@ export default function Effects() {
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water15} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Water15} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={WaterExtra2} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={WaterExtra2} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
           <p className="text-center text-md italic">
@@ -355,10 +355,10 @@ export default function Effects() {
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water17} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Water17} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={Water18} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Water18} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
           <p className="text-center text-md italic">
@@ -381,10 +381,10 @@ export default function Effects() {
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img src={Water19} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Water19} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={Water20} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Water20} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
           <p className="text-center text-md italic">

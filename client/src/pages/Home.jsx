@@ -128,6 +128,7 @@ export default function Home() {
       <div className="mt-8 flex flex-col lg:flex-row items-center">
         <img
           src={SubjectOfActivity}
+          loading="lazy"
           alt="Subject of Activity"
           className="mr-4 rounded-md shadow-md mb-4 lg:mb-0"
           style={{ maxWidth: '300px' }}
@@ -177,6 +178,7 @@ export default function Home() {
           >
             <motion.img
               src={MAE}
+              loading="lazy"
               alt="MAE Logo"
               className="max-w-80 mb-3"
               whileHover={{ rotate: 0 }}
@@ -200,6 +202,7 @@ export default function Home() {
             whileTap={{ scale: 0.95 }}
           >
             <motion.img
+              loading="lazy"
               src={Lions}
               alt="Lions Logo"
               className="max-w-80 mb-3"
