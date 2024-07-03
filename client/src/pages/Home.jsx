@@ -64,7 +64,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         />
-        <div className="lg:ml-6">
+        <div className="lg:ml-6 my-auto">
           <motion.p
             className={`mb-3 text-center sm:text-justify text-gray-700`}
             initial={{ opacity: 0 }}
@@ -94,7 +94,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
         />
-        <div className="lg:mr-6">
+        <div className="lg:mr-6 my-auto">
           <motion.p
             className={`mb-3 text-center sm:text-justify text-gray-700`}
             initial={{ opacity: 0 }}
