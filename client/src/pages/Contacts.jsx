@@ -126,7 +126,7 @@ export default function Contacts() {
                   alt="Address icon"
                   className="w-6 h-6 mr-2"
                 />
-                гр.Варна, р-н Приморски, Ген.Радко Димитриев 13, вх.Б, ет.1
+                гр.Варна, р-н Приморски, ул. Никола Михайловски 1, ап.31
               </motion.p>
               <motion.p
                 className={` mb-3 flex ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}
