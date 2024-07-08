@@ -6,6 +6,7 @@ import SubjectOfActivity from '../assets/images/SubjectOfActivity.jpg';
 import CavitationRealImg from '../assets/images/cavitation-real.jpg';
 import MAE from '../assets/images/mae-logo2.png';
 import Lions from '../assets/images/lions-logo.png';
+import CavitationVortex from '../assets/images/cavitation-vortex.jpg';
 
 // Custom hook to detect screen size
 function useMediaQuery() {
@@ -56,7 +57,7 @@ export default function Home() {
       </motion.h1>
       <div className="lg:flex lg:items-start mb-6">
         <motion.img
-          src={CavitationRealImg}
+          src={CavitationVortex}
           alt="Cavitation Process"
           className='lg:float-left lg:mr-6 mb-4 lg:mb-0 w-full md:w-auto max-w-[340px] mx-auto lg:mx-0 rounded-md shadow-md'
           whileHover={{ scale: 1.05 }}
