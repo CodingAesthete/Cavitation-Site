@@ -6,7 +6,7 @@ import SubjectOfActivity from '../assets/images/SubjectOfActivity.jpg';
 import CavitationRealImg from '../assets/images/cavitation-real.jpg';
 import MAE from '../assets/images/mae-logo2.png';
 import Lions from '../assets/images/lions-logo.png';
-import CavitationVortex from '../assets/images/cavitation-vortex.jpg';
+import CavitationVortex from '../assets/images/cavitation-vortex-2.jpg';
 
 // Custom hook to detect screen size
 function useMediaQuery() {
