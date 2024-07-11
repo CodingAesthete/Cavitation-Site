@@ -76,7 +76,7 @@ export default function Contacts() {
                 >
                   С удоволствие ще отговорим на всички ваши въпроси и запитвания относно нашите услуги и продукти. Независимо дали искате да направите поръчка, да получите допълнителна информация или просто да споделите своите идеи и предложения, ние сме тук, за да ви помогнем.
                 </motion.p>
-                <motion.p
+                {/* <motion.p
                   className={`mb-3 flex items-start sm:items-center ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -93,7 +93,7 @@ export default function Contacts() {
                     <br className="sm:hidden" />
                     <i>Георги Стоянов Мишков</i>
                   </span>
-                </motion.p>
+                </motion.p> */}
                 <motion.p
                   className={`mb-3 flex items-start sm:items-center ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}
                   initial={{ opacity: 0 }}

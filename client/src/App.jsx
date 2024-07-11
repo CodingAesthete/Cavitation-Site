@@ -16,19 +16,21 @@ export default function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/goals" element={<Goals />} />
-        <Route path="/effects" element={<Effects />} />
-        <Route path="/learn-more" element={<LearnMore />} />
-        <Route path="/contacts" element={<Contacts />} />
-        <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/sign-in" element={<SignIn />} />
-        <Route element={<PrivateRoute />}>
-          <Route path='/profile' element={<Profile />} />
-        </Route>
-      </Routes>
+      <div className="pt-36 extrasmall:pt-52 header-sm:pt-36 sm:pt-40 md:pt-40 lg:pt-40 xl:pt-24"> {/* Adjust these values based on your header's height */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/goals" element={<Goals />} />
+          <Route path="/effects" element={<Effects />} />
+          <Route path="/learn-more" element={<LearnMore />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/sign-in" element={<SignIn />} />
+          <Route element={<PrivateRoute />}>
+            <Route path='/profile' element={<Profile />} />
+          </Route>
+        </Routes>
+      </div>
     </BrowserRouter>
   )
 }
