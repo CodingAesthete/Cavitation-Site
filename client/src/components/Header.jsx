@@ -1,10 +1,6 @@
 import { Link } from "react-router-dom";
-import OfficialLogo from '../assets/images/OfficialLogo.png';
-import NewLogo from '../assets/images/new-logo-2.png';
 import VortexLogo from '../assets/images/Vortex-Official-Logo.png';
-import Avatar from "../assets/images/site-avatar.jpg"
 import { useSelector } from 'react-redux';
-import { motion } from 'framer-motion';
 
 export default function Header() {
   const { currentUser } = useSelector((state) => state.user);
@@ -18,7 +14,7 @@ export default function Header() {
           </div>
         </Link>
 
-        <ul className='text-blue-800 flex flex-col header-sm:flex-row sm:text-xl mb-2 header-special:mb-0 md:flex-row items-center gap-1 header-sm:gap-6 sm:gap-8 text-xl xs:text-lg md:text-2xl xl:text-xl mt-4 header-special:mt-0'>
+        <ul className='text-blue-800 flex flex-col header-sm:flex-row sm:text-xl mb-2 header-special:mb-0 md:flex-row items-center gap-1 header-sm:gap-6 sm:gap-8 text-xl xs:text-lg md:text-2xl xl:text-xl mt-4 header-special:mt-0 font-bold'>
           <div className='flex flex-row sm:flex-row sm:text-xl mb-2 header-special:mb-0 md:flex-row items-center gap-4 xs:gap-8 sm:gap-8 text-xl xs:text-lg md:text-2xl xl:text-xl mt-4 header-special:mt-0'>
             <Link to='/'>
               <li className='hover:underline cursor-pointer'>За нас</li>
