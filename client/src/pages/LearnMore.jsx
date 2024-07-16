@@ -16,8 +16,17 @@ import Chlor from '../assets/images/Chlor.jpg';
 import UV from '../assets/images/UV.jpg';
 import CavitationMethod from '../assets/images/CavitationMethod.jpg';
 import ContactImage from '../assets/images/ContactImage.jpg';
+import Water15 from '../assets/images/water15.jpg';
+import WaterExtra2 from '../assets/images/WaterExtra2.jpg';
+import Water17 from '../assets/images/water17.jpg';
+import Water18 from '../assets/images/water18.jpg';
 
 export default function LearnMore() {
+  const albumPhotoContainerStyle = {
+    border: '8px solid #6B4226', // Brown border
+    borderRadius: '8px', // Rounded corners
+    overflow: 'hidden',
+  };
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -65,7 +74,7 @@ export default function LearnMore() {
           transition={{ delay: 0.3 }}
           className='text-center sm:text-justify'
         >
-          Кавитацията е образуването на въздушните мехурчета във водата поради резки промени в налягането- това е процес на нарушаване целостта на течността, който се извършва в тези части на потока, където налягането се понижава и достига до критично значение. С възникването на въздушните балончета и изменението на техните размери в процеса на кавитацията се променят физическите и акустичните свойства на водата.
+          Кавитацията е образуването на въздушни мехурчета във водата поради резки промени в налягането- това е процес на нарушаване целостта на течността, който се извършва в тези части на потока, където налягането се понижава и достига до критично значение. С възникването на въздушните балончета и изменението на техните размери в процеса на кавитацията се променят физическите и акустичните свойства на водата.
         </motion.p>
 
         <ul className='text-center sm:text-justify'>
@@ -157,6 +166,98 @@ export default function LearnMore() {
       </div>
 
       <motion.div
+        className="h-1 bg-blue-900 mt-6 mb-6"
+        initial={{ scaleX: 0 }}
+        animate={{ scaleX: 1 }}
+        transition={{ duration: 0.5 }}
+      ></motion.div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3 }}
+        className='text-center sm:text-justify'
+      >
+        <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
+          Пречистване на течности
+        </h2>
+        <p className="mb-4 animate-slideInUp md:text-justify text-center">
+          Понастоящем методите без реагенти за пречистване на течности са обещаващи.
+          Безреагентните методи за пречистване на водата не замърсяват природната среда с
+          химикали и не оказват вредно или дразнещо действие върху човешкия организъм при
+          контакт. Един от обещаващите методи за пречистване на водата е
+          обработката й в кавитационни реактори.
+          Бактерицидният ефект на кавитацията е правопропорционален на нейния интензитет,
+          честота или време на въздействие. Ефектът на кавитацията върху водните разтвори
+          се свежда до разделянето на водните молекули в кавитационните мехурчета.
+        </p>
+        <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
+          <div style={albumPhotoContainerStyle}>
+            <img loading="lazy" src={Water15} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
+          </div>
+          <div style={albumPhotoContainerStyle} className="hidden md:block">
+            <img loading="lazy" src={WaterExtra2} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+          </div>
+        </div>
+        <p className="text-center text-md italic">
+          Преминаване на водата през т.нар. кавитационни реактори
+        </p>
+      </motion.div>
+
+      <motion.div
+        className="h-1 bg-blue-900 mt-6 mb-6"
+        initial={{ scaleX: 0 }}
+        animate={{ scaleX: 1 }}
+        transition={{ duration: 0.5 }}
+      ></motion.div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3 }}
+        className='text-center sm:text-justify'
+      >
+        <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
+          Кавитацията в пречистването на водата
+        </h2>
+        <p className="mb-4 animate-slideInUp md:text-justify text-center">
+          Интензивният ефект на ударните вълни върху бактерии като Salmonella или E-coli
+          може да намали техния брой хиляди пъти. Въздействието на кумулативните струи
+          течност по време на колапса на кавитационните микромехурчета причинява смъртта
+          на бактериите. Оценката на ефекта от кавитационната обработка върху
+          съдържанието на жизнеспособни спори на суспензия от Fusarium solani и живи клетки
+          от бактерии и гъбички показа, че след пет цикъла на обработка на суспензията в КВУ,
+          броят на спорите намаляват наполовина, броят на живите резервоари намалява с
+          порядък, значително намалява дължината на актиномицетния мицел. След
+          кавитационно третиране на отпадъчни води в КВУ броят на общите колиформни
+          бактерии (TCB) намалява почти 100 000 пъти, броят на термотолерантните
+          бактерии (TCB) с 60 000 пъти и броят на колифагите (бактериални вируси) с 80
+          пъти. Най-ефективният метод за унищожаване на патогенната микрофлора се счита
+          комбинацията от различни методи на физическо въздействие върху третираната
+          течност, комбинираното използване на кавитация, ултравиолетово облъчване,
+          насищане на течността с озон и кислород дава синергичен ефект и значително
+          увеличава; ефективността на дезинфекция на течности. Методът на кавитационна
+          дезинфекция на течности може да се използва ефективно при третирането на
+          отпадъчни води от предприятия, общински пречиствателни станции за отпадъчни
+          води, канализация в плувни басейни, регенериране на флуиди и
+          други течности, с които хората влизат в контакт или се изхвърлят в околната среда.
+        </p>
+        <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
+          <div style={albumPhotoContainerStyle}>
+            <img loading="lazy" src={Water17} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
+          </div>
+          <div style={albumPhotoContainerStyle} className="hidden md:block">
+            <img loading="lazy" src={Water18} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+          </div>
+        </div>
+        <p className="text-center text-md italic">
+          Използване на кавитационния метод  за пречустването на отпадъчни води и предотвратяване на замърсяването
+        </p>
+      </motion.div>
+
+
+
+      <motion.div
         className="h-1 bg-blue-900 mt-6"
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
@@ -245,7 +346,7 @@ export default function LearnMore() {
           transition={{ delay: 0.8 }}
         >
           <motion.p className="lg:pr-6 text-center sm:text-justify w-full lg:w-auto">
-            Не по-малка се оказва ролята на кавитацията в <b>нефтената промишленост</b> - кавитационната обработка позволява да се увеличи процентът на леките фракции при крекинг процеса. Използва се и за почистване на оборудването.
+            Не по-малка се оказва ролята на кавитацията в <b>нефтената промишленост</b> - при кавитационната обработка  се променя процентното съдържание на леките и тежките фракции при крекинг процеса в полза на леките.
           </motion.p>
           <motion.img
             src={Oil}
@@ -265,7 +366,7 @@ export default function LearnMore() {
           transition={{ delay: 0.8 }}
         >
           <motion.p className="lg:pr-6 text-center sm:text-justify w-full lg:w-auto">
-            Приложението й в други области кавитационната технология се състои в изчистване и полиране на вътрешните повърхности на оборудванието, изчистване от замърсяване и накипи, производство на биогаз, както и за отопление на помещенията.
+            <b>Приложението й в други области</b>: кавитационната технология се състои в изчистване и полиране на вътрешните повърхности на оборудванието, изчистване от замърсяване и накипи, производство на биогаз, както и за отопление на помещенията.
           </motion.p>
           <motion.img
             src={Polishing}
@@ -339,7 +440,7 @@ export default function LearnMore() {
           >
             <motion.p>
               <b>3.</b> Обработката с използване на кавитационния ефект няма по-горе отбелязаните недостатъци; Тя е много по-енергоефективна и по-евтина.
-              За сравнение, разходите на кавитационния способ в сравнение с другите способи
+              Разходите на кавитационния способ в сравнение с другите способи
               за изчистване на водите, са както следва:
               способ за изчистване с УВ - 1,7 пъти по-малко,
               способ с хлориране - 3,5 пъти по-малко,

@@ -106,8 +106,21 @@ export default function Contacts() {
                     className="w-6 h-6 mr-2"
                   />
                   <span className="block sm:inline">
-                    <b>mishkov.georgi@gmail.com</b>
+                    <b>vortexshipping@gmail.com</b>
                   </span>
+                </motion.p>
+                <motion.p
+                  className='mb-3 flex items-center'
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.3 }}
+                >
+                  <img
+                    src={Telephone}
+                    alt="Telephone icon"
+                    style={{ width: '24px', height: '24px', marginRight: '8px' }}
+                  />
+                  <b>+359-88-661-2166</b>&nbsp;-&nbsp;<i>Георги Стоянов Мишков</i>
                 </motion.p>
               </div>
             </div>
@@ -126,7 +139,7 @@ export default function Contacts() {
                   alt="Address icon"
                   className="w-6 h-6 mr-2"
                 />
-                гр.Варна, р-н Приморски, ул. Никола Михайловски 1, ап.31
+                гр.Варна, р-н Приморски, ул. Никола Михайловски 1
               </motion.p>
               <motion.p
                 className={` mb-3 flex ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}

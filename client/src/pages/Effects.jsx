@@ -2,26 +2,21 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Water1 from '../assets/images/water1.jpg';
 import Water2 from '../assets/images/water2.jpg';
-import Water3 from '../assets/images/water3.jpg';
-import Water4 from '../assets/images/water4.jpg';
-import WaterExtra from '../assets/images/WaterExtra.jpg';
-import WaterExtra2 from '../assets/images/WaterExtra2.jpg';
-import Water5 from '../assets/images/water5.jpg';
 import Water6 from '../assets/images/water6.jpg';
 import Water7 from '../assets/images/water7.jpg';
 import Water8 from '../assets/images/water8.jpg';
 import Water9 from '../assets/images/water9.jpg';
 import Water10 from '../assets/images/water10.jpg';
-import Water11 from '../assets/images/water11.jpg';
-import Water12 from '../assets/images/water12.jpg';
-import Water13 from '../assets/images/water13.jpg';
-import Water14 from '../assets/images/water14.jpg';
-import Water15 from '../assets/images/water15.jpg';
-import Water16 from '../assets/images/water16.jpg';
-import Water17 from '../assets/images/water17.jpg';
-import Water18 from '../assets/images/water18.jpg';
 import Water19 from '../assets/images/water19.jpg';
 import Water20 from '../assets/images/water20.jpg';
+import Byala1 from '../assets/images/Byala1.jpg';
+import Byala2 from '../assets/images/Byala2.jpg';
+import BlackHorse from '../assets/images/BlackHorse.jpg';
+import Cow from '../assets/images/Cow.jpg';
+import Snowflake from '../assets/images/Snowflake.jpg';
+import net from '../assets/images/net.jpg';
+import WaterStructure from '../assets/images/WaterStructure.jpg';
+import WaterInitial from '../assets/images/WaterInitial.jpg';
 
 export default function Effects() {
   const albumPhotoContainerStyle = {
@@ -127,11 +122,11 @@ export default function Effects() {
             <li>осигурява много по-дълбока хидратация на органи и тъкани.</li>
           </ul>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
-            <div style={albumPhotoContainerStyle}>
+            <div style={albumPhotoContainerStyle} className="hidden md:block">
               <img src={Water1} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
-            <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img src={Water2} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+            <div style={albumPhotoContainerStyle}>
+              <img src={WaterInitial} alt="Water 2" className=" max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
           <p className="text-center text-md italic">
@@ -149,17 +144,17 @@ export default function Effects() {
             интегрират една с друга, образувайки клъстери - групи. Структурата на H2O молекулата може
             да бъде стабилизирана и направена симетрична, увеличавайки ползите от използването на
             такава вода в плувните басейни. Процесът възниква поради водородната връзка. Клъстерите,
-            които обединява, създават пространствени и планарни структури. Те са по-стабилни от
+            които обединяват и създават пространствени и планарни структури. Те са по-стабилни от
             обикновено, обвързани с общи правила на физическо взаимодействие, но запазват индивидуалните
             си характеристики. Основният тип клъстерна структура е симетричен пръстен от шест водни
             молекули. Тази форма е присъща на клетъчните течности в човешкото тяло, лед и сняг.
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img loading="lazy" src={Water3} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Snowflake} alt="Snowflake" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img loading="lazy" src={WaterExtra} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={WaterStructure} alt="Water Structure" className="max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
           <p className="text-center text-md italic">
@@ -181,10 +176,10 @@ export default function Effects() {
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img loading="lazy" src={Water5} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={net} alt="net" className=" max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img loading="lazy" src={Water6} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Water6} alt="Water 1" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
           <p className="text-center text-md italic">
@@ -224,7 +219,7 @@ export default function Effects() {
 
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
-            Как да се възползваме от предимствата?
+            Как да се възползваме от предимствата на структурираната вода?
           </h2>
           <p className="mb-4 animate-slideInUp md:text-justify text-center">
             В човешкото тяло водата също е структурирана. Кристалната й решетка е подобна на
@@ -258,10 +253,10 @@ export default function Effects() {
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img loading="lazy" src={Water11} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={BlackHorse} alt="Black Horse" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img loading="lazy" src={Water12} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Cow} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
           <p className="text-center text-md italic">
@@ -289,80 +284,14 @@ export default function Effects() {
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
-              <img loading="lazy" src={Water13} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Byala1} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
             </div>
             <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img loading="lazy" src={Water14} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+              <img loading="lazy" src={Byala2} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
           <p className="text-center text-md italic">
             Пълна дезинфекция и осигуряване на безопасност в плувни басейни
-          </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
-            Пречистване на течности
-          </h2>
-          <p className="mb-4 animate-slideInUp md:text-justify text-center">
-            Понастоящем методите без реагенти за пречистване на течности са обещаващи.
-            Безреагентните методи за пречистване на водата не замърсяват природната среда с
-            химикали и не оказват вредно или дразнещо действие върху човешкия организъм при
-            контакт. Един от обещаващите методи за пречистване на водата е
-            обработката й в кавитационни реактори.
-            Бактерицидният ефект на кавитацията е правопропорционален на нейния интензитет,
-            честота или време на въздействие. Ефектът на кавитацията върху водните разтвори
-            се свежда до разделянето на водните молекули в кавитационните мехурчета.
-          </p>
-          <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
-            <div style={albumPhotoContainerStyle}>
-              <img loading="lazy" src={Water15} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
-            </div>
-            <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img loading="lazy" src={WaterExtra2} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
-            </div>
-          </div>
-          <p className="text-center text-md italic">
-            Преминаване на водата през т.нар. кавитационни реактори
-          </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
-            Кавитацията в пречистването на водата
-          </h2>
-          <p className="mb-4 animate-slideInUp md:text-justify text-center">
-            Интензивният ефект на ударните вълни върху бактерии като Salmonella или E-coli
-            може да намали техния брой хиляди пъти. Въздействието на кумулативните струи
-            течност по време на колапса на кавитационните микромехурчета причинява смъртта
-            на бактериите. Оценката на ефекта от кавитационната обработка върху
-            съдържанието на жизнеспособни спори на суспензия от Fusarium solani и живи клетки
-            от бактерии и гъбички показа, че след пет цикъла на обработка на суспензията в КВУ,
-            броят на спорите намаляват наполовина, броят на живите резервоари намалява с
-            порядък, значително намалява дължината на актиномицетния мицел. След
-            кавитационно третиране на отпадъчни води в КВУ броят на общите колиформни
-            бактерии (TCB) намалява почти 100 000 пъти, броят на термотолерантните
-            бактерии (TCB) с 60 000 пъти и броят на колифагите (бактериални вируси) с 80
-            пъти. Най-ефективният метод за унищожаване на патогенната микрофлора се счита
-            комбинацията от различни методи на физическо въздействие върху третираната
-            течност, комбинираното използване на кавитация, ултравиолетово облъчване,
-            насищане на течността с озон и кислород дава синергичен ефект и значително
-            увеличава; ефективността на дезинфекция на течности. Методът на кавитационна
-            дезинфекция на течности може да се използва ефективно при третирането на
-            отпадъчни води от предприятия, общински пречиствателни станции за отпадъчни
-            води, канализация в плувни басейни, регенериране на флуиди и
-            други течности, с които хората влизат в контакт или се изхвърлят в околната среда.
-          </p>
-          <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
-            <div style={albumPhotoContainerStyle}>
-              <img loading="lazy" src={Water17} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
-            </div>
-            <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img loading="lazy" src={Water18} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
-            </div>
-          </div>
-          <p className="text-center text-md italic">
-            Използване на кавитационния метод  за пречустването на отпадъчни води и предотвратяване на замърсяването
           </p>
         </section>
 
