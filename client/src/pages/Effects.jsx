@@ -266,6 +266,32 @@ export default function Effects() {
 
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
+            Кавитацията за битови нужди
+          </h2>
+          <p className="mb-4 animate-slideInUp md:text-justify text-center">
+            Структурираната вода може да се използва и в домашни условия. Цветята, които се
+            поливат с него, растат по-добре, а зеленчуците и овощните култури дават стабилна
+            реколта. Структурираната вода не съдържа вредни вещества, микроби и токсини,
+            затова е препоръчително да миете лицето си с нея, за да запазите младостта и
+            красотата на кожата на лицето. Структурираната вода се използва за ефективно
+            почистване на повърхности от калциеви отлагания и предотвратяване на метална
+            корозия в бойлери, съдомиялни машини и други уреди.
+          </p>
+          <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
+            <div style={albumPhotoContainerStyle}>
+              <img loading="lazy" src={Water19} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
+            </div>
+            <div style={albumPhotoContainerStyle} className="hidden md:block">
+              <img loading="lazy" src={Water20} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+            </div>
+          </div>
+          <p className="text-center text-md italic">
+            Консумация на кавитационна вода, несъдържаща хлор и други химикали, вредни за човешкото здраве
+          </p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
             Свойства на структурираната вода
           </h2>
           <div className="animate-slideInUp">
@@ -292,32 +318,6 @@ export default function Effects() {
           </div>
           <p className="text-center text-md italic">
             Пълна дезинфекция и осигуряване на безопасност в плувни басейни
-          </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
-            Кавитацията за битови нужди
-          </h2>
-          <p className="mb-4 animate-slideInUp md:text-justify text-center">
-            Структурираната вода може да се използва и в домашни условия. Цветята, които се
-            поливат с него, растат по-добре, а зеленчуците и овощните култури дават стабилна
-            реколта. Структурираната вода не съдържа вредни вещества, микроби и токсини,
-            затова е препоръчително да миете лицето си с нея, за да запазите младостта и
-            красотата на кожата на лицето. Структурираната вода се използва за ефективно
-            почистване на повърхности от калциеви отлагания и предотвратяване на метална
-            корозия в бойлери, съдомиялни машини и други уреди.
-          </p>
-          <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
-            <div style={albumPhotoContainerStyle}>
-              <img loading="lazy" src={Water19} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
-            </div>
-            <div style={albumPhotoContainerStyle} className="hidden md:block">
-              <img loading="lazy" src={Water20} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
-            </div>
-          </div>
-          <p className="text-center text-md italic">
-            Консумация на кавитационна вода, несъдържаща хлор и други химикали, вредни за човешкото здраве
           </p>
         </section>
 
