@@ -17,8 +17,11 @@ import Snowflake from '../assets/images/Snowflake.jpg';
 import net from '../assets/images/net.jpg';
 import WaterStructure from '../assets/images/WaterStructure.jpg';
 import WaterInitial from '../assets/images/WaterInitial.jpg';
+import { useTranslation, Trans } from 'react-i18next';
+import i18n from '../i18n'; // Import i18n instance
 
 export default function Effects() {
+  const { t } = useTranslation();
   const albumPhotoContainerStyle = {
     border: '8px solid #6B4226', // Brown border
     borderRadius: '8px', // Rounded corners
@@ -73,6 +76,8 @@ export default function Effects() {
       }),
     };
 
+
+
     return (
       <div style={containerStyle}>
         {drops.map((drop) => (
@@ -108,18 +113,14 @@ export default function Effects() {
       <div className="p-6min-h-screen">
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
-            Ефект на структурираната вода
+            {t("effT1")}
           </h2>
           <p className="mb-4 animate-slideInUp md:text-justify text-center">
-            Кавитационната обработка на водата променя нейната структура на молекулно ниво. Водата във всякаква форма е най-„аномалното“ съединение в природата.
-            Лесно променя агрегатното си състояние при температурни, електромагнитни, електролитни и
-            други въздействия. Молекулярната структура на водата може да се коригира, след което
-            нейните характеристики и ефекти върху човешкото тяло се променят. <br className="mt-2" />
-            Със сигурност модифицираната вода:
+            {t("effT1P1")}
           </p>
           <ul className="list-disc list-inside pl-4 animate-slideInUp mb-4">
-            <li>става по-здравословна за организма;</li>
-            <li>осигурява много по-дълбока хидратация на органи и тъкани.</li>
+            <li>{t("effT1P2")}</li>
+            <li>{t("effT1P3")}</li>
           </ul>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle} className="hidden md:block">
@@ -130,24 +131,16 @@ export default function Effects() {
             </div>
           </div>
           <p className="text-center text-md italic">
-            Визуализация на структурираната вода: различия в молекулната структура след кавитационна обработка.
+            {t("effT1P4")}
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
-            Химичните връзки във водните молекули
+            {t("effT2")}
           </h2>
           <p className="mb-4 animate-slideInUp md:text-justify text-center">
-            Химичните връзки във водните молекули са ковалентни и полярни. Водородът привлича електрони
-            с положителен заряд, а кислородът -  частици с отрицателен заряд. Биполярните молекули могат да се
-            интегрират една с друга, образувайки клъстери - групи. Структурата на H2O молекулата може
-            да бъде стабилизирана и направена симетрична, увеличавайки ползите от използването на
-            такава вода в плувните басейни. Процесът възниква поради водородната връзка. Клъстерите,
-            които обединяват и създават пространствени и планарни структури. Те са по-стабилни от
-            обикновено, обвързани с общи правила на физическо взаимодействие, но запазват индивидуалните
-            си характеристики. Основният тип клъстерна структура е симетричен пръстен от шест водни
-            молекули. Тази форма е присъща на клетъчните течности в човешкото тяло, лед и сняг.
+            {t("effT2P1")}
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
@@ -158,21 +151,16 @@ export default function Effects() {
             </div>
           </div>
           <p className="text-center text-md italic">
-            Химична структура на водните молекули
+            {t("effT2P2")}
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
-            Конвенционалните клъстери
+            {t("effT3")}
           </h2>
           <p className="mb-4 animate-slideInUp md:text-justify text-center">
-            Конвенционалните клъстери се образуват от макромолекулни структури. В тях има най-малко 15
-            молекули - те се движат хаотично и са разположени асиметрично. Следователно водата е
-            неактивна, не прониква добре през клетъчните мембрани и не е полезна. За да се подобри
-            производителността й, е необходимо да се образуват шестоъгълни клъстери.
-            За целта се променя структурата на водата. Новите клъстери са подобни на групи в
-            междуклетъчната течност, съдържащи 5-7 молекули.
+            {t("effT3P1")}
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
@@ -183,26 +171,16 @@ export default function Effects() {
             </div>
           </div>
           <p className="text-center text-md italic">
-            Химична структура при новосъздаден клъстер
+            {t("effT3P2")}
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
-            Основни предимства на структурирана вода
+            {t("effT4")}
           </h2>
           <p className="mb-4 animate-slideInUp md:text-justify text-center">
-            В природата процесът на образуване на
-            структурирана нискомолекулна вода възниква по време на замразяването и размразяването на
-            снега. Това се случва в местата с планински потоци, водопади и реки. Движението по естествени
-            спирали повишава биологичната активност на водата. Под въздействието на кавитационната
-            технология H2O молекулите се зареждат отрицателно, обогатявайки течността със свободни
-            електрони.
-            Подобен ефект се наблюдава и в природата - в потоци и извори, особено планински
-            извори, чието начало е свързано с  ледници. Произхождайки от границата на агрегатните
-            състояния, водата променя кристалната си решетка. Връзките й са силни и
-            молекулите й са подредени, затова е толкова лесно и приятно да се пие от планински
-            потоци и чисти извори.
+            {t("effT4P1")}
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
@@ -213,23 +191,16 @@ export default function Effects() {
             </div>
           </div>
           <p className="text-center text-md italic">
-            Промяна на кристалната решетка на водата във връзка с преминаването в различно агрегатно състояние
+            {t("effT4P2")}
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
-            Как да се възползваме от предимствата на структурираната вода?
+            {t("effT5")}
           </h2>
           <p className="mb-4 animate-slideInUp md:text-justify text-center">
-            В човешкото тяло водата също е структурирана. Кристалната й решетка е подобна на
-            тази на леда. Благодарение на нискомолекулната си структура, водата лесно
-            прониква в клетката, повишава метаболитната й активност, качеството на
-            биохимичните реакции и в крайна сметка влияе върху „работата“ на човешкото тяло.
-            След промяна на структурата на водата, нейните клъстери стават плътни,
-            подобни на клетъчните. Усвояването й става много по-лесно- тялото не губи енергия. Необходимите вещества бързо се доставят в клетката и
-            ефективността на хидратацията се увеличава. Нейната „памет“ е до голяма степен
-            изтрита, което намалява вредата от натрупаната негативна енергия.
+            {t("effT5P1")}
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
@@ -240,16 +211,16 @@ export default function Effects() {
             </div>
           </div>
           <p className="text-center text-md italic">
-            Допълнителна хидратация на тялото, изложено на кавитационна вода
+            {t("effT5P2")}
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
-            Ефект на кавитацията при животните
+            {t("effT6")}
           </h2>
           <p className="mb-4 animate-slideInUp md:text-justify text-center">
-            Кавитационната обработка на водата променя структурата на молекулите, което подобрява качеството на водата особено за животните. Новообразуваните структури са полезни за тялото, тъй като съдържат микроелементи, минерали и други хранителни вещества, необходими за здравето. Тези клъстерни структури са по-стабилни и способстват за по-добро хидратиране и подобряване на общото състояние на организмите, които ги консумират.
+            {t("effT6P1")}
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
@@ -260,22 +231,16 @@ export default function Effects() {
             </div>
           </div>
           <p className="text-center text-md italic">
-            Набавяне на важни елементи посредством консумацията на обработената вода при животните
+            {t("effT6P2")}
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
-            Кавитацията за битови нужди
+            {t("effT7")}
           </h2>
           <p className="mb-4 animate-slideInUp md:text-justify text-center">
-            Структурираната вода може да се използва и в домашни условия. Цветята, които се
-            поливат с него, растат по-добре, а зеленчуците и овощните култури дават стабилна
-            реколта. Структурираната вода не съдържа вредни вещества, микроби и токсини,
-            затова е препоръчително да миете лицето си с нея, за да запазите младостта и
-            красотата на кожата на лицето. Структурираната вода се използва за ефективно
-            почистване на повърхности от калциеви отлагания и предотвратяване на метална
-            корозия в бойлери, съдомиялни машини и други уреди.
+            {t("effT7P1")}
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
             <div style={albumPhotoContainerStyle}>
@@ -286,26 +251,26 @@ export default function Effects() {
             </div>
           </div>
           <p className="text-center text-md italic">
-            Консумация на кавитационна вода, несъдържаща хлор и други химикали, вредни за човешкото здраве
+            {t("effT7P2")}
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
-            Свойства на структурираната вода
+            {t("effT8")}
           </h2>
           <div className="animate-slideInUp">
             <p className="mb-4 animate-slideInUp md:text-justify text-center">
-              1. Структурираната вода, благодарение на модифицираната си структура, е полезна при плуване в басейн.
+              {t("effT8P1")}
             </p>
             <p className="mb-4 animate-slideInUp md:text-justify text-center">
-              2. Прониква до клетъчно ниво без допълнителни разходи за „обработка” от тялото, поддържайки високо ниво на енергия в човека.
+              {t("effT8P2")}
             </p>
             <p className="mb-4 animate-slideInUp md:text-justify text-center">
-              3. В зависимост от характеристиките на променената структура, течността се превръща в ефективен антиоксидант, предотвратяващ стареенето на клетките и разрушаването на ДНК.
+              {t("effT8P3")}
             </p>
             <p className="mb-4 animate-slideInUp md:text-justify text-center">
-              4. Има ефект на активен антисептик, неутрализиращ инфекции и възпалителни процеси.
+              {t("effT8P4")}
             </p>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
@@ -317,7 +282,7 @@ export default function Effects() {
             </div>
           </div>
           <p className="text-center text-md italic">
-            Пълна дезинфекция и осигуряване на безопасност в плувни басейни
+            {t("effT8P5")}
           </p>
         </section>
 

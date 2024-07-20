@@ -68,7 +68,7 @@ export default function LearnMore() {
       setIsAnimating(true);
       setTimeout(() => {
         setIsAnimating(false);
-      }, 200); // Duration of the animation in milliseconds
+      }, 100); // Duration of the animation in milliseconds
     };
 
     i18n.on('languageChanged', handleLanguageChange);
