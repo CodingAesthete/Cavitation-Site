@@ -267,6 +267,7 @@ export default function Home() {
           <div className="flex flex-col gap-4 mb-4  sm:flex-row sm:gap-6">
             <motion.img
               src={Event1}
+              loading="lazy"
               alt="Event 1"
               className="w-full md:max-w-[48%] lg:max-w-[49%] rounded-md shadow-md"
               whileHover={{ scale: 1.05 }}
@@ -276,6 +277,7 @@ export default function Home() {
             />
             <motion.img
               src={Event2}
+              loading="lazy"
               alt="Event 2"
               className="w-full hidden md:block md:max-w-[48%] lg:max-w-[49%] rounded-md shadow-md"
               whileHover={{ scale: 1.05 }}
@@ -298,7 +300,7 @@ export default function Home() {
             <div className="w-full md:w-5/12 lg:w-5/12">
               <div className="relative" style={{ paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '0.375rem', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
                 <iframe
-                  src="https://www.youtube.com/embed/8EC9nA821Bg?si=FpAAHfaBPMdUaTE-"
+                  src="https://www.youtube.com/embed/FrWi9gA65qA?si=sVJ88AP8To_KdVj2"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -323,7 +325,7 @@ export default function Home() {
             <div className="w-full md:w-5/12 lg:w-5/12">
               <div className="relative" style={{ paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '0.375rem', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
                 <iframe
-                  src="https://www.youtube.com/embed/xBzeMutFQTE?si=7qYy9yDEc8OIMatP"
+                  src="https://www.youtube.com/embed/xX5kpHwXeiY?si=Y6YLLFKYbPBmxlRu"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

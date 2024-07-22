@@ -24,6 +24,10 @@ i18n
           evT1: "Събития",
           evP1: "На събитието, проведено в Бяла, беше представено нашето патентовано съоръжение, процесът на кавитация на водата и неговите предимства. Георги Мишков, управител на Vortex Shipping LTD, и професор Стоянов от Военноморското училище във Варна обясниха как кавитацията подобрява качеството на водата, като премахва примеси и микроорганизми. Те подчертаха и важните й ползи за кожата и спортните резултати. Кавитационното съоръжение използва високоенергийни импулси за създаване и разрушаване на мехурчета, което води до пречистване на водата. След презентациите се проведе беседа с гостите, които имаха възможност да зададат въпроси и да обсъдят приложението на технологията.",
           evP2: "Научете още за нас и кавитацията:",
+          evP3: "Георги Мишков",
+          evP4: "управител на Vortex Shipping LTD",
+          evP5: "Румен Стоянов",
+          evP6: "Почетен професор на ВВМУ",
 
           cavT1: "Що е кавитация?",
           cavT1P1: "Кавитацията е образуването на въздушни мехурчета във водата поради резки промени в налягането- това е процес на нарушаване целостта на течността, който се извършва в тези части на потока, където налягането се понижава и достига до критично значение. С възникването на въздушните балончета и изменението на техните размери в процеса на кавитацията се променят физическите и акустичните свойства на водата.",
@@ -147,6 +151,10 @@ i18n
           evT1: "Events",
           evP1: "At the event held in Byala, our patented equipment, the process of water cavitation, and its benefits were presented. Georgi Mishkov, manager of Vortex Shipping LTD, and Professor Stoyanov from the Naval Academy in Varna explained how cavitation improves water quality by removing impurities and microorganisms. They also highlighted its important benefits for skin and athletic performance. The cavitation equipment uses high-energy pulses to create and break bubbles, leading to water purification. After the presentations, a discussion was held with the guests, who had the opportunity to ask questions and discuss the application of the technology.",
           evP2: "Learn more about us and cavitation:",
+          evP3: "Georgi Mishkov",
+          evP4: "Manager of Vortex Shipping LTD",
+          evP5: "Rumen Stoyanov",
+          evP6: "Honorary Professor at the Naval Academy",
 
           cavT1: "What is cavitation?",
           cavT1P1: "Cavitation is the formation of air bubbles in water due to sudden changes in pressure—it's a process of disrupting the integrity of the liquid, occurring in those parts of the flow where the pressure decreases and reaches a critical value. With the formation of air bubbles and the change in their sizes during the cavitation process, the physical and acoustic properties of the water are altered.",
