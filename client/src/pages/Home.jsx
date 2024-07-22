@@ -264,11 +264,12 @@ export default function Home() {
           </motion.h1>
 
           {/* Container for Event Images */}
-          <div className="flex flex-col gap-4 mb-4 w-full sm:flex-row sm:gap-6">
+          <div className="flex flex-col gap-4 mb-4  sm:flex-row sm:gap-6">
             <motion.img
               src={Event1}
               alt="Event 1"
-              className="w-full md:w-1/2 rounded-md shadow-md"
+              className="w-full md:max-w-[48%] lg:max-w-[49%] rounded-md shadow-md"
+
               whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -277,7 +278,8 @@ export default function Home() {
             <motion.img
               src={Event2}
               alt="Event 2"
-              className="w-full hidden md:block sm:w-1/2 rounded-md shadow-md"
+              className="w-full hidden md:block md:max-w-[48%] lg:max-w-[49%] rounded-md shadow-md"
+
               whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
