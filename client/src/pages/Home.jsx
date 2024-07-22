@@ -269,7 +269,6 @@ export default function Home() {
               src={Event1}
               alt="Event 1"
               className="w-full md:max-w-[48%] lg:max-w-[49%] rounded-md shadow-md"
-
               whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -279,7 +278,6 @@ export default function Home() {
               src={Event2}
               alt="Event 2"
               className="w-full hidden md:block md:max-w-[48%] lg:max-w-[49%] rounded-md shadow-md"
-
               whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -295,6 +293,59 @@ export default function Home() {
           >
             {t("evP1")}
           </motion.p>
+
+          <div className="mt-8 gap-8 flex flex-col md:flex-row justify-around text-center">
+            <div className="w-full md:w-5/12 lg:w-5/12">
+              <div className="relative" style={{ paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '0.375rem', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
+                <iframe
+                  src="https://www.youtube.com/embed/8EC9nA821Bg?si=FpAAHfaBPMdUaTE-"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                ></iframe>
+              </div>
+              <motion.div
+                className="bg-blue-50 p-4 mt-3 rounded-md shadow-md"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+              >
+                <p className="text-center text-gray-700 font-bold text-lg">
+                  Георги Мишков
+                </p>
+                <p className="text-center text-gray-500 italic">
+                  управител на Vortex Shipping LTD
+                </p>
+              </motion.div>
+            </div>
+            <div className="w-full md:w-5/12 lg:w-5/12">
+              <div className="relative" style={{ paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '0.375rem', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
+                <iframe
+                  src="https://www.youtube.com/embed/xBzeMutFQTE?si=7qYy9yDEc8OIMatP"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                ></iframe>
+              </div>
+              <motion.div
+                className="bg-blue-50 p-4 mt-3 rounded-md shadow-md"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+              >
+                <p className="text-center text-gray-700 font-bold text-lg">
+                  Румен Стоянов
+                </p>
+                <p className="text-center text-gray-500 italic">
+                  Почетен професор на ВВМУ
+                </p>
+              </motion.div>
+            </div>
+          </div>
 
           {/* Social Media Icons */}
           <div className="mt-8 text-center">
