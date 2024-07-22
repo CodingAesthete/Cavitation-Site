@@ -315,10 +315,10 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.5 }}
               >
                 <p className="text-center text-gray-700 font-bold text-lg">
-                  Георги Мишков
+                  {t("evP3")}
                 </p>
                 <p className="text-center text-gray-500 italic">
-                  управител на Vortex Shipping LTD
+                  {t("evP4")}
                 </p>
               </motion.div>
             </div>
@@ -340,10 +340,10 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.5 }}
               >
                 <p className="text-center text-gray-700 font-bold text-lg">
-                  Румен Стоянов
+                  {t("evP5")}
                 </p>
                 <p className="text-center text-gray-500 italic">
-                  Почетен професор на ВВМУ
+                  {t("evP6")}
                 </p>
               </motion.div>
             </div>
