@@ -51,7 +51,7 @@ function useMediaQuery() {
 
 export default function LearnMore() {
   const albumPhotoContainerStyle = {
-    border: '8px solid #6B4226', // Brown border
+    border: '8px solid #003153', // Brown border
     borderRadius: '8px', // Rounded corners
     overflow: 'hidden',
   };
@@ -94,7 +94,7 @@ export default function LearnMore() {
         <div style={{ clear: 'both' }}>
           <br />
           <motion.h2
-            className='w-full text-center text-2xl font-bold pb-6'
+            className='w-full text-center text-2xl font-extrabold text-blue-900 pb-6'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
@@ -108,20 +108,19 @@ export default function LearnMore() {
               src={Baloons2}
               alt="Baloons 2"
               style={{ flex: '0 1 45%', maxHeight: '220px', marginBottom: '10px' }}
-              whileHover={{ scale: 1.1 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className='m-0'
+              className='m-0 rounded-md hidden md:block'
             />
             <motion.img
               src={Baloons}
               alt="Baloons"
               style={{ flex: '0 1 45%', maxHeight: '220px', marginBottom: '10px' }}
-              whileHover={{ scale: 1.1 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
+              className='rounded-md'
             />
           </div>
 
@@ -129,14 +128,14 @@ export default function LearnMore() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className='text-center sm:text-justify'
+            className='text-center sm:text-justify text-gray-700'
           >
             {t("cavT1P1")}
           </motion.p>
 
           <ul className='text-center sm:text-justify'>
             <motion.li
-              className="mb-3"
+              className="mb-3  text-gray-700"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
@@ -144,7 +143,7 @@ export default function LearnMore() {
               {t("cavT1P2")}
             </motion.li>
             <motion.li
-              className="mb-3"
+              className="mb-3  text-gray-700"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
@@ -159,31 +158,28 @@ export default function LearnMore() {
               transition={{ delay: 0.5 }}
             >
               <motion.img
-                className='w-11/12 sm:w-3/4 lg:w-1/3 mx-auto'
+                className='w-11/12 sm:w-3/4 lg:w-1/3 mx-auto rounded-md'
                 src={Formula1}
                 alt="cavitation formulas"
                 loading="lazy"
-                whileHover={{ scale: 1.1 }}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
               />
               <motion.img
-                className='w-11/12 sm:w-3/4 lg:w-1/3  mx-auto'
+                className='w-11/12 sm:w-3/4 lg:w-1/3  mx-auto rounded-md'
                 src={Formula2}
                 alt="cavitation formulas"
                 loading="lazy"
-                whileHover={{ scale: 1.1 }}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
               />
               <motion.img
-                className='w-11/12 sm:w-3/4 lg:w-1/3  mx-auto'
+                className='w-11/12 sm:w-3/4 lg:w-1/3  mx-auto rounded-md'
                 src={Formula3}
                 alt="cavitation formulas"
                 loading="lazy"
-                whileHover={{ scale: 1.1 }}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
@@ -208,7 +204,7 @@ export default function LearnMore() {
               transition={{ delay: 0.6 }}
             >
               <div className="p-2 sm:p-6 bg-slate-100 bg-opacity-65 rounded-2xl border-4 border-dashed border-blue-300">
-                <p>
+                <p className=" text-gray-700">
                   {t("cavT1P4")}
                 </p>
               </div>
@@ -229,10 +225,10 @@ export default function LearnMore() {
           transition={{ delay: 0.3 }}
           className='text-center sm:text-justify'
         >
-          <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
+          <h2 className='w-full text-center text-2xl font-extrabold text-blue-900 pb-6'>
             {t("cavT2")}
           </h2>
-          <p className="mb-4 animate-slideInUp md:text-justify text-center">
+          <p className="mb-4 animate-slideInUp md:text-justify text-center text-gray-700">
             {t("cavT2P1")}
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
@@ -243,7 +239,7 @@ export default function LearnMore() {
               <img loading="lazy" src={WaterExtra2} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
-          <p className="text-center text-md italic">
+          <p className="text-center text-md italic  text-gray-700">
             {t("cavT2P2")}
           </p>
         </motion.div>
@@ -261,10 +257,10 @@ export default function LearnMore() {
           transition={{ delay: 0.3 }}
           className='text-center sm:text-justify'
         >
-          <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
+          <h2 className='w-full text-center text-2xl font-extrabold text-blue-900 pb-6'>
             {t("cavT3")}
           </h2>
-          <p className="mb-4 animate-slideInUp md:text-justify text-center">
+          <p className="mb-4 animate-slideInUp md:text-justify text-center text-gray-700">
             {t("cavT3P1")}
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
@@ -275,7 +271,7 @@ export default function LearnMore() {
               <img loading="lazy" src={Water18} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
             </div>
           </div>
-          <p className="text-center text-md italic">
+          <p className="text-center text-md italic  text-gray-700">
             {t("cavT3P2")}
           </p>
         </motion.div>
@@ -292,7 +288,7 @@ export default function LearnMore() {
         <div style={{ clear: 'right', width: '100%' }}>
           <br />
           <motion.h2
-            className='w-full text-center text-2xl font-bold pb-6'
+            className='w-full text-center text-2xl font-extrabold text-blue-900 pb-6'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
@@ -307,7 +303,7 @@ export default function LearnMore() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            <motion.p className="lg:pr-6 text-center sm:text-justify w-full lg:w-auto">
+            <motion.p className="lg:pr-6 text-center sm:text-justify w-full lg:w-auto  text-gray-700">
               <Trans i18nKey="cavT4P1">
                 Кавитационната обработка има широко приложение в промишлеността, селското
                 стопанство и медицината. В <strong>хранителната промишленост</strong> за хомогенизация и
@@ -318,9 +314,8 @@ export default function LearnMore() {
             <motion.img
               src={Food}
               alt="Agriculture"
-              className="mb-3 lg:mb-0 lg:ml-6"
+              className="mb-3 lg:mb-0 lg:ml-6 rounded-md"
               style={{ maxHeight: '170px' }}
-              whileHover={{ scale: 1.1 }}
               loading="lazy"
             />
           </motion.div>
@@ -332,7 +327,7 @@ export default function LearnMore() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            <motion.p className=" lg:pr-6 text-center sm:text-justify w-full lg:w-auto">
+            <motion.p className=" lg:pr-6 text-center sm:text-justify w-full lg:w-auto  text-gray-700">
               <Trans i18nKey="cavT4P2">
                 В <b>медицината</b> също открива приложение - използва се за бактериологично обеззаразяване, така също и за ефективното проникване на лекарствените вещества към центъра на поразяване. Подобрява кръвообращението и стимулира регенеративните процеси.
               </Trans>
@@ -341,9 +336,8 @@ export default function LearnMore() {
               src={Medicine}
               alt="Medicine"
               loading="lazy"
-              className="mb-3 lg:mb-0 lg:ml-6"
+              className="mb-3 lg:mb-0 lg:ml-6 rounded-md"
               style={{ maxHeight: '170px' }}
-              whileHover={{ scale: 1.1 }}
             />
           </motion.div>
 
@@ -354,7 +348,7 @@ export default function LearnMore() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            <motion.p className="lg:pr-6 text-center sm:text-justify w-full lg:w-auto">
+            <motion.p className="lg:pr-6 text-center sm:text-justify w-full lg:w-auto text-gray-700">
               <Trans i18nKey="cavT4P3">
                 В <b>селското стопанство</b> при използването на кавитационно-обработената вода се наблюдава значително увеличаване на добивите, а също и намаляване на заболяваемостта на посевите, което е свързано с повишеното съдържание на кислорода във водата.
               </Trans>
@@ -362,10 +356,9 @@ export default function LearnMore() {
             <motion.img
               src={Farming}
               alt="Farming"
-              className="mb-3 lg:mb-0 lg:ml-6"
+              className="mb-3 lg:mb-0 lg:ml-6 rounded-md"
               loading="lazy"
               style={{ maxHeight: '170px' }}
-              whileHover={{ scale: 1.1 }}
             />
           </motion.div>
 
@@ -376,7 +369,7 @@ export default function LearnMore() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            <motion.p className="lg:pr-6 text-center sm:text-justify w-full lg:w-auto">
+            <motion.p className="lg:pr-6 text-center sm:text-justify w-full lg:w-auto text-gray-700">
               <Trans i18nKey="cavT4P4">
                 Не по-малка се оказва ролята на кавитацията в <b>нефтената промишленост</b> - при кавитационната обработка  се променя процентното съдържание на леките и тежките фракции при крекинг процеса в полза на леките.
               </Trans>
@@ -385,9 +378,8 @@ export default function LearnMore() {
               src={Oil}
               alt="Oil"
               loading="lazy"
-              className="mb-3 lg:mb-0 lg:ml-6"
+              className="mb-3 lg:mb-0 lg:ml-6 rounded-md"
               style={{ maxHeight: '170px' }}
-              whileHover={{ scale: 1.1 }}
             />
           </motion.div>
 
@@ -398,7 +390,7 @@ export default function LearnMore() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            <motion.p className="lg:pr-6 text-center sm:text-justify w-full lg:w-auto">
+            <motion.p className="lg:pr-6 text-center sm:text-justify w-full lg:w-auto text-gray-700">
               <Trans i18nKey="cavT4P5">
                 <b>Приложението й в други области</b>: кавитационната технология се състои в изчистване и полиране на вътрешните повърхности на оборудванието, изчистване от замърсяване и накипи, производство на биогаз, както и за отопление на помещенията.
               </Trans>
@@ -407,9 +399,8 @@ export default function LearnMore() {
               src={Polishing}
               alt="Polishing"
               loading="lazy"
-              className="mb-3 lg:mb-0 lg:ml-6"
+              className="mb-3 lg:mb-0 lg:ml-6 rounded-md"
               style={{ maxHeight: '170px' }}
-              whileHover={{ scale: 1.1 }}
             />
           </motion.div>
 
@@ -427,7 +418,7 @@ export default function LearnMore() {
         <div style={{ clear: 'both' }}>
           <br />
           <motion.h2
-            className='w-full text-center text-2xl font-bold pb-6'
+            className='w-full text-center text-2xl font-extrabold text-blue-900 pb-6'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
@@ -443,7 +434,7 @@ export default function LearnMore() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.9 }}
             >
-              <motion.p>
+              <motion.p className=" text-gray-700">
                 <Trans i18nKey="cavT5P1">
                   <b>1.</b> Обработка с хлор:
                   Този способ е най-разпространен, тъй като хлорът е относително евтин.
@@ -461,7 +452,7 @@ export default function LearnMore() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.9 }}
             >
-              <motion.p>
+              <motion.p className=" text-gray-700">
                 <Trans i18nKey="cavT5P2">
                   <b>2.</b> Обработка с ултра-виолетови лъчи:
                   Този метод не използува химически агенти и е екологически чист.
@@ -477,7 +468,7 @@ export default function LearnMore() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.9 }}
             >
-              <motion.p>
+              <motion.p className=" text-gray-700">
                 <Trans i18nKey="cavT5P3">
                   <b>3.</b> Обработката с използване на кавитационния ефект няма по-горе отбелязаните недостатъци; Тя е много по-енергоефективна и по-евтина.
                   Разходите на кавитационния способ в сравнение с другите способи
@@ -495,23 +486,20 @@ export default function LearnMore() {
             <motion.img
               src={Chlor}
               alt="Chlor"
-              className="mb-3"
+              className="mb-3 rounded-md"
               style={{ maxWidth: '100%', height: 'auto' }} // Adjusted width to be responsive
-              whileHover={{ scale: 1.1 }}
             />
             <motion.img
               src={CavitationMethod}
               alt="Cavitation-Method"
-              className="mb-3"
+              className="mb- rounded-md"
               style={{ maxWidth: '100%', height: 'auto' }} // Adjusted width to be responsive
-              whileHover={{ scale: 1.1 }}
             />
             <motion.img
               src={UV}
               alt="UV-Treatment"
-              className="mb-3"
+              className="mb-3 rounded-md"
               style={{ maxWidth: '100%', height: 'auto' }} // Adjusted width to be responsive
-              whileHover={{ scale: 1.1 }}
             />
           </motion.div>
 
@@ -520,23 +508,20 @@ export default function LearnMore() {
             <motion.img
               src={Chlor}
               alt="Chlor"
-              className="mb-3 lg:mb-0"
+              className="mb-3 lg:mb-0 rounded-md"
               style={{ maxWidth: '95%', height: 'auto' }} // Adjusted width to be responsive
-              whileHover={{ scale: 1.1 }}
             />
             <motion.img
               src={CavitationMethod}
               alt="Cavitation-Method"
-              className="mb-3 lg:mb-0"
+              className="mb-3 lg:mb-0 rounded-md"
               style={{ maxWidth: '95%', height: 'auto' }} // Adjusted width to be responsive
-              whileHover={{ scale: 1.1 }}
             />
             <motion.img
               src={UV}
               alt="UV-Treatment"
-              className="mb-3 lg:mb-0"
+              className="mb-3 lg:mb-0 rounded-md"
               style={{ maxWidth: '95%', height: 'auto' }} // Adjusted width to be responsive
-              whileHover={{ scale: 1.1 }}
             />
           </motion.div>
 
@@ -553,14 +538,14 @@ export default function LearnMore() {
 
         <div style={{ clear: 'both' }} className='mt-3'>
           <motion.h2
-            className='w-full text-center text-2xl font-bold pb-3'
+            className='w-full text-center text-2xl font-extrabold text-blue-900 pb-6'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
           >
             {t("cavT6")}
           </motion.h2>
-          <div className='text-xl mb-2'><Trans i18nKey="cavT6P1">~ Степента на обеззаразяване се достига, както следва (<b>c кавитация</b>):</Trans></div>
+          <div className='text-xl mb-2 text-gray-700'><Trans i18nKey="cavT6P1">~ Степента на обеззаразяване се достига, както следва (<b>c кавитация</b>):</Trans></div>
           <table style={{ borderCollapse: 'collapse', border: '1px solid black', width: '100%' }}>
             <colgroup>
               <col style={{ width: '50%' }} />
@@ -588,7 +573,7 @@ export default function LearnMore() {
             </tbody>
           </table>
 
-          <div className='text-xl mb-2 mt-3'><Trans i18nKey="cavT6P2">~ Степента на обеззаразяване се достига, както следва (<b>без кавитация</b>):</Trans></div>
+          <div className='text-xl mb-2 mt-3  text-gray-700'><Trans i18nKey="cavT6P2">~ Степента на обеззаразяване се достига, както следва (<b>без кавитация</b>):</Trans></div>
           <table style={{ borderCollapse: 'collapse', border: '1px solid black', width: '100%' }}>
             <colgroup>
               <col style={{ width: '50%' }} />
@@ -622,7 +607,7 @@ export default function LearnMore() {
             transition={{ delay: 1 }}
           >
 
-            <motion.p>
+            <motion.p className=" text-gray-700">
               {t("cavT6P3")}
             </motion.p>
           </motion.div>
@@ -633,7 +618,7 @@ export default function LearnMore() {
             transition={{ delay: 1 }}
           >
 
-            <motion.p>
+            <motion.p className=" text-gray-700">
               {t("cavT6P4")}
             </motion.p>
           </motion.div>
@@ -653,10 +638,9 @@ export default function LearnMore() {
           transition={{ delay: 1 }}
         >
           <motion.img
-            className='w-full sm:w-4/5 md:w-3/5 mx-auto'
+            className='w-full sm:w-4/5 md:w-3/5 mx-auto rounded-md'
             src={ContactImage}
             alt="cavitation chain"
-            whileHover={{ scale: 1.1 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}

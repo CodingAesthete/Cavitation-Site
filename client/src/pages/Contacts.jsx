@@ -10,6 +10,7 @@ import ReputationIcon from '../assets/images/Reputation.webp';
 import Vision from '../assets/images/Vision2.jpg';
 import Email from '../assets/images/Email.jpg';
 import ContactsIcon from '../assets/images/Contacts.jpg';
+import ConImg2 from '../assets/images/con-img2.jpg';
 import { useTranslation, Trans } from 'react-i18next';
 import i18n from '../i18n'; // Import i18n instance
 
@@ -74,7 +75,7 @@ export default function Contacts() {
       >
         <div>
           <motion.h1
-            className='w-full text-center text-3xl font-bold pb-6 pt-3 mb-2'
+            className='w-full text-center text-2xl font-extrabold text-blue-900 pb-6'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
@@ -85,10 +86,9 @@ export default function Contacts() {
             <div className="flex flex-col lg:flex-row gap-6">
               <div className="w-full lg:w-5/12">
                 <motion.img
-                  src={ContactsIcon}
+                  src={ConImg2}
                   alt="Contact icon"
-                  className="w-full lg:max-w-lg lg:mr-4 mb-4 lg:mb-0"
-                  whileHover={{ scale: 1.1 }}
+                  className="w-full lg:max-w-lg lg:mr-4 mb-4 lg:mb-0 rounded-md"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.2 }}
@@ -97,7 +97,7 @@ export default function Contacts() {
               <div className="flex items-center w-full">
                 <div>
                   <motion.p
-                    className={`lg:text-xl mb-3 ${screenSize === 'sm' ? 'text-center' : 'text-justify'}`}
+                    className="mb-4 md:text-justify text-center text-gray-700"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.3 }}
@@ -123,7 +123,7 @@ export default function Contacts() {
                   </span>
                 </motion.p> */}
                   <motion.p
-                    className={`mb-3 flex items-start sm:items-center ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}
+                    className={`mb-3 flex items-start md:text-justify text-center text-gray-700`}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.3 }}
@@ -138,7 +138,7 @@ export default function Contacts() {
                     </span>
                   </motion.p>
                   <motion.p
-                    className='mb-3 flex items-center'
+                    className={`mb-3 flex items-start md:text-justify text-center text-gray-700`}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.3 }}
@@ -154,10 +154,10 @@ export default function Contacts() {
               </div>
             </div>
 
-            <div className=" lg:text-xl flex flex-col-reverse lg:flex-row justify-between items-center lg:items-center">
+            <div className=" lg:text-lg flex flex-col-reverse lg:flex-row justify-between items-center lg:items-center">
               <div className="w-full lg:w-7/12">
                 <motion.p
-                  className={`mb-3 flex ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}
+                  className={`mb-3 flex items-start md:text-justify text-center text-gray-700`}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.3 }}
@@ -170,7 +170,7 @@ export default function Contacts() {
                   {t("conT1P3")}
                 </motion.p>
                 <motion.p
-                  className={` mb-3 flex ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}
+                  className={`mb-3 flex items-start md:text-justify text-center text-gray-700`}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.3 }}
@@ -183,7 +183,7 @@ export default function Contacts() {
                   {t("conT1P4")}
                 </motion.p>
                 <motion.p
-                  className={`mb-3 flex ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}
+                  className={`mb-3 flex items-start md:text-justify text-center text-gray-700`}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.3 }}
@@ -196,7 +196,7 @@ export default function Contacts() {
                   {t("conT1P5")}
                 </motion.p>
                 <motion.p
-                  className={`mb-3 flex ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}
+                  className={`mb-3 flex items-start md:text-justify text-center text-gray-700`}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.3 }}
@@ -209,7 +209,7 @@ export default function Contacts() {
                   {t("conT1P6")}
                 </motion.p>
                 <motion.p
-                  className={`mb-3 flex ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}
+                  className={`mb-3 flex items-start md:text-justify text-center text-gray-700`}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.3 }}

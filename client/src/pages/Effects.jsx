@@ -44,7 +44,7 @@ function useMediaQuery() {
 
 export default function Effects() {
   const albumPhotoContainerStyle = {
-    border: '8px solid #6B4226', // Brown border
+    border: '8px solid #003153', // Brown border
     borderRadius: '8px', // Rounded corners
     overflow: 'hidden',
   };
@@ -76,49 +76,49 @@ export default function Effects() {
   };
 
   const WaterDrops = () => {
-    const drops = Array.from({ length: 10 }).map((_, index) => ({
-      id: index,
-      x: Math.random() * window.innerWidth,
-      y: Math.random() * window.innerHeight,
-      scale: Math.random() * 0.8 + 0.2,
-      opacity: Math.random(),
-      speed: Math.random() * 1.15 + 1,
-    }));
+    // const drops = Array.from({ length: 10 }).map((_, index) => ({
+    //   id: index,
+    //   x: Math.random() * window.innerWidth,
+    //   y: Math.random() * window.innerHeight,
+    //   scale: Math.random() * 0.8 + 0.2,
+    //   opacity: Math.random(),
+    //   speed: Math.random() * 1.15 + 1,
+    // }));
 
-    const dropVariants = {
-      animate: (custom) => ({
-        y: window.innerHeight + 20,
-        transition: {
-          duration: custom.speed,
-          repeat: Infinity,
-          repeatType: 'loop',
-          ease: 'linear',
-        },
-      }),
-    };
+    // const dropVariants = {
+    //   animate: (custom) => ({
+    //     y: window.innerHeight + 20,
+    //     transition: {
+    //       duration: custom.speed,
+    //       repeat: Infinity,
+    //       repeatType: 'loop',
+    //       ease: 'linear',
+    //     },
+    //   }),
+    // };
 
 
 
-    return (
-      <div style={containerStyle}>
-        {drops.map((drop) => (
-          <motion.div
-            key={drop.id}
-            style={{
-              ...dropStyle,
-              left: drop.x,
-              right: drop.x - 40,
-              top: drop.y,
-              scale: drop.scale,
-              opacity: drop.opacity,
-            }}
-            variants={dropVariants}
-            animate="animate"
-            custom={drop}
-          />
-        ))}
-      </div>
-    );
+    // return (
+    //   <div style={containerStyle}>
+    //     {drops.map((drop) => (
+    //       <motion.div
+    //         key={drop.id}
+    //         style={{
+    //           ...dropStyle,
+    //           left: drop.x,
+    //           right: drop.x - 40,
+    //           top: drop.y,
+    //           scale: drop.scale,
+    //           opacity: drop.opacity,
+    //         }}
+    //         variants={dropVariants}
+    //         animate="animate"
+    //         custom={drop}
+    //       />
+    //     ))}
+    //   </div>
+    // );
   };
 
   const screenSize = useMediaQuery();
@@ -161,13 +161,13 @@ export default function Effects() {
         <WaterDrops />
         <div className="p-6min-h-screen">
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
+            <h2 className='w-full text-center text-2xl font-extrabold text-blue-900 pb-6'>
               {t("effT1")}
             </h2>
-            <p className="mb-4 animate-slideInUp md:text-justify text-center">
+            <p className="mb-4 animate-slideInUp md:text-justify text-center  text-gray-700">
               {t("effT1P1")}
             </p>
-            <ul className="list-disc list-inside pl-4 animate-slideInUp mb-4">
+            <ul className="list-disc list-inside pl-4 animate-slideInUp mb-4  text-gray-700">
               <li>{t("effT1P2")}</li>
               <li>{t("effT1P3")}</li>
             </ul>
@@ -179,16 +179,23 @@ export default function Effects() {
                 <img src={WaterInitial} alt="Water 2" className=" max-w-sx md:w-md border rounded-md" />
               </div>
             </div>
-            <p className="text-center text-md italic">
+            <p className="text-center text-md italic  text-gray-700">
               {t("effT1P4")}
             </p>
           </section>
 
+          <motion.div
+            className="h-1 bg-blue-900 my-8 rounded-full"
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 0.5 }}
+          ></motion.div>
+
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
+            <h2 className='w-full text-center text-2xl font-extrabold text-blue-900 pb-6'>
               {t("effT2")}
             </h2>
-            <p className="mb-4 animate-slideInUp md:text-justify text-center">
+            <p className="mb-4 animate-slideInUp md:text-justify text-center  text-gray-700">
               {t("effT2P1")}
             </p>
             <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
@@ -199,16 +206,23 @@ export default function Effects() {
                 <img loading="lazy" src={WaterStructure} alt="Water Structure" className="max-w-sx md:w-md border rounded-md" />
               </div>
             </div>
-            <p className="text-center text-md italic">
+            <p className="text-center text-md italic  text-gray-700">
               {t("effT2P2")}
             </p>
           </section>
 
+          <motion.div
+            className="h-1 bg-blue-900 my-8 rounded-full"
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 0.5 }}
+          ></motion.div>
+
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
+            <h2 className='w-full text-center text-2xl font-extrabold text-blue-900 pb-6'>
               {t("effT3")}
             </h2>
-            <p className="mb-4 animate-slideInUp md:text-justify text-center">
+            <p className="mb-4 animate-slideInUp md:text-justify text-center  text-gray-700">
               {t("effT3P1")}
             </p>
             <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
@@ -219,16 +233,23 @@ export default function Effects() {
                 <img loading="lazy" src={Water6} alt="Water 1" className="hidden md:block max-w-sx md:w-md border rounded-md" />
               </div>
             </div>
-            <p className="text-center text-md italic">
+            <p className="text-center text-md italic  text-gray-700">
               {t("effT3P2")}
             </p>
           </section>
 
+          <motion.div
+            className="h-1 bg-blue-900 my-8 rounded-full"
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 0.5 }}
+          ></motion.div>
+
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
+            <h2 className='w-full text-center text-2xl font-extrabold text-blue-900 pb-6'>
               {t("effT4")}
             </h2>
-            <p className="mb-4 animate-slideInUp md:text-justify text-center">
+            <p className="mb-4 animate-slideInUp md:text-justify text-center  text-gray-700">
               {t("effT4P1")}
             </p>
             <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
@@ -239,16 +260,23 @@ export default function Effects() {
                 <img loading="lazy" src={Water8} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
               </div>
             </div>
-            <p className="text-center text-md italic">
+            <p className="text-center text-md italic  text-gray-700">
               {t("effT4P2")}
             </p>
           </section>
 
+          <motion.div
+            className="h-1 bg-blue-900 my-8 rounded-full"
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 0.5 }}
+          ></motion.div>
+
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
+            <h2 className='w-full text-center text-2xl font-extrabold text-blue-900 pb-6'>
               {t("effT5")}
             </h2>
-            <p className="mb-4 animate-slideInUp md:text-justify text-center">
+            <p className="mb-4 animate-slideInUp md:text-justify text-center  text-gray-700">
               {t("effT5P1")}
             </p>
             <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
@@ -259,16 +287,23 @@ export default function Effects() {
                 <img loading="lazy" src={Water10} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
               </div>
             </div>
-            <p className="text-center text-md italic">
+            <p className="text-center text-md italic  text-gray-700">
               {t("effT5P2")}
             </p>
           </section>
 
+          <motion.div
+            className="h-1 bg-blue-900 my-8 rounded-full"
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 0.5 }}
+          ></motion.div>
+
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
+            <h2 className='w-full text-center text-2xl font-extrabold text-blue-900 pb-6'>
               {t("effT6")}
             </h2>
-            <p className="mb-4 animate-slideInUp md:text-justify text-center">
+            <p className="mb-4 animate-slideInUp md:text-justify text-center  text-gray-700">
               {t("effT6P1")}
             </p>
             <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
@@ -279,16 +314,23 @@ export default function Effects() {
                 <img loading="lazy" src={Cow} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
               </div>
             </div>
-            <p className="text-center text-md italic">
+            <p className="text-center text-md italic  text-gray-700">
               {t("effT6P2")}
             </p>
           </section>
 
+          <motion.div
+            className="h-1 bg-blue-900 my-8 rounded-full"
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 0.5 }}
+          ></motion.div>
+
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
+            <h2 className='w-full text-center text-2xl font-extrabold text-blue-900 pb-6'>
               {t("effT7")}
             </h2>
-            <p className="mb-4 animate-slideInUp md:text-justify text-center">
+            <p className="mb-4 animate-slideInUp md:text-justify text-center  text-gray-700">
               {t("effT7P1")}
             </p>
             <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:gap-8">
@@ -299,26 +341,33 @@ export default function Effects() {
                 <img loading="lazy" src={Water20} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
               </div>
             </div>
-            <p className="text-center text-md italic">
+            <p className="text-center text-md italic  text-gray-700">
               {t("effT7P2")}
             </p>
           </section>
 
+          <motion.div
+            className="h-1 bg-blue-900 my-8 rounded-full"
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 0.5 }}
+          ></motion.div>
+
           <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4 text-center animate-fadeInSlow">
+            <h2 className='w-full text-center text-2xl font-extrabold text-blue-900 pb-6'>
               {t("effT8")}
             </h2>
             <div className="animate-slideInUp">
-              <p className="mb-4 animate-slideInUp md:text-justify text-center">
+              <p className="mb-4 animate-slideInUp md:text-justify text-center text-gray-700">
                 {t("effT8P1")}
               </p>
-              <p className="mb-4 animate-slideInUp md:text-justify text-center">
+              <p className="mb-4 animate-slideInUp md:text-justify text-center text-gray-700">
                 {t("effT8P2")}
               </p>
-              <p className="mb-4 animate-slideInUp md:text-justify text-center">
+              <p className="mb-4 animate-slideInUp md:text-justify text-center  text-gray-700">
                 {t("effT8P3")}
               </p>
-              <p className="mb-4 animate-slideInUp md:text-justify text-center">
+              <p className="mb-4 animate-slideInUp md:text-justify text-center  text-gray-700">
                 {t("effT8P4")}
               </p>
             </div>
@@ -330,7 +379,7 @@ export default function Effects() {
                 <img loading="lazy" src={Byala2} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
               </div>
             </div>
-            <p className="text-center text-md italic">
+            <p className="text-center text-md italic  text-gray-700">
               {t("effT8P5")}
             </p>
           </section>

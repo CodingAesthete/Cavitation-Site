@@ -56,10 +56,6 @@ export default function Goals() {
 
   const questionsAndAnswers = [
     {
-      question: t("factQ1"),
-      answer: t("factA1"),
-    },
-    {
       question: t("factQ2"),
       answer: t("factA2"),
     },
@@ -91,10 +87,6 @@ export default function Goals() {
       question: t("factQ9"),
       answer: t("factA9"),
     },
-    {
-      question: t("factQ10"),
-      answer: t("factA10"),
-    }
   ];
 
   const handleQuestionClick = (index) => {
@@ -138,7 +130,7 @@ export default function Goals() {
         animate={{ opacity: isAnimating ? 0 : 1, scale: isAnimating ? 0.95 : 1 }}
         transition={{ duration: 0.6 }}
       >
-        <h1 className='text-2xl font-bold mb-4 text-center'>{t("factT1")}</h1>
+        <h1 className='w-full text-center text-2xl font-extrabold text-blue-900 pb-6'>{t("factT1")}</h1>
         <div className='space-y-4'>
           {questionsAndAnswers.map((qa, index) => (
             <div key={index} className='border-b pb-2 border-darkblue-500'>
@@ -150,7 +142,7 @@ export default function Goals() {
                   <span className='bg-gradient-to-r from-blue-500 to-violet-500 text-white font-bold mr-2 flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center'>
                     {index + 1}
                   </span>
-                  <span className=' ml-1 sm:ml-2 sm:text-justify md:text-start'> {qa.question}</span>
+                  <span className=' ml-1 sm:ml-2 sm:text-justify md:text-start text-gray-700'> {qa.question}</span>
                 </span>
 
                 {/* <FaChevronDown className={`transform transition-transform duration-300 ${selectedQuestion === index ? 'rotate-180' : ''} sm:hidden`} /> */}
@@ -191,9 +183,10 @@ export default function Goals() {
             transition={{ delay: 0.2 }}
             onMouseEnter={() => setShowOverlay(true)}
             onMouseLeave={() => setShowOverlay(false)}
+            className="rounded-md"
           />
         </div>
       </motion.div>
-    </motion.div>
+    </motion.div >
   );
 }

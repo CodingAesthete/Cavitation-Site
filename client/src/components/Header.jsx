@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import VortexLogo from '../assets/images/Vortex-Official-Logo.png';
+import CavitationLogo from '../assets/images/cav-logo-new.png';
 import { useSelector } from 'react-redux';
 import LanguagesIcon from '../assets/images/languages-icon.png';
 import { useTranslation } from 'react-i18next';

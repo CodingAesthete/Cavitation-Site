@@ -12,6 +12,7 @@ import Event2 from '../assets/images/event2.jpg';
 import FB from '../assets/images/fb.jpg';
 import YT from '../assets/images/yt2.png';
 import IN from '../assets/images/in.png';
+import Conf from '../assets/images/conf.jpg';
 import { useTranslation, Trans } from 'react-i18next';
 import i18n from '../i18n'; // Import i18n instance
 
@@ -69,7 +70,7 @@ export default function Home() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="text-lg w-11/12 sm:w-5/6 mx-auto rounded-lg px-4 sm:px-10 py-8 mt-6 mb-10 bg-gradient-to-r from-blue-100 to-blue-200 shadow-lg"
+      className="text-lg w-11/12 sm:w-5/6 mx-auto rounded-lg px-4 sm:px-10 py-8 mt-6 mb-10 bg-blue-50 shadow-lg"
     >
       <motion.div
         initial={{ opacity: 1 }}
@@ -89,7 +90,6 @@ export default function Home() {
             src={CavitationVortex}
             alt="Cavitation Process"
             className='lg:float-left lg:mr-6 mb-4 lg:mb-0 w-full md:w-auto max-w-[340px] mx-auto lg:mx-0 rounded-md shadow-md'
-            whileHover={{ scale: 1.05 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
@@ -117,13 +117,12 @@ export default function Home() {
         </div>
         <div className="lg:flex lg:items-start lg:flex-row-reverse mb-6">
           <motion.img
-            className='pt-2 lg:float-right lg:ml-6 mb-4 lg:mb-0 w-full lg:w-auto max-w-[265px] xl:max-w-[340px] mx-auto lg:mx-0 rounded-md shadow-md'
             src={CavitationGlass}
-            alt="Cavitation Example"
-            whileHover={{ scale: 1.05 }}
+            alt="Cavitation Process"
+            className='lg:float-right lg:ml-6 mb-4 lg:mb-0 w-full lg:w-auto max-w-[265px] xl:max-w-[340px] mx-auto lg:mx-0 rounded-md shadow-md'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
+            transition={{ delay: 0.2 }}
           />
           <div className="lg:mr-6 my-auto">
             <motion.p
@@ -194,11 +193,7 @@ export default function Home() {
           </motion.h1>
           <div className="flex flex-row justify-around items-start flex-wrap">
             <motion.div
-              className="mx-0 sm:mx-4 mb-4 max-w-xs sm:max-w-md flex flex-col justify-center items-center bg-white  p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-              initial={{ opacity: 0, x: 100 }}
-              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
-              transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
-              whileTap={{ scale: 0.95 }}
+              className="mx-0 sm:mx-4 mb-4 max-w-xs sm:max-w-md flex flex-col justify-center items-center bg-white  p-4 rounded-lg shadow-lg hover:shadow-xl"
             >
               <motion.img
                 src={MAE}
@@ -206,24 +201,11 @@ export default function Home() {
                 alt="MAE Logo"
                 className="max-w-80 mb-3"
                 whileHover={{ rotate: 0 }}
-                animate={isInView ? {
-                  rotate: [0, -3, 3, 0],
-                  scale: [1, 1.1, 1]
-                } : {}}
-                transition={isInView ? {
-                  repeat: 1,
-                  duration: 1.2,
-                  ease: "easeOut"
-                } : {}}
               />
               <p className="text-center text-gray-700">{t("maeDescription")}</p>
             </motion.div>
             <motion.div
-              className="mx-0 sm:mx-4 mb-4 max-w-xs sm:max-w-md flex flex-col justify-center items-center bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-              initial={{ opacity: 0, x: 100 }}
-              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
-              transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
-              whileTap={{ scale: 0.95 }}
+              className="mx-0 sm:mx-4 mb-4 max-w-xs sm:max-w-md flex flex-col justify-center items-center bg-white p-4 rounded-lg shadow-lg hover:shadow-xl"
             >
               <motion.img
                 loading="lazy"
@@ -231,15 +213,6 @@ export default function Home() {
                 alt="Lions Logo"
                 className="max-w-80 mb-3"
                 whileHover={{ rotate: 0 }}
-                animate={isInView ? {
-                  rotate: [0, -3, 3, 0],
-                  scale: [1, 1.1, 1]
-                } : {}}
-                transition={isInView ? {
-                  repeat: 1,
-                  duration: 1.2,
-                  ease: "easeOut"
-                } : {}}
               />
               <p className="text-center text-gray-700 mt-3">{t("lionsDescription")}</p>
             </motion.div>
@@ -270,17 +243,15 @@ export default function Home() {
               loading="lazy"
               alt="Event 1"
               className="w-full md:max-w-[48%] lg:max-w-[49%] rounded-md shadow-md"
-              whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             />
             <motion.img
-              src={Event2}
+              src={Conf}
               loading="lazy"
               alt="Event 2"
               className="w-full hidden md:block md:max-w-[48%] lg:max-w-[49%] rounded-md shadow-md"
-              whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
@@ -288,7 +259,7 @@ export default function Home() {
           </div>
 
           <motion.p
-            className="text-lg leading-[1.9] text-gray-800 font-serif italic p-4 bg-blue-50 border-l-4 border-r-4 border-blue-900 shadow-md rounded-md"
+            className="text-lg leading-[1.9] text-gray-800 italic p-4 bg-blue-100 border-l-4 border-r-4 border-blue-900 shadow-md rounded-md"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
@@ -309,7 +280,7 @@ export default function Home() {
                 ></iframe>
               </div>
               <motion.div
-                className="bg-blue-50 p-4 mt-3 rounded-md shadow-md"
+                className="bg-white p-4 mt-3 rounded-md shadow-md"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
@@ -334,7 +305,7 @@ export default function Home() {
                 ></iframe>
               </div>
               <motion.div
-                className="bg-blue-50 p-4 mt-3 rounded-md shadow-md"
+                className="bg-white p-4 mt-3 rounded-md shadow-md"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
@@ -357,34 +328,20 @@ export default function Home() {
             <div className="flex justify-center space-x-6">
               <a
                 href="https://www.facebook.com/profile.php?id=61562812142550"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-transform transform hover:scale-110"
               >
                 <motion.img
                   src={FB}
                   alt="Facebook"
-                  className="w-20 h-20 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300"
-                  whileHover={{ scale: 1.1 }}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.2 }}
+                  className="w-20 h-20 rounded-full shadow-lg hover:shadow-xlduration-300"
                 />
               </a>
               <a
                 href="https://www.youtube.com/@cavitation-bg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-transform transform hover:scale-110"
               >
                 <motion.img
                   src={YT}
                   alt="YouTube"
-                  className="w-20 h-20 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300"
-                  whileHover={{ scale: 1.1 }}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.3 }}
+                  className="w-20 h-20 rounded-full shadow-lg hover:shadow-xlduration-300"
                 />
               </a>
               <a

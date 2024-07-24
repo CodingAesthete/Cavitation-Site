@@ -76,7 +76,7 @@ i18n
 
           conT1: "Свържете се с нас",
           conT1P1: "С удоволствие ще отговорим на всички ваши въпроси и запитвания относно нашите услуги и продукти. Независимо дали искате да направите поръчка, да получите допълнителна информация или просто да споделите своите идеи и предложения, ние сме тук, за да ви помогнем.",
-          conT1P2: "Георги Стоянов Мишков",
+          conT1P2: "мениджър",
           conT1P3: "гр.Варна, р-н Приморски, ул. Никола Михайловски 1",
           conT1P4: "Статусът ни е активен и сме в процес на надграждане",
           conT1P5: "Дългогодишен опит и успешни проекти",
@@ -203,7 +203,7 @@ i18n
 
           conT1: "Contact Us",
           conT1P1: "We are happy to answer all your questions and inquiries regarding our services and products. Whether you want to place an order, get additional information, or simply share your ideas and suggestions, we are here to help you.",
-          conT1P2: "Georgi Stoyanov Mishkov",
+          conT1P2: "manager",
           conT1P3: "Varna, Primorski District, Nikola Mihaylovski Street 1",
           conT1P4: "Our status is active and we are in the process of upgrading",
           conT1P5: "Long-standing experience and successful projects",
