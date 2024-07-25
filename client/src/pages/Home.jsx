@@ -13,6 +13,7 @@ import FB from '../assets/images/fb.jpg';
 import YT from '../assets/images/yt2.png';
 import IN from '../assets/images/in.png';
 import Conf from '../assets/images/conf.jpg';
+import SpeechCav from '../assets/images/SpeechCav2.jpg';
 import { useTranslation, Trans } from 'react-i18next';
 import i18n from '../i18n'; // Import i18n instance
 
@@ -153,7 +154,7 @@ export default function Home() {
 
         <div className="mt-8 flex flex-col lg:flex-row items-center">
           <img
-            src={SubjectOfActivity}
+            src={SpeechCav}
             loading="lazy"
             alt="Subject of Activity"
             className="mr-4 rounded-md shadow-md mb-4 lg:mb-0"
@@ -328,36 +329,44 @@ export default function Home() {
             <div className="flex justify-center space-x-6">
               <a
                 href="https://www.facebook.com/profile.php?id=61562812142550"
+                target="_blank"
               >
                 <motion.img
                   src={FB}
                   alt="Facebook"
                   className="w-20 h-20 rounded-full shadow-lg hover:shadow-xlduration-300"
-                />
-              </a>
-              <a
-                href="https://www.youtube.com/@cavitation-bg"
-              >
-                <motion.img
-                  src={YT}
-                  alt="YouTube"
-                  className="w-20 h-20 rounded-full shadow-lg hover:shadow-xlduration-300"
+                  whileHover={{ scale: 1.1 }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.1 }}
                 />
               </a>
               <a
                 href="https://www.youtube.com/@cavitation-bg"
                 target="_blank"
-                rel="noopener noreferrer"
-                className="transition-transform transform hover:scale-110"
+              >
+                <motion.img
+                  src={YT}
+                  alt="YouTube"
+                  className="w-20 h-20 rounded-full shadow-lg"
+                  whileHover={{ scale: 1.1 }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.1 }}
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/@cavitation-bg"
+                target="_blank"
               >
                 <motion.img
                   src={IN}
                   alt="YouTube"
-                  className="w-20 h-20 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  className="w-20 h-20 rounded-full shadow-lg "
                   whileHover={{ scale: 1.1 }}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ delay: 0.3 }}
+                  transition={{ delay: 0.1 }}
                 />
               </a>
             </div>

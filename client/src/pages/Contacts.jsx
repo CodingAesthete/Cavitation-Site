@@ -11,6 +11,7 @@ import Vision from '../assets/images/Vision2.jpg';
 import Email from '../assets/images/Email.jpg';
 import ContactsIcon from '../assets/images/Contacts.jpg';
 import ConImg2 from '../assets/images/con-img2.jpg';
+import Handshake from '../assets/images/handshake.avif';
 import { useTranslation, Trans } from 'react-i18next';
 import i18n from '../i18n'; // Import i18n instance
 
@@ -86,7 +87,7 @@ export default function Contacts() {
             <div className="flex flex-col lg:flex-row gap-6">
               <div className="w-full lg:w-5/12">
                 <motion.img
-                  src={ConImg2}
+                  src={Handshake}
                   alt="Contact icon"
                   className="w-full lg:max-w-lg lg:mr-4 mb-4 lg:mb-0 rounded-md"
                   initial={{ opacity: 0 }}

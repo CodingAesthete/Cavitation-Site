@@ -11,6 +11,9 @@ import SignIn from './pages/SIgnIn';
 import PrivateRoute from './components/PrivateRoute';
 import Profile from './pages/Profile';
 import Effects from './pages/Effects';
+import TermsOfUse from './pages/TermsOfUse';
+import Copyright from './pages/Copyright';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
@@ -26,11 +29,14 @@ export default function App() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/terms-of-use" element={<TermsOfUse />} />
+          <Route path="/copyright" element={<Copyright />} />
           <Route element={<PrivateRoute />}>
             <Route path='/profile' element={<Profile />} />
           </Route>
         </Routes>
       </div>
+      <Footer />
     </BrowserRouter>
   )
 }
