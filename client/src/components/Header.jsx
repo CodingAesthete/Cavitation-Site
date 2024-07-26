@@ -46,13 +46,13 @@ export default function Header() {
       <header className='fixed top-0 left-0 right-0 bg-blue-200 text-black font-semibold shadow-lg z-50'>
         <div className='flex flex-col header-special:flex-row items-center justify-between mx-4 header-special:mx-24 xl:mx-36'>
           <Link to='/' className='flex flex-row items-center header-special:flex-row header-special:gap-4'>
-            <div className='my-1 w-48 extrasmall:w-48 sm:w-48 xl:w-36' style={fadeInStyle}>
+            <div className='my-1 w-36 extrasmall:w-36 sm:w-48 xl:w-36' style={fadeInStyle}>
               <img src={PerfectLogo} alt="Logo" />
             </div>
           </Link>
 
-          <ul className='text-blue-800 flex flex-col header-sm:flex-row sm:text-xl mb-2 header-special:mb-0 md:flex-row items-center gap-1 header-sm:gap-6 sm:gap-8 text-xl xs:text-lg md:text-2xl xl:text-xl mt-4 header-special:mt-0 font-bold'>
-            <div className='flex flex-row sm:flex-row sm:text-xl mb-2 header-special:mb-0 md:flex-row items-center gap-4 xs:gap-8 sm:gap-8 text-xl xs:text-lg md:text-2xl xl:text-xl mt-4 header-special:mt-0'>
+          <ul className='text-blue-800 flex flex-col sm:text-xl header-special:mb-0 md:flex-row items-center gap-1 header-sm:gap-6 sm:gap-3 md:gap-8 text-xl xs:text-lg md:text-2xl xl:text-xl header-special:mt-0 font-bold'>
+            <div className='flex flex-row sm:flex-row sm:text-xl md:mb-2 header-special:mb-0 md:flex-row items-center gap-4 xs:gap-8 sm:gap-8 text-xl xs:text-lg md:text-2xl xl:text-xl mt-3 header-special:mt-0'>
               <Link to='/'>
                 <li className='hover:underline cursor-pointer'>{t("head1")}</li>
               </Link>
@@ -63,7 +63,7 @@ export default function Header() {
                 <li className='hover:underline'>{t("head3")}</li>
               </Link>
             </div>
-            <div className='flex flex-row sm:flex-row sm:text-xl mb-2 header-special:mb-0 md:flex-row items-center gap-4 xs:gap-8 sm:gap-8 text-xl xs:text-lg md:text-2xl xl:text-xl mt-4 header-special:mt-0'>
+            <div className='flex flex-row sm:flex-row sm:text-xl mb-1 header-sm:mb-0 md:flex-row items-center gap-4 xs:gap-8 sm:gap-8 text-xl xs:text-lg md:text-2xl xl:text-xl mt-1 header-special:mt-0'>
               <Link to='/goals'>
                 <li className='hover:underline'>{t("head4")}</li>
               </Link>

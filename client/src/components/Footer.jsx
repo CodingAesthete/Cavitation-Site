@@ -43,7 +43,7 @@ export default function Footer() {
 
       <header className=' bottom-0 left-0 right-0 py-1 bg-blue-900 text-black font-semibold shadow-lg z-50'>
         <div className='flex flex-col md:flex-row items-center justify-between mx-4 header-special:mx-24 xl:mx-36'>
-          <div className='text-blue-100 font-extrabold my-1 w-52' style={fadeInStyle}>
+          <div className='text-blue-100 font-extrabold my-1' style={fadeInStyle}>
             @2024 Cavitation System
           </div>
 
