@@ -15,6 +15,9 @@ import Handshake from '../assets/images/handshake.avif';
 import { useTranslation, Trans } from 'react-i18next';
 import i18n from '../i18n'; // Import i18n instance
 
+import styled from "styled-components";
+import emailjs from "@emailjs/browser";
+
 // Custom hook to detect screen size
 function useMediaQuery() {
   const [screenSize, setScreenSize] = React.useState('');
@@ -61,6 +64,30 @@ export default function Contacts() {
       i18n.off('languageChanged', handleLanguageChange);
     };
   }, []);
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_i65gcnr",
+        "template_9qyf2qf",
+        form.current,
+        "riEk3h4Locf_7PiQ1"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <motion.div
@@ -135,7 +162,7 @@ export default function Contacts() {
                       className="w-6 h-6 mr-2"
                     />
                     <span className="block sm:inline">
-                      <b>vortexshipping@gmail.com</b>
+                      <b>cavitationsystem@gmail.com</b>
                     </span>
                   </motion.p>
                   <motion.p
@@ -234,7 +261,72 @@ export default function Contacts() {
             </div>
           </div>
         </div>
+        <StyledContactForm>
+          <form ref={form} onSubmit={sendEmail}>
+            <label>Име</label>
+            <input type="text" name="user_name" />
+            <label>Имейл</label>
+            <input type="email" name="user_email" />
+            <label>Съобщение</label>
+            <textarea name="message" />
+            <input type="submit" value="Изпрати" />
+          </form>
+        </StyledContactForm>
       </motion.div >
     </motion.div>
   );
 }
+
+const StyledContactForm = styled.div`
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 16px;
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 0.5rem;
+      outline: none;
+      border-radius: 0.375rem;
+      border: 1px solid rgb(220, 220, 220);
+
+      &:focus {
+         border-color: rgb(30, 110, 30); /* Darker green */
+      }
+    }
+
+    textarea {
+      min-height: 100px;
+    }
+
+    label {
+      margin-top: 1rem;
+    }
+
+    input[type="submit"] {
+      margin-top: 1.5rem;
+      cursor: pointer;
+      background-color: rgb(25, 58, 160); /* Darker blue */
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: rgb(17, 42, 112); /* Even darker blue on hover */
+      }
+    }
+  }
+`;
+
+
+
+
