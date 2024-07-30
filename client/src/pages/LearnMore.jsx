@@ -637,36 +637,40 @@ export default function LearnMore() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
         >
-          <motion.img
-            className='w-full sm:w-4/5 md:w-3/5 mx-auto rounded-md'
-            src={ContactImage}
-            alt="cavitation chain"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
-            style={{ display: 'block', margin: '0 auto' }}
-          />
-          <motion.div
-            style={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              color: 'white',
-              fontWeight: 'bold',
-              fontSize: '32px',
-              letterSpacing: '2px',
-              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)',
-              WebkitTextStroke: '1px blue',
-              textStroke: '1px green',
-            }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
-          >
-            <p className='hidden sm:inline text-2xl md:text-3xl pb-3'>{t("cavT7P1")}</p>
-            <p className='text-2xl md:text-3xl pb-3'>{t("cavT7P2")}</p>
-          </motion.div>
+          <a href="https://cavitation.bg/contacts" rel="noopener noreferrer">
+            <motion.img
+              className='w-full sm:w-4/5 md:w-3/5 mx-auto rounded-md'
+              src={ContactImage}
+              alt="cavitation chain"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1 }}
+              style={{ display: 'block', margin: '0 auto' }}
+            />
+          </a>
+          <a href="https://cavitation.bg/contacts" rel="noopener noreferrer">
+            <motion.div
+              style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                color: 'white',
+                fontWeight: 'bold',
+                fontSize: '32px',
+                letterSpacing: '2px',
+                textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)',
+                WebkitTextStroke: '1px blue',
+                textStroke: '1px green',
+              }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1 }}
+            >
+              <p className='hidden sm:inline text-2xl md:text-3xl pb-3'>{t("cavT7P1")}</p>
+              <p className='text-2xl md:text-3xl pb-3'>{t("cavT7P2")}</p>
+            </motion.div>
+          </a>
         </motion.div>
 
 

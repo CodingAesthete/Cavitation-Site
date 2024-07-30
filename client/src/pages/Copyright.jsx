@@ -1,7 +1,11 @@
 import React from "react";
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n'; // Import i18n instance
 
 export default function Copyright() {
+  const { i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -20,26 +24,26 @@ export default function Copyright() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          Копирайт
+          {t("copT1")}
         </motion.h1>
         <div className="text-gray-700">
           <p className="mb-3">
-            Материалите публикувани на <a href="https://cavitation.bg" className="text-blue-600 hover:underline">cavitation.bg</a> са под закрила на Закона за авторското право.
+            {t("copT2")} <a href="https://cavitation.bg" className="text-blue-600 hover:underline">cavitation.bg</a> {t("copT3")}
           </p>
           <p className="mb-3">
-            Допустимо е използването на текстови, фото и видео материали от този уебсайт, при условие, че:
+            {t("copT4")}
           </p>
           <ul className="list-disc list-inside mb-3">
-            <li>Всяко използване на материалите трябва да включва ясно и видимо посочване на източника с активна препратка към <a href="https://cavitation.bg" className="text-blue-600 hover:underline">www.cavitation.bg</a>,</li>
-            <li>Материалите не трябва да бъдат променяни, адаптирани или манипулирани по начин, който би могъл да наруши авторските права или да създаде подвеждаща информация,</li>
-            <li>Използването на материалите е разрешено само за лични, образователни или некомерсиални цели, освен ако изрично не е посочено друго в съответния материал.</li>
-            <li>Не е разрешено да се използват материали от уебсайта за целите на създаване на конкурентни продукти или услуги, или за публично представяне, разпространение или продажба без изричното разрешение на правопритежателя.</li>
+            <li>{t("copT5")} <a href="https://cavitation.bg" className="text-blue-600 hover:underline">www.cavitation.bg</a>,</li>
+            <li>{t("copT6")}</li>
+            <li>{t("copT7")}</li>
+            <li>{t("copT8")}</li>
           </ul>
           <p className="mb-3">
-            Всяко неразрешено използване, възпроизвеждане, разпространение, показване или публично представяне на материалите, публикувани на този уебсайт, е забранено и може да доведе до правни последствия, включително, но не само, искове за нарушаване на авторски права.
+            {t("copT9")}
           </p>
           <p className="mb-3">
-            Запазваме си правото да променяме тези правила по всяко време, като всички промени ще бъдат публикувани на този уебсайт. Препоръчваме ви редовно да се запознавате с актуалната версия на правилата.
+            {t("copT10")}
           </p>
         </div>
       </motion.div>

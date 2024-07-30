@@ -17,6 +17,8 @@ import Snowflake from '../assets/images/Snowflake.jpg';
 import net from '../assets/images/net.jpg';
 import WaterStructure from '../assets/images/WaterStructure.jpg';
 import WaterInitial from '../assets/images/WaterInitial.jpg';
+import Flowers from '../assets/images/flowers.jpg';
+import Woman from '../assets/images/woman.jpg';
 import { useTranslation, Trans } from 'react-i18next';
 import i18n from '../i18n'; // Import i18n instance
 
@@ -284,7 +286,7 @@ export default function Effects() {
                 <img loading="lazy" src={Water9} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
               </div>
               <div style={albumPhotoContainerStyle} className="hidden md:block">
-                <img loading="lazy" src={Water10} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+                <img loading="lazy" src={Woman} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
               </div>
             </div>
             <p className="text-center text-md italic  text-gray-700">
@@ -338,7 +340,7 @@ export default function Effects() {
                 <img loading="lazy" src={Water19} alt="Water 1" className="max-w-sx md:w-md border rounded-md" />
               </div>
               <div style={albumPhotoContainerStyle} className="hidden md:block">
-                <img loading="lazy" src={Water20} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
+                <img loading="lazy" src={Flowers} alt="Water 2" className="hidden md:block max-w-sx md:w-md border rounded-md" />
               </div>
             </div>
             <p className="text-center text-md italic  text-gray-700">

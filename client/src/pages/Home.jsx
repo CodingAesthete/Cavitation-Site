@@ -272,7 +272,7 @@ export default function Home() {
             <div className="w-full md:w-5/12 lg:w-5/12">
               <div className="relative" style={{ paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '0.375rem', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
                 <iframe
-                  src="https://www.youtube.com/embed/FrWi9gA65qA?si=sVJ88AP8To_KdVj2"
+                  src="https://www.youtube.com/embed/4GX1wnoQABU?si=viM7h6X3HMWuvK-q"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -297,7 +297,7 @@ export default function Home() {
             <div className="w-full md:w-5/12 lg:w-5/12">
               <div className="relative" style={{ paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '0.375rem', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
                 <iframe
-                  src="https://www.youtube.com/embed/xX5kpHwXeiY?si=Y6YLLFKYbPBmxlRu"
+                  src="https://www.youtube.com/embed/M9Jk6y2lGh4?si=7bkAdk3-eUtMOiNZ"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -356,8 +356,6 @@ export default function Home() {
                 />
               </a>
               <a
-                href="https://www.youtube.com/@cavitation-bg"
-                target="_blank"
               >
                 <motion.img
                   src={IN}

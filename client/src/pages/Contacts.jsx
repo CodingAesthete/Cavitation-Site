@@ -263,13 +263,13 @@ export default function Contacts() {
         </div>
         <StyledContactForm>
           <form ref={form} onSubmit={sendEmail}>
-            <label>Име</label>
+            <label>{t("conT2")}</label>
             <input type="text" name="user_name" />
-            <label>Имейл</label>
+            <label>{t("conT3")}</label>
             <input type="email" name="user_email" />
-            <label>Съобщение</label>
+            <label>{t("conT4")}</label>
             <textarea name="message" />
-            <input type="submit" value="Изпрати" />
+            <input type="submit" value={t("conT5")} />
           </form>
         </StyledContactForm>
       </motion.div >
