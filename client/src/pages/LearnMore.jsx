@@ -630,7 +630,7 @@ export default function LearnMore() {
             transition={{ delay: 1 }}
           >
             <motion.a
-              className="text-darkblue underline hover:bg-darkblue hover:text-white"
+              className="text-blue-600 font-bold underline hover:bg-darkblue hover:text-blue-900 hover:font-bold"
               href="https://cavitation.bg/results"
             >
               Резултати от изследвания
