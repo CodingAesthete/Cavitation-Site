@@ -622,6 +622,21 @@ export default function LearnMore() {
               {t("cavT6P4")}
             </motion.p>
           </motion.div>
+
+          <motion.div
+            className="text-center sm:text-justify flex items-center mb-3 mt-3"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1 }}
+          >
+            <motion.a
+              className="text-darkblue underline hover:bg-darkblue hover:text-white"
+              href="https://cavitation.bg/results"
+            >
+              Резултати от изследвания
+            </motion.a>
+          </motion.div>
+
           <motion.div
             className="h-1 bg-blue-900 mt-6"
             initial={{ scaleX: 0 }}
