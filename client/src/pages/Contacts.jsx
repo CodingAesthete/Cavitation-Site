@@ -1,22 +1,19 @@
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useInView } from 'framer-motion';
-import Message from '../assets/images/message.webp';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n'; // Import i18n instance
+import emailjs from "@emailjs/browser";
+
+// Import images
+import Handshake from '../assets/images/handshake.avif';
+import Email from '../assets/images/Email.jpg';
 import Telephone from '../assets/images/telephone.png';
-import MapImage from '../assets/images/Map.jpg';
 import AddressIcon from '../assets/images/AddressIcon.jpg';
 import Check from '../assets/images/Check.png';
 import SuccessIcon from '../assets/images/SuccessIcon.png';
 import ReputationIcon from '../assets/images/Reputation.webp';
 import Vision from '../assets/images/Vision2.jpg';
-import Email from '../assets/images/Email.jpg';
-import ContactsIcon from '../assets/images/Contacts.jpg';
-import ConImg2 from '../assets/images/con-img2.jpg';
-import Handshake from '../assets/images/handshake.avif';
-import { useTranslation, Trans } from 'react-i18next';
-import i18n from '../i18n'; // Import i18n instance
-
-import styled from "styled-components";
-import emailjs from "@emailjs/browser";
+import MapImage from '../assets/images/Map.jpg';
 
 // Custom hook to detect screen size
 function useMediaQuery() {
@@ -43,11 +40,9 @@ function useMediaQuery() {
 
 export default function Contacts() {
   const screenSize = useMediaQuery();
-
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true });
   const { t } = useTranslation();
-
   const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
@@ -115,8 +110,9 @@ export default function Contacts() {
               <div className="w-full lg:w-5/12">
                 <motion.img
                   src={Handshake}
+                  style={{ border: '8px solid #003153', padding: "1px" }}
                   alt="Contact icon"
-                  className="w-full lg:max-w-lg lg:mr-4 mb-4 lg:mb-0 rounded-md"
+                  className="w-full lg:max-w-lg lg:mr-4 mb-4 lg:mb-0 rounded-lg border-4 border-blue-800"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.2 }}
@@ -132,24 +128,6 @@ export default function Contacts() {
                   >
                     {t("conT1P1")}
                   </motion.p>
-                  {/* <motion.p
-                  className={`mb-3 flex items-start sm:items-center ${screenSize === 'sm' ? 'text-left' : 'text-justify'}`}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.3 }}
-                >
-                  <img
-                    src={Telephone}
-                    alt="Telephone icon"
-                    className="w-6 h-6 mr-2"
-                  />
-                  <span className="block sm:inline">
-                    <b>+359-88-661-2166</b>
-                    <span className="hidden sm:inline"> - </span>
-                    <br className="sm:hidden" />
-                    <i>Георги Стоянов Мишков</i>
-                  </span>
-                </motion.p> */}
                   <motion.p
                     className={`mb-3 flex items-start md:text-justify text-center text-gray-700`}
                     initial={{ opacity: 0 }}
@@ -174,7 +152,7 @@ export default function Contacts() {
                     <img
                       src={Telephone}
                       alt="Telephone icon"
-                      style={{ width: '24px', height: '24px', marginRight: '8px' }}
+                      className="w-6 h-6 mr-2"
                     />
                     <b>+359-88-661-2166</b>&nbsp;-&nbsp;<i>{t("conT1P2")}</i>
                   </motion.p>
@@ -252,8 +230,9 @@ export default function Contacts() {
               </div>
               <motion.img
                 src={MapImage}
+                style={{ border: '8px solid #003153', padding: "1px" }}
                 alt="Map"
-                className="lg:w-5/12 lg:max-h-full rounded-md mt-4 lg:mt-0 w-full"
+                className="lg:w-5/12 lg:max-h-full rounded-md mt-4 lg:mt-0 w-full border-4 border-blue-800"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 }}
@@ -261,72 +240,18 @@ export default function Contacts() {
             </div>
           </div>
         </div>
-        <StyledContactForm>
-          <form ref={form} onSubmit={sendEmail}>
-            <label>{t("conT2")}</label>
-            <input type="text" name="user_name" />
-            <label>{t("conT3")}</label>
-            <input type="email" name="user_email" />
-            <label>{t("conT4")}</label>
-            <textarea name="message" />
-            <input type="submit" value={t("conT5")} />
+        <div className="w-full max-w-full mx-auto mt-6">
+          <form ref={form} onSubmit={sendEmail} className="flex flex-col space-y-4">
+            <label className="block text-gray-700 font-medium mb-2">{t("conT2")}</label>
+            <input type="text" name="user_name" className="w-full p-2 border border-gray-300 rounded-md focus:border-green-700" />
+            <label className="block text-gray-700 font-medium mb-2">{t("conT3")}</label>
+            <input type="email" name="user_email" className="w-full p-2 border border-gray-300 rounded-md focus:border-green-700" />
+            <label className="block text-gray-700 font-medium mb-2">{t("conT4")}</label>
+            <textarea name="message" className="w-full p-2 border border-gray-300 rounded-md focus:border-green-700 min-h-[100px]" />
+            <input type="submit" value={t("conT5")} className="w-full py-2 px-4 bg-blue-700 text-white rounded-md cursor-pointer hover:bg-blue-900" />
           </form>
-        </StyledContactForm>
-      </motion.div >
+        </div>
+      </motion.div>
     </motion.div>
   );
 }
-
-const StyledContactForm = styled.div`
-  width: 100%;
-  max-width: 100%;
-  margin: auto;
-
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    font-size: 16px;
-
-    input, textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 0.5rem;
-      outline: none;
-      border-radius: 0.375rem;
-      border: 1px solid rgb(220, 220, 220);
-
-      &:focus {
-         border-color: rgb(30, 110, 30); /* Darker green */
-      }
-    }
-
-    textarea {
-      min-height: 100px;
-    }
-
-    label {
-      margin-top: 1rem;
-    }
-
-    input[type="submit"] {
-      margin-top: 1.5rem;
-      cursor: pointer;
-      background-color: rgb(25, 58, 160); /* Darker blue */
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 0.375rem;
-      transition: background-color 0.2s;
-
-      &:hover {
-        background-color: rgb(17, 42, 112); /* Even darker blue on hover */
-      }
-    }
-  }
-`;
-
-
-
-

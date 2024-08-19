@@ -102,27 +102,26 @@ export default function LearnMore() {
             {t("cavT1")}
           </motion.h2>
 
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}
-            className='flex-col sm:flex-row'>
+          <div style={{ display: 'flex', justifyContent: 'space-between' }} className='flex-col sm:flex-row'>
             <motion.img
               src={Baloons2}
               alt="Baloons 2"
-              style={{ flex: '0 1 45%', maxHeight: '220px', marginBottom: '10px' }}
+              style={{ flex: '0 1 45%', maxHeight: '220px', marginBottom: '10px', border: '8px solid #003153', borderRadius: '8px', padding: "1px" }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className='m-0 rounded-md hidden md:block'
+              className='m-0 hidden md:block'
             />
             <motion.img
               src={Baloons}
               alt="Baloons"
-              style={{ flex: '0 1 45%', maxHeight: '220px', marginBottom: '10px' }}
+              style={{ flex: '0 1 45%', maxHeight: '220px', marginBottom: '10px', border: '8px solid #003153', borderRadius: '8px', padding: "1px" }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className='rounded-md'
             />
           </div>
+
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -186,29 +185,18 @@ export default function LearnMore() {
               />
             </motion.div>
             <motion.div
-              style={{
-                clear: 'both',
-                display: 'flex',
-                justifyContent: 'center',
-                backgroundImage: `url(${WaterDrops})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundBlendMode: 'overlay',
-                backgroundColor: 'rgba(173, 216, 230, 0.7)',
-                width: '95%',
-                margin: '0 auto',
-              }}
-              className='mt-12 mb-6 rounded-2xl lg:w-80 lg:mx-auto'
+              className="flex justify-center bg-blue-100 bg-opacity-70 p-4 rounded-2xl shadow-md border-l-4 border-r-4 border-blue-900 mt-12 mb-6 w-full max-w-full mx-auto"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
             >
-              <div className="p-2 sm:p-6 bg-slate-100 bg-opacity-65 rounded-2xl border-4 border-dashed border-blue-300">
-                <p className=" text-gray-700">
+              <div className="w-full">
+                <p className="text-lg leading-[1.9] text-gray-800 italic">
                   {t("cavT1P4")}
                 </p>
               </div>
             </motion.div>
+
           </ul>
         </div>
 
@@ -303,7 +291,7 @@ export default function LearnMore() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            <motion.p className="lg:pr-6 text-center sm:text-justify w-full lg:w-auto  text-gray-700">
+            <motion.p className="lg:pr-6 text-center sm:text-justify w-full lg:w-auto text-gray-700">
               <Trans i18nKey="cavT4P1">
                 Кавитационната обработка има широко приложение в промишлеността, селското
                 стопанство и медицината. В <strong>хранителната промишленост</strong> за хомогенизация и
@@ -311,11 +299,12 @@ export default function LearnMore() {
                 повишаване на срока на съхранение на продуктите.
               </Trans>
             </motion.p>
+
             <motion.img
               src={Food}
               alt="Agriculture"
               className="mb-3 lg:mb-0 lg:ml-6 rounded-md"
-              style={{ maxHeight: '170px' }}
+              style={{ maxHeight: '170px', border: '8px solid #003153', padding: "1px" }}
               loading="lazy"
             />
           </motion.div>
@@ -327,7 +316,7 @@ export default function LearnMore() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            <motion.p className=" lg:pr-6 text-center sm:text-justify w-full lg:w-auto  text-gray-700">
+            <motion.p className="lg:pr-6 text-center sm:text-justify w-full lg:w-auto text-gray-700">
               <Trans i18nKey="cavT4P2">
                 В <b>медицината</b> също открива приложение - използва се за бактериологично обеззаразяване, така също и за ефективното проникване на лекарствените вещества към центъра на поразяване. Подобрява кръвообращението и стимулира регенеративните процеси.
               </Trans>
@@ -337,7 +326,7 @@ export default function LearnMore() {
               alt="Medicine"
               loading="lazy"
               className="mb-3 lg:mb-0 lg:ml-6 rounded-md"
-              style={{ maxHeight: '170px' }}
+              style={{ maxHeight: '170px', border: '8px solid #003153', padding: "1px" }}
             />
           </motion.div>
 
@@ -357,8 +346,7 @@ export default function LearnMore() {
               src={Farming}
               alt="Farming"
               className="mb-3 lg:mb-0 lg:ml-6 rounded-md"
-              loading="lazy"
-              style={{ maxHeight: '170px' }}
+              style={{ maxHeight: '170px', border: '8px solid #003153', padding: "1px" }}
             />
           </motion.div>
 
@@ -379,7 +367,7 @@ export default function LearnMore() {
               alt="Oil"
               loading="lazy"
               className="mb-3 lg:mb-0 lg:ml-6 rounded-md"
-              style={{ maxHeight: '170px' }}
+              style={{ maxHeight: '170px', border: '8px solid #003153', padding: "1px" }}
             />
           </motion.div>
 
@@ -400,9 +388,10 @@ export default function LearnMore() {
               alt="Polishing"
               loading="lazy"
               className="mb-3 lg:mb-0 lg:ml-6 rounded-md"
-              style={{ maxHeight: '170px' }}
+              style={{ maxHeight: '170px', border: '8px solid #003153', padding: "1px" }}
             />
           </motion.div>
+
 
           {/* Divider */}
           <motion.div
@@ -487,19 +476,19 @@ export default function LearnMore() {
               src={Chlor}
               alt="Chlor"
               className="mb-3 rounded-md"
-              style={{ maxWidth: '100%', height: 'auto' }} // Adjusted width to be responsive
+              style={{ maxWidth: '100%', height: 'auto', border: '8px solid #003153', padding: "1px" }} // Add border
             />
             <motion.img
               src={CavitationMethod}
               alt="Cavitation-Method"
               className="mb- rounded-md"
-              style={{ maxWidth: '100%', height: 'auto' }} // Adjusted width to be responsive
+              style={{ maxWidth: '100%', height: 'auto', border: '8px solid #003153', padding: "1px" }} // Add border
             />
             <motion.img
               src={UV}
               alt="UV-Treatment"
               className="mb-3 rounded-md"
-              style={{ maxWidth: '100%', height: 'auto' }} // Adjusted width to be responsive
+              style={{ maxWidth: '100%', height: 'auto', border: '8px solid #003153', padding: "1px" }} // Add border
             />
           </motion.div>
 
@@ -509,19 +498,19 @@ export default function LearnMore() {
               src={Chlor}
               alt="Chlor"
               className="mb-3 lg:mb-0 rounded-md"
-              style={{ maxWidth: '95%', height: 'auto' }} // Adjusted width to be responsive
+              style={{ maxWidth: '95%', height: 'auto', border: '8px solid #003153', padding: "1px" }} // Add border
             />
             <motion.img
               src={CavitationMethod}
               alt="Cavitation-Method"
               className="mb-3 lg:mb-0 rounded-md"
-              style={{ maxWidth: '95%', height: 'auto' }} // Adjusted width to be responsive
+              style={{ maxWidth: '95%', height: 'auto', border: '8px solid #003153', padding: "1px" }} // Add border
             />
             <motion.img
               src={UV}
               alt="UV-Treatment"
               className="mb-3 lg:mb-0 rounded-md"
-              style={{ maxWidth: '95%', height: 'auto' }} // Adjusted width to be responsive
+              style={{ maxWidth: '95%', height: 'auto', border: '8px solid #003153', padding: "1px" }} // Add border
             />
           </motion.div>
 
@@ -533,6 +522,7 @@ export default function LearnMore() {
             transition={{ duration: 0.5 }}
           ></motion.div>
         </div>
+
 
 
 
@@ -633,7 +623,7 @@ export default function LearnMore() {
               className="text-blue-600 font-bold underline hover:bg-darkblue hover:text-blue-900 hover:font-bold"
               href="https://cavitation.bg/results"
             >
-              Резултати от изследвания
+              {t("resultsLink")}
             </motion.a>
           </motion.div>
 

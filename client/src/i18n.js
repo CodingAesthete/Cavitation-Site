@@ -184,7 +184,11 @@ i18n
           termsT30: "6.1. Настоящите условия представляват целия договор между потребителя и Вортекс Шипинг ЕООД относно използването на Сайта и отменят всички предходни споразумения или договорености, независимо дали са устни или писмени.",
           termsT31: "6.2. Вортекс Шипинг ЕООД си запазва правото да променя условията по всяко време и тези промени ще влязат в сила след публикуването им на Сайта.",
           termsT32: "6.3. В случай че някоя от клаузите на настоящите условия бъде призната за невалидна или неприложима, останалите клаузи ще продължат да са в сила.",
-          termsT33: "6.4. Всеки спор, възникнал във връзка с настоящите условия, ще бъде разрешаван по реда, установен от българското законодателство и компетентните съдилища на Република България."
+          termsT33: "6.4. Всеки спор, възникнал във връзка с настоящите условия, ще бъде разрешаван по реда, установен от българското законодателство и компетентните съдилища на Република България.",
+
+          resultsLink: "Резултати от изследвания",
+          resultsT1: "Изследване на ВИК Варна",
+          resultsT2: "Анализ на ВВМУ Варна",
         }
       },
       en: {
@@ -363,7 +367,11 @@ i18n
           "termsT30": "6.1. These terms represent the entire agreement between the user and Vortex Shipping Ltd. regarding the use of the Site and supersede all prior agreements or arrangements, whether oral or written.",
           "termsT31": "6.2. Vortex Shipping Ltd. reserves the right to change the terms at any time, and these changes will take effect upon their publication on the Site.",
           "termsT32": "6.3. If any provision of these terms is found to be invalid or unenforceable, the remaining provisions will continue in full force and effect.",
-          "termsT33": "6.4. Any dispute arising in connection with these terms will be resolved in accordance with Bulgarian legislation and the competent courts of the Republic of Bulgaria."
+          "termsT33": "6.4. Any dispute arising in connection with these terms will be resolved in accordance with Bulgarian legislation and the competent courts of the Republic of Bulgaria.",
+
+          resultsLink: "Research Results",
+          resultsT1: "Study of Water Supply and Sewerage Varna",
+          resultsT2: "Analysis by the Naval Academy Varna",
         }
       }
     }

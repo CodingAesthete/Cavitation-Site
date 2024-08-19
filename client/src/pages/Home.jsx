@@ -89,6 +89,7 @@ export default function Home() {
         <div className="lg:flex lg:items-start mb-6">
           <motion.img
             src={CavitationVortex}
+            style={{ border: '8px solid #003153', padding: "1px" }}
             alt="Cavitation Process"
             className='lg:float-left lg:mr-6 mb-4 lg:mb-0 w-full md:w-auto max-w-[340px] mx-auto lg:mx-0 rounded-md shadow-md'
             initial={{ opacity: 0 }}
@@ -119,6 +120,7 @@ export default function Home() {
         <div className="lg:flex lg:items-start lg:flex-row-reverse mb-6">
           <motion.img
             src={CavitationGlass}
+            style={{ border: '8px solid #003153', padding: "1px" }}
             alt="Cavitation Process"
             className='lg:float-right lg:ml-6 mb-4 lg:mb-0 w-full lg:w-auto max-w-[265px] xl:max-w-[340px] mx-auto lg:mx-0 rounded-md shadow-md'
             initial={{ opacity: 0 }}
@@ -158,7 +160,7 @@ export default function Home() {
             loading="lazy"
             alt="Subject of Activity"
             className="mr-4 rounded-md shadow-md mb-4 lg:mb-0"
-            style={{ maxWidth: '300px' }}
+            style={{ border: '8px solid #003153', padding: "1px", maxWidth: '300px' }}
           />
           <motion.div>
             <motion.h1
@@ -170,7 +172,7 @@ export default function Home() {
               {t("subjectOfActivity")}
             </motion.h1>
             <p
-              className={`text-lg leading-6 italic ${screenSize === 'sm' ? 'text-left' : 'text-justify'} text-gray-700`}
+              className={`text-lg leading-6 ${screenSize === 'sm' ? 'text-left' : 'text-justify'} text-gray-700`}
               dangerouslySetInnerHTML={{ __html: t("subjectDescription") }}
             />
           </motion.div>
@@ -241,6 +243,7 @@ export default function Home() {
           <div className="flex flex-col gap-4 mb-4  sm:flex-row sm:gap-6">
             <motion.img
               src={Event1}
+              style={{ border: '8px solid #003153', padding: "1px" }}
               loading="lazy"
               alt="Event 1"
               className="w-full md:max-w-[48%] lg:max-w-[49%] rounded-md shadow-md"
@@ -250,6 +253,7 @@ export default function Home() {
             />
             <motion.img
               src={Conf}
+              style={{ border: '8px solid #003153', padding: "1px" }}
               loading="lazy"
               alt="Event 2"
               className="w-full hidden md:block md:max-w-[48%] lg:max-w-[49%] rounded-md shadow-md"
@@ -260,7 +264,7 @@ export default function Home() {
           </div>
 
           <motion.p
-            className="text-lg leading-[1.9] text-gray-800 italic p-4 bg-blue-100 border-l-4 border-r-4 border-blue-900 shadow-md rounded-md"
+            className="text-lg leading-[1.9] text-gray-800  p-4 bg-blue-100 border-l-4 border-r-4 border-blue-900 shadow-md rounded-md italic"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}

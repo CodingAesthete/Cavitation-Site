@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { motion, useInView } from 'framer-motion';
 import Vvmu from '../assets/images/vvmu.jpg';
 import Vik from '../assets/images/vik.jpg';
+import Bacteria from '../assets/images/bacteria.jpg';
 import { useTranslation } from 'react-i18next';
 import i18n from '../i18n'; // Import i18n instance
 
@@ -73,7 +74,7 @@ export default function Results() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            {t("Резултати от изследвания")}
+            {t("resultsLink")}
           </motion.h1>
 
           <div className="flex flex-col justify-center gap-6">
@@ -84,7 +85,7 @@ export default function Results() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
               >
-                Изследване на ВИК Варна
+                {t("resultsT1")}
               </motion.h2>
               <motion.img
                 src={Vik}
@@ -111,7 +112,7 @@ export default function Results() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 }}
               >
-                Анализ на ВВМУ Варна
+                {t("resultsT2")}
               </motion.h2>
               <div className="relative w-full flex justify-center overflow-hidden">
                 <motion.div
@@ -129,6 +130,53 @@ export default function Results() {
                 </motion.div>
               </div>
             </div>
+
+            {/* New Section */}
+            <motion.div
+              className="flex flex-col items-center mt-6"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6 }}
+            >
+              <motion.h2
+                className="text-lg font-bold text-blue-800 mb-4 text-center"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.6 }}
+              >
+                Обработка на морска вода от Варненски залив
+              </motion.h2>
+
+              <motion.img
+                src={Bacteria}
+                alt="Bacteria under microscope"
+                className="w-full h-auto rounded-md max-w-xl mb-6"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.6 }}
+              />
+
+              <div className="w-full max-w-xl">
+                {[
+                  "Контролна проба",
+                  "След 10 мин кавитационна обработка",
+                  "След 20 мин кавитационна обработка",
+                  "След 50 мин кавитационна обработка"
+                ].map((text, index) => (
+                  <motion.div
+                    key={index}
+                    className="flex items-center mb-2"
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.6 + index * 0.2 }}
+                  >
+                    <div className="bg-blue-800 w-2 h-2 rounded-full mr-4"></div>
+                    <p className="text-blue-700">{text}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+
           </div>
         </div>
       </motion.div>
