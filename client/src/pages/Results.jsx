@@ -144,7 +144,7 @@ export default function Results() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
               >
-                Обработка на морска вода от Варненски залив
+                {t("resultsT3")}
               </motion.h2>
 
               <motion.img
@@ -158,10 +158,10 @@ export default function Results() {
 
               <div className="w-full max-w-xl">
                 {[
-                  "Контролна проба",
-                  "След 10 мин кавитационна обработка",
-                  "След 20 мин кавитационна обработка",
-                  "След 50 мин кавитационна обработка"
+                  t("resultsT3P1"),
+                  t("resultsT3P2"),
+                  t("resultsT3P3"),
+                  t("resultsT3P4")
                 ].map((text, index) => (
                   <motion.div
                     key={index}

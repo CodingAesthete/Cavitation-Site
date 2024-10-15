@@ -15,6 +15,7 @@ import TermsOfUse from './pages/TermsOfUse';
 import Copyright from './pages/Copyright';
 import Footer from './components/Footer';
 import Results from './pages/Results';
+import AgWater from './pages/AgWater';
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/results" element={<Results />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
           <Route path="/copyright" element={<Copyright />} />
+          <Route path="/ag-water" element={<AgWater />} />
           <Route element={<PrivateRoute />}>
             <Route path='/profile' element={<Profile />} />
           </Route>

@@ -73,6 +73,7 @@ i18n
           head3: "Ефекти",
           head4: "Факти",
           head5: "Контакти",
+          head6: "Сребърна вода",
 
           conT1: "Свържете се с нас",
           conT1P1: "С удоволствие ще отговорим на всички ваши въпроси и запитвания относно нашите услуги и продукти. Независимо дали искате да направите поръчка, да получите допълнителна информация или просто да споделите своите идеи и предложения, ние сме тук, за да ви помогнем.",
@@ -189,6 +190,11 @@ i18n
           resultsLink: "Резултати от изследвания",
           resultsT1: "Изследване на ВИК Варна",
           resultsT2: "Анализ на ВВМУ Варна",
+          resultsT3: "Обработка на морска вода от Варненски залив за наличие на Ешерихия коли",
+          resultsT3P1: "Контролна проба",
+          resultsT3P2: "След 10 мин кавитационна обработка",
+          resultsT3P3: "След 20 мин кавитационна обработка",
+          resultsT3P4: "След 50 мин кавитационна обработка",
         }
       },
       en: {
@@ -255,6 +261,7 @@ i18n
           head3: "Effects",
           head4: "Facts",
           head5: "Contacts",
+          head6: "Silver Water",
 
           conT1: "Contact Us",
           conT1P1: "We are happy to answer all your questions and inquiries regarding our services and products. Whether you want to place an order, get additional information, or simply share your ideas and suggestions, we are here to help you.",
@@ -372,6 +379,11 @@ i18n
           resultsLink: "Research Results",
           resultsT1: "Study of Water Supply and Sewerage Varna",
           resultsT2: "Analysis by the Naval Academy Varna",
+          resultsT3: "Treatment of seawater from Varna Bay for the presence of Escherichia coli",
+          resultsT3P1: "Control sample",
+          resultsT3P2: "After 10 minutes of cavitation treatment",
+          resultsT3P3: "After 20 minutes of cavitation treatment",
+          resultsT3P4: "After 50 minutes of cavitation treatment",
         }
       }
     }

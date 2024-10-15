@@ -51,7 +51,7 @@ export default function Header() {
             </div>
           </Link>
 
-          <ul className='text-blue-800 flex flex-col sm:text-xl header-special:mb-0 md:flex-row items-center gap-1 header-sm:gap-6 sm:gap-3 md:gap-8 text-xl xs:text-lg md:text-2xl xl:text-xl header-special:mt-0 font-bold'>
+          <ul className='text-blue-800 flex flex-col sm:text-xl header-special:mb-0 header-fixer:flex-row items-center gap-1 header-sm:gap-6 sm:gap-3 md:gap-8 text-xl xs:text-lg md:text-2xl xl:text-xl header-special:mt-0 font-bold'>
             <div className='flex flex-row sm:flex-row sm:text-xl md:mb-2 header-special:mb-0 md:flex-row items-center gap-4 xs:gap-8 sm:gap-8 text-xl xs:text-lg md:text-2xl xl:text-xl mt-3 header-special:mt-0'>
               <Link to='/'>
                 <li className='hover:underline cursor-pointer'>{t("head1")}</li>
@@ -64,8 +64,11 @@ export default function Header() {
               </Link>
             </div>
             <div className='flex flex-row sm:flex-row sm:text-xl mb-1 header-sm:mb-0 md:flex-row items-center gap-4 xs:gap-8 sm:gap-8 text-xl xs:text-lg md:text-2xl xl:text-xl mt-1 header-special:mt-0'>
-              <Link to='/goals'>
+              {/* <Link to='/goals'>
                 <li className='hover:underline'>{t("head4")}</li>
+              </Link> */}
+              <Link to='/ag-water'>
+                <li className='hover:underline'> {t("head6")} </li>
               </Link>
               <Link to='/contacts'>
                 <li className='hover:underline'> {t("head5")} </li>

@@ -20,6 +20,7 @@ import Water15 from '../assets/images/water15.jpg';
 import WaterExtra2 from '../assets/images/WaterExtra2.jpg';
 import Water17 from '../assets/images/water17.jpg';
 import Water18 from '../assets/images/water18.jpg';
+import Goals from './Goals'
 import { useTranslation, Trans } from 'react-i18next';
 import i18n from '../i18n'; // Import i18n instance
 
@@ -634,8 +635,16 @@ export default function LearnMore() {
             transition={{ duration: 0.5 }}
           ></motion.div>
         </div>
+        <Goals />
 
-        <motion.div
+        {/* <motion.div
+          className="h-1 bg-blue-900 mt-8 rounded-full"
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 0.5 }}
+        ></motion.div> */}
+
+        {/* <motion.div
           style={{ clear: 'both', position: 'relative', textAlign: 'center' }}
           className='mt-12 mb-6'
           initial={{ opacity: 0 }}
@@ -676,7 +685,7 @@ export default function LearnMore() {
               <p className='text-2xl md:text-3xl pb-3'>{t("cavT7P2")}</p>
             </motion.div>
           </a>
-        </motion.div>
+        </motion.div> */}
 
 
 
