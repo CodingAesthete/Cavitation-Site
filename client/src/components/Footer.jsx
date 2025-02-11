@@ -32,10 +32,19 @@ export default function Footer() {
   const { t } = useTranslation();
 
   const toggleLanguage = () => {
-    const newLanguage = i18n.language === 'bg' ? 'en' : 'bg';
+    const currentLanguage = i18n.language;
+
+    let newLanguage;
+    if (currentLanguage === 'bg') {
+      newLanguage = 'en';
+    } else if (currentLanguage === 'en') {
+      newLanguage = 'fr';
+    } else {
+      newLanguage = 'bg';
+    }
+
     i18n.changeLanguage(newLanguage);
   };
-
   return (
     <>
       <header className='bottom-0 left-0 right-0 py-1 bg-blue-900 text-black font-semibold shadow-lg z-50'>

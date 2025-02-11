@@ -4,7 +4,7 @@ import CavitationLogo from '../assets/images/cav-logo-new.png';
 import PerfectLogo from '../assets/images/LastLogo.png';
 import CavBgLogo from '../assets/images/CavBgLogo.jpg';
 import { useSelector } from 'react-redux';
-import LanguagesIcon from '../assets/images/languages-icon.png';
+import LanguagesIcon from '../assets/images/LanguageIcon2.png';
 import { useTranslation } from 'react-i18next';
 import i18n from '../i18n'; // Import i18n instance
 
@@ -32,7 +32,17 @@ export default function Header() {
   const { i18n } = useTranslation();
 
   const toggleLanguage = () => {
-    const newLanguage = i18n.language === 'bg' ? 'en' : 'bg';
+    const currentLanguage = i18n.language;
+
+    let newLanguage;
+    if (currentLanguage === 'bg') {
+      newLanguage = 'en';
+    } else if (currentLanguage === 'en') {
+      newLanguage = 'fr';
+    } else {
+      newLanguage = 'bg';
+    }
+
     i18n.changeLanguage(newLanguage);
   };
 
@@ -74,7 +84,7 @@ export default function Header() {
                 <li className='hover:underline'> {t("head5")} </li>
               </Link>
               <li className='hover:underline cursor-pointer' onClick={toggleLanguage}>
-                <img src={LanguagesIcon} alt="Languages Icon" className='w-12 h-12' />
+                <img src={LanguagesIcon} alt="Languages Icon" className='w-16 h-10' />
               </li>
             </div>
           </ul>
