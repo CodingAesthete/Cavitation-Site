@@ -8,6 +8,8 @@ import AgModel from '../assets/images/AgModel.jpg';
 import OldTimes from '../assets/images/OldTimes.jpg';
 import AgGlass from '../assets/images/AgGlass.jpg';
 import MoonWater from '../assets/images/MoonLight.jpg';
+import TableFoods from "../assets/images/TableFoods.jpg"
+import Comparison from "../assets/images/Comparison.jpg"
 import { useTranslation, Trans } from 'react-i18next';
 import i18n from '../i18n'; // Import i18n instance
 
@@ -360,6 +362,104 @@ export default function AgWater() {
           <div className="flex justify-center mt-2 max-w-full md:max-w-[75%] mx-auto">
             <motion.img
               src={MoonWater}
+              style={{
+                border: '8px solid #003153',  // Keeps the border for definition
+                borderRadius: '20px',         // Rounded corners for a softer look
+                width: '100%',                 // Make the image take full width of its container
+                height: 'auto',                // Maintain aspect ratio
+                padding: '1px',               // Padding for aesthetics
+                boxShadow: '0 8px 20px rgba(0, 0, 0, 0.2)', // Adding a nice shadow for depth
+              }}
+              loading="lazy"
+              alt="Event 2"
+            />
+          </div>
+
+
+        </div>
+
+        <motion.div
+          className="h-1 bg-blue-900 mt-8 rounded-full"
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 0.5 }}
+        ></motion.div>
+
+        <div className="mt-8" ref={sectionRef}>
+          <motion.h1
+            className='w-full text-center text-2xl font-extrabold text-blue-900 pb-6'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          >
+            Медта в нашия живот
+          </motion.h1>
+
+          {/* Container for Event Images */}
+          <div>
+            <motion.p className="mb-4 animate-slideInUp md:text-justify text-center text-gray-700"
+            >
+              Медта е важен микроелемент, който играе съществена роля в метаболизма на човека. Тя е необходима за функцията на различни протеини и ензими и подпомага образуването на пигменти в кожата. Медта е също така важна за костите и нервната система, но тъй като организмът не може сам да я произвежда, тя трябва да бъде получавана чрез храната. Богати на мед храни са зеленчуците, пълнозърнестият хляб, ядките и овесените ядки.
+            </motion.p>
+
+            <motion.p className="mb-4 animate-slideInUp md:text-justify text-center text-gray-700">
+              Обработката на басейнова вода с медни и сребърни йони я прави мека, без вкус и мирис, и не причинява раздразнение на кожата. Тези йони продължават да предпазват водата дълго време, което намалява нуждата от постоянен контрол и поддръжка. Меди и среброто са по-безопасни и екологични в сравнение с хлора, като не дразнят дихателните пътища и са подходящи за деца и хора с чувствителна кожа.
+            </motion.p>
+          </div>
+
+          {/* Centering the image */}
+          <div className="flex justify-center mt-2 max-w-full md:max-w-[75%] mx-auto">
+            <motion.img
+              src={TableFoods}
+              style={{
+                border: '8px solid #003153',  // Keeps the border for definition
+                borderRadius: '20px',         // Rounded corners for a softer look
+                width: '100%',                 // Make the image take full width of its container
+                height: 'auto',                // Maintain aspect ratio
+                padding: '1px',               // Padding for aesthetics
+                boxShadow: '0 8px 20px rgba(0, 0, 0, 0.2)', // Adding a nice shadow for depth
+              }}
+              loading="lazy"
+              alt="Event 2"
+            />
+          </div>
+
+
+        </div>
+
+        <motion.div
+          className="h-1 bg-blue-900 mt-8 rounded-full"
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 0.5 }}
+        ></motion.div>
+
+        <div className="mt-8" ref={sectionRef}>
+          <motion.h1
+            className='w-full text-center text-2xl font-extrabold text-blue-900 pb-6'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          >
+            Ефективност и предимства на технологията
+          </motion.h1>
+
+          {/* Container for Event Images */}
+          <div>
+            <motion.p className="mb-4 animate-slideInUp md:text-justify text-center text-gray-700"
+            >
+              Басейновата вода отговаря на изискванията на СанПиН 2.1.2.1188-03 за плувни басейни. Работните концентрации за ефективна обработка на водата са: за мед – до 0,7 мг/л (ПДКCu = 1,0 мг/л), за сребро – до 0,02 мг/л (ПДКAg = 0,05 мг/л). След обработка водата остава естествена, мека, без вкус и мирис, не дразни кожата и е идеална за деца и хора с чувствителност. Основното предимство на обработката с медни и сребърни йони е, че те остават във водата и я защитават дълго време (до няколко месеца), елиминирайки нуждата от постоянен контрол и персонал.
+            </motion.p>
+
+            <motion.p className="mb-4 animate-slideInUp md:text-justify text-center text-gray-700">
+              Методът с мед и сребро елиминира недостатъците на хлорирането, като същевременно изисква по-малко поддръжка. Медта действа като естествен коагулант, предотвратява растежа на водорасли и е полезна за здравето. Нивото ѝ трябва да се проверява веднъж на три месеца, а замяната на пясъка във филтъра е необходима едва на всеки 10 години. Водата не трябва да се подменя и може да бъде използвана за напояване на растения.
+            </motion.p>
+          </div>
+
+          {/* Centering the image */}
+          <div className="flex justify-center mt-2 max-w-full md:max-w-[90%] mx-auto">
+            <motion.img
+              src={Comparison}
               style={{
                 border: '8px solid #003153',  // Keeps the border for definition
                 borderRadius: '20px',         // Rounded corners for a softer look
